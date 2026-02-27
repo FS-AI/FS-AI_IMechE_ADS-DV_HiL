@@ -1,0 +1,16 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-CANIfParameters 1
+FileCreator = CarMaker Office Extended 14.0.1
+
+CANIf.Parallelization = 1
+CANIf.CPUAffinity = -1
+CANIf.Priority = Max
+CANIf.Parallelization.Sampling.DeltaT = 0.001
+CANIf.Parallelization.Sampling.Offset = 0
+CANIf.Parallelization.TCPU = 0
+CANIf.Parallelization.CTMonitor = 0
+
+CAN.0 = 5 PCAN
+CAN.0.Channel.0 = PCAN_USBVCU
+CAN.0.Channel.0.Config = 500000
+

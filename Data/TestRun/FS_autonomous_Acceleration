@@ -1,0 +1,964 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-TestRun 14
+FileCreator = CarMaker Office 14.1.1
+Description:
+Vehicle = Examples_FS/FS_Autonomous
+Trailer =
+Tire.0 =
+Tire.1 =
+Tire.2 =
+Tire.3 =
+Snapshot.TimeLimit =
+Snapshot.DistLimit =
+Road.FName = FS_autonomous_Acceleration.rd5
+Vehicle.DriverTemplate.FName = TestRun
+Vehicle.KnowledgeTemplate.Name =
+Vehicle.UserDriver.Long.FName =
+Vehicle.Routing.Type = NotSpecified
+Vehicle.StartPos.Type = Link
+Vehicle.StartPos.ObjId =
+Vehicle.StartPos = 2.0 -2.5
+Vehicle.StartPos.Orientation.Type = Relative
+Vehicle.StartPos.Orientation = 0.0
+DrivMan.nMan = 1
+DrivMan.Man.Start.Velocity = 0.0
+DrivMan.Man.Start.SteerAng = 0
+DrivMan.Man.Start.LaneOffset = 0
+DrivMan.Man.Start.OperatorActive = 1
+DrivMan.Man.Start.OperatorState = drive
+DrivMan.VhclOperator.Kind = IPGOperator 1
+DrivMan.SelectorCtrlMapping.Kind =
+DrivMan.Man.0.nLongSteps = 1
+DrivMan.Man.0.nLatSteps = 1
+DrivMan.Man.0.CombinedSteps = 1
+DrivMan.Man.0.MaxExec = 1
+DrivMan.Man.0.ConsiderDomain = own
+DrivMan.Man.0.Transition.Interrupt = self
+DrivMan.Man.0.Transition.EndCond = end
+DrivMan.Man.0.Transition.SimultanStart = end
+DrivMan.SpeedUnit = kmh
+Env.StartTime.Year = 2014
+Env.StartTime.Month = 7
+Env.StartTime.Day = 1
+Env.StartTime.Hour = 12
+Env.StartTime.Min = 0
+Env.StartTime.Sec = 0
+Env.StartTime.DeltaUTC = 0.0
+Env.GNav.Active = 0
+Env.Temperature = 20.0
+Env.AirDensity = 1.205
+Env.AirPressure = 1.013
+Env.AirHumidity = 60
+Env.SolarRadiation = 400.0
+Env.Sun.Position = angleDefinition
+Env.Sun.Azimuth = 45.0
+Env.Sun.Elevation = 45.0
+Env.Cloud.Kind = simple
+Env.Cloud.Height = 800
+Env.Cloud.Intensity = 0.2
+Env.Cloud.Velocity = 10
+Env.Cloud.Angle = 45
+Env.FogActive = 0
+Env.VisRangeInFog = 10000
+Env.FogUseSkyColor = 0
+Env.FogColor = 0.5 0.5 0.5
+Env.Precipitation.Type = None
+Env.Wind.Kind = none
+Env.Wind.Velocity = 0.0
+Env.Wind.Angle = 0.0
+Env.Kind = Generic
+Env.Temp.Offset_Elev = -0.0065
+Env.Temp.Offset_sRoad.Amplify = 1.0
+Env.Temp.Offset_sRoad.On = 0
+Env.Temp.Offset_Time.Amplify = 1.0
+Env.Temp.Offset_Time.On = 1
+Env.Temp.Offset_Time:
+	0.0 -2.0
+	3.0 -2.5
+	6.0 -2.7
+	7.5 -2.7
+	9.0 -2.5
+	10.0 -2.3
+	11.0 -1.6
+	12.0 0.0
+	13.0 1.4
+	14.0 2.1
+	15.5 2.5
+	17.0 2.2
+	18.0 1.7
+	19.0 1.1
+	20.0 0.2
+	21.0 -0.6
+	22.0 -1.1
+	23.0 -1.6
+	24.0 -2.0
+Env.Settings.Commands:
+Env.nEvent = 0
+Driver.Info = Driver parametrization saved in Test Run
+Driver.Mode = std
+Driver.MultiStep = 1
+Driver.Course.LapDriving = 1
+Driver.Course.CornerCutCoef = 0.5
+Driver.Course.ApexShiftCoef = 0.0
+Driver.Course.CornerRoundCoef = 0.0
+Driver.Course.ShapeCoef = 1.0
+Driver.Course.PylonShiftFdCoef = 0.1
+Driver.Course.PylonShiftBkCoef = 0.1
+Driver.Acc.GGExp:
+	50 1.0 1.0
+Driver.Acc.axMax = 3.0
+Driver.Acc.axMin = -4.0
+Driver.Acc.ayMax = 4.0
+Driver.Acc.UseVelDepend = 0
+Driver.Acc.Factor.Accel = 1.0
+Driver.Acc.Factor.Decel = 1.0
+Driver.Acc.Factor.Lateral = 0.95
+Driver.Vel.CruisingSpeed = 150.0
+Driver.Vel.dtMinAccelDecel = 4
+Driver.Vel.Random.Amp = 0.0
+Driver.Vel.Random.Freq = 1.0
+Driver.Vel.LatInclFromRoad = 1
+Driver.Vel.MinimumSpeed = 1.0
+Driver.Long.Active = 1
+Driver.Long.TractionControl = 1
+Driver.Long.dtAccBrake = 0.5
+Driver.Long.dtAccBrakeKind = 0
+Driver.Long.DevMax = 0.0
+Driver.Long.tReact = 0.0
+Driver.Long.SmoothCoef = 0.0
+Driver.Long.SmoothThrottleLimit = 1.0
+Driver.Long.AccuracyCoef = 1
+Driver.Long.Rally.BrakeSlipCoef =
+Driver.Long.Rally.SideSlipCoef =
+Driver.Long.Rally.Active = 0
+Driver.Long.DriveCycle.Coef = 0
+Driver.Long.DriveCycle.Tol = 0
+Driver.Long.DragTorqueBraking = 0
+Driver.Long.ThrottleVelRelease = 10.0
+Driver.Long.ThrottleVelPush = 10.0
+Driver.Long.BrakeVelRelease = 10.0
+Driver.Long.BrakeVelPush = 10.0
+Driver.Long.ActuatorAccMax = 1000.0
+Driver.Long.ThrottleAmp = 1.0
+Driver.Long.BrakeAmp = 1.0
+Driver.Long.ClutchAmp = 1.0
+Driver.Long.dtSwitchGear = 0.0
+Driver.Long.Road3DRedCoef = 0.0
+Driver.Lat.Active = 1
+Driver.Lat.RiderRollType = 3
+Driver.Lat.RiderRollAmplify = 1.0
+Driver.Lat.DevMax = 0.0
+Driver.Lat.tReact = 0.0
+Driver.Lat.DevProReact =
+Driver.Lat.tDwell =
+Driver.Lat.StAHandOverHand =
+Driver.Lat.tHandOverHand =
+Driver.Lat.AccuracyCoef = 1.0
+Driver.Lat.StTorqueRequestSensitivity =
+Driver.Lat.StTorqueRequestCompCoef =
+Driver.Lat.StWhlAngleMax = 630
+Driver.Lat.StWhlAngleVelMax = 500
+Driver.Lat.StWhlAngleAccMax = 3000.0
+Driver.Lat.StWhlTorqueMax = 20.0
+Driver.Lat.StWhlTorqueVelMax = 1000.0
+Driver.Lat.SteeringAmp = 1.0
+Driver.DecShift.UseBrakePark = 0
+Driver.DecShift.tSwitchGear = 0.0
+Driver.DecShift.AsymClutch = 0.0
+Driver.DecShift.AsymClutchDown = 0.0
+Driver.DecShift.AsymShift = 0.0
+Driver.DecShift.tSSNeutralGear =
+Driver.DecShift.nEngine.Limits:
+	1500 4000
+Driver.DecShift.nEngine.Shift:
+	2000 3000
+Driver.Consider.SpeedLimit = 1
+Driver.Consider.StopMarker = 1
+Driver.Consider.TrfLight = 1
+Driver.Consider.Traffic = 1
+Driver.Traffic.Overtake = 0
+Driver.Traffic.TimeGapMin = 1.8
+Driver.Traffic.TimeGapMax = 5.0
+Driver.Traffic.DistMin = 6.0
+Driver.Traffic.DistMax = 250.0
+Driver.Traffic.EcoCoef = 0.75
+Driver.Traffic.Overtake.Rate = 1.0
+Driver.Traffic.Overtake.dSpeedMin = 10.0
+Driver.Traffic.Overtake.Multilane = 1
+Driver.Traffic.Ongoing.FollowVelThresh = 60.0
+Driver.Traffic.Ongoing.OvertakeVelDiff = 20.0
+Driver.Traffic.Overtake.SetIndicator = 1
+Driver.Percept.nObjMax = 4
+Driver.Percept.nLanesMax = 3
+Driver.Percept.UpdRate = 100
+Driver.DecShift.nEngine.MaxSpeed:
+	3000 4000
+	5000 6000
+Driver.DecShift.nEngine.MaxSpeed.UserDefined = 0
+Driver.Acc.VelDepend:
+	20.00 8.17 -11.97 8.98
+	30.00 8.12 -11.97 9.21
+	40.00 7.99 -11.97 9.44
+	50.00 7.69 -11.99 9.68
+	60.00 6.99 -12.02 9.92
+Driver.Acc.VelDepend.UserDefined = 0
+Driver.OutSdcv = 0
+Driver.Knowl.N = 0
+Traffic.SpeedUnit = ms
+Traffic.IFF.FName =
+Traffic.IFF.Time.Name = Time
+Traffic.GenDriverBehavior.FName = Default
+Traffic.0.Name = CN0
+Traffic.0.Info:
+	Generic traffic object
+Traffic.0.DetectMask = 1 1
+Traffic.0.UpdRate = 200
+Traffic.0.AutoDrv.UpdRate = 200
+Traffic.0.Lighting = 0
+Traffic.0.FreeMotion = 0
+Traffic.0.TrailerName =
+Traffic.0.Template.FName = TrafficCone_Large_Orange
+Traffic.0.AutoDriver.FName =
+Traffic.0.Routing.Type = Route
+Traffic.0.Routing.ObjId = 89
+Traffic.0.StartPos.Type = Route
+Traffic.0.StartPos.ObjId = 89
+Traffic.0.StartPos = 0 1.5
+Traffic.0.StartPos.Orientation.Type = Relative
+Traffic.0.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.0.nMan = 0
+Traffic.0.Man.Start.Velocity = 0.0
+Traffic.0.Man.TreatAtEnd = FreezePos
+Traffic.1.Name = CN1
+Traffic.1.Info:
+	Generic traffic object
+Traffic.1.DetectMask = 1 1
+Traffic.1.UpdRate = 200
+Traffic.1.AutoDrv.UpdRate = 200
+Traffic.1.Lighting = 0
+Traffic.1.FreeMotion = 0
+Traffic.1.TrailerName =
+Traffic.1.Template.FName = TrafficCone_Large_Orange
+Traffic.1.AutoDriver.FName =
+Traffic.1.Routing.Type = Route
+Traffic.1.Routing.ObjId = 89
+Traffic.1.StartPos.Type = Route
+Traffic.1.StartPos.ObjId = 89
+Traffic.1.StartPos = 0 -1.5
+Traffic.1.StartPos.Orientation.Type = Relative
+Traffic.1.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.1.nMan = 0
+Traffic.1.Man.Start.Velocity = 0.0
+Traffic.1.Man.TreatAtEnd = FreezePos
+Traffic.2.Name = CN2
+Traffic.2.Info:
+	Generic traffic object
+Traffic.2.DetectMask = 1 1
+Traffic.2.UpdRate = 200
+Traffic.2.AutoDrv.UpdRate = 200
+Traffic.2.Lighting = 0
+Traffic.2.FreeMotion = 0
+Traffic.2.TrailerName =
+Traffic.2.Template.FName = TrafficCone_Large_Orange
+Traffic.2.AutoDriver.FName =
+Traffic.2.Routing.Type = Route
+Traffic.2.Routing.ObjId = 89
+Traffic.2.StartPos.Type = Route
+Traffic.2.StartPos.ObjId = 89
+Traffic.2.StartPos = 0.5 1.5
+Traffic.2.StartPos.Orientation.Type = Relative
+Traffic.2.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.2.nMan = 0
+Traffic.2.Man.Start.Velocity = 0.0
+Traffic.2.Man.TreatAtEnd = FreezePos
+Traffic.3.Name = CN3
+Traffic.3.Info:
+	Generic traffic object
+Traffic.3.DetectMask = 1 1
+Traffic.3.UpdRate = 200
+Traffic.3.AutoDrv.UpdRate = 200
+Traffic.3.Lighting = 0
+Traffic.3.FreeMotion = 0
+Traffic.3.TrailerName =
+Traffic.3.Template.FName = TrafficCone_Large_Orange
+Traffic.3.AutoDriver.FName =
+Traffic.3.Routing.Type = Route
+Traffic.3.Routing.ObjId = 89
+Traffic.3.StartPos.Type = Route
+Traffic.3.StartPos.ObjId = 89
+Traffic.3.StartPos = 0.5 -1.5
+Traffic.3.StartPos.Orientation.Type = Relative
+Traffic.3.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.3.nMan = 0
+Traffic.3.Man.Start.Velocity = 0.0
+Traffic.3.Man.TreatAtEnd = FreezePos
+Traffic.4.Name = CN4
+Traffic.4.Info:
+	Generic traffic object
+Traffic.4.DetectMask = 1 1
+Traffic.4.UpdRate = 200
+Traffic.4.AutoDrv.UpdRate = 200
+Traffic.4.Lighting = 0
+Traffic.4.FreeMotion = 0
+Traffic.4.TrailerName =
+Traffic.4.Template.FName = TrafficCone_Small_Blue
+Traffic.4.AutoDriver.FName =
+Traffic.4.Routing.Type = Route
+Traffic.4.Routing.ObjId = 89
+Traffic.4.StartPos.Type = Route
+Traffic.4.StartPos.ObjId = 89
+Traffic.4.StartPos = 5 1.5
+Traffic.4.StartPos.Orientation.Type = Relative
+Traffic.4.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.4.nMan = 0
+Traffic.4.Man.Start.Velocity = 0.0
+Traffic.4.Man.TreatAtEnd = FreezePos
+Traffic.5.Name = CN5
+Traffic.5.Info:
+	Generic traffic object
+Traffic.5.DetectMask = 1 1
+Traffic.5.UpdRate = 200
+Traffic.5.AutoDrv.UpdRate = 200
+Traffic.5.Lighting = 0
+Traffic.5.FreeMotion = 0
+Traffic.5.TrailerName =
+Traffic.5.Template.FName = TrafficCone_Small_Yellow
+Traffic.5.AutoDriver.FName =
+Traffic.5.Routing.Type = Route
+Traffic.5.Routing.ObjId = 89
+Traffic.5.StartPos.Type = Route
+Traffic.5.StartPos.ObjId = 89
+Traffic.5.StartPos = 5 -1.5
+Traffic.5.StartPos.Orientation.Type = Relative
+Traffic.5.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.5.nMan = 0
+Traffic.5.Man.Start.Velocity = 0.0
+Traffic.5.Man.TreatAtEnd = FreezePos
+Traffic.6.Name = CN6
+Traffic.6.Info:
+	Generic traffic object
+Traffic.6.DetectMask = 1 1
+Traffic.6.UpdRate = 200
+Traffic.6.AutoDrv.UpdRate = 200
+Traffic.6.Lighting = 0
+Traffic.6.FreeMotion = 0
+Traffic.6.TrailerName =
+Traffic.6.Template.FName = TrafficCone_Small_Blue
+Traffic.6.AutoDriver.FName =
+Traffic.6.Routing.Type = Route
+Traffic.6.Routing.ObjId = 89
+Traffic.6.StartPos.Type = Route
+Traffic.6.StartPos.ObjId = 89
+Traffic.6.StartPos = 10 1.5
+Traffic.6.StartPos.Orientation.Type = Relative
+Traffic.6.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.6.nMan = 0
+Traffic.6.Man.Start.Velocity = 0.0
+Traffic.6.Man.TreatAtEnd = FreezePos
+Traffic.7.Name = CN7
+Traffic.7.Info:
+	Generic traffic object
+Traffic.7.DetectMask = 1 1
+Traffic.7.UpdRate = 200
+Traffic.7.AutoDrv.UpdRate = 200
+Traffic.7.Lighting = 0
+Traffic.7.FreeMotion = 0
+Traffic.7.TrailerName =
+Traffic.7.Template.FName = TrafficCone_Small_Yellow
+Traffic.7.AutoDriver.FName =
+Traffic.7.Routing.Type = Route
+Traffic.7.Routing.ObjId = 89
+Traffic.7.StartPos.Type = Route
+Traffic.7.StartPos.ObjId = 89
+Traffic.7.StartPos = 10 -1.5
+Traffic.7.StartPos.Orientation.Type = Relative
+Traffic.7.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.7.nMan = 0
+Traffic.7.Man.Start.Velocity = 0.0
+Traffic.7.Man.TreatAtEnd = FreezePos
+Traffic.8.Name = CN8
+Traffic.8.Info:
+	Generic traffic object
+Traffic.8.DetectMask = 1 1
+Traffic.8.UpdRate = 200
+Traffic.8.AutoDrv.UpdRate = 200
+Traffic.8.Lighting = 0
+Traffic.8.FreeMotion = 0
+Traffic.8.TrailerName =
+Traffic.8.Template.FName = TrafficCone_Small_Blue
+Traffic.8.AutoDriver.FName =
+Traffic.8.Routing.Type = Route
+Traffic.8.Routing.ObjId = 89
+Traffic.8.StartPos.Type = Route
+Traffic.8.StartPos.ObjId = 89
+Traffic.8.StartPos = 15 1.5
+Traffic.8.StartPos.Orientation.Type = Relative
+Traffic.8.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.8.nMan = 0
+Traffic.8.Man.Start.Velocity = 0.0
+Traffic.8.Man.TreatAtEnd = FreezePos
+Traffic.9.Name = CN9
+Traffic.9.Info:
+	Generic traffic object
+Traffic.9.DetectMask = 1 1
+Traffic.9.UpdRate = 200
+Traffic.9.AutoDrv.UpdRate = 200
+Traffic.9.Lighting = 0
+Traffic.9.FreeMotion = 0
+Traffic.9.TrailerName =
+Traffic.9.Template.FName = TrafficCone_Small_Yellow
+Traffic.9.AutoDriver.FName =
+Traffic.9.Routing.Type = Route
+Traffic.9.Routing.ObjId = 89
+Traffic.9.StartPos.Type = Route
+Traffic.9.StartPos.ObjId = 89
+Traffic.9.StartPos = 15 -1.5
+Traffic.9.StartPos.Orientation.Type = Relative
+Traffic.9.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.9.nMan = 0
+Traffic.9.Man.Start.Velocity = 0.0
+Traffic.9.Man.TreatAtEnd = FreezePos
+Traffic.10.Name = CN10
+Traffic.10.Info:
+	Generic traffic object
+Traffic.10.DetectMask = 1 1
+Traffic.10.UpdRate = 200
+Traffic.10.AutoDrv.UpdRate = 200
+Traffic.10.Lighting = 0
+Traffic.10.FreeMotion = 0
+Traffic.10.TrailerName =
+Traffic.10.Template.FName = TrafficCone_Small_Blue
+Traffic.10.AutoDriver.FName =
+Traffic.10.Routing.Type = Route
+Traffic.10.Routing.ObjId = 89
+Traffic.10.StartPos.Type = Route
+Traffic.10.StartPos.ObjId = 89
+Traffic.10.StartPos = 20 1.5
+Traffic.10.StartPos.Orientation.Type = Relative
+Traffic.10.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.10.nMan = 0
+Traffic.10.Man.Start.Velocity = 0.0
+Traffic.10.Man.TreatAtEnd = FreezePos
+Traffic.11.Name = CN11
+Traffic.11.Info:
+	Generic traffic object
+Traffic.11.DetectMask = 1 1
+Traffic.11.UpdRate = 200
+Traffic.11.AutoDrv.UpdRate = 200
+Traffic.11.Lighting = 0
+Traffic.11.FreeMotion = 0
+Traffic.11.TrailerName =
+Traffic.11.Template.FName = TrafficCone_Small_Yellow
+Traffic.11.AutoDriver.FName =
+Traffic.11.Routing.Type = Route
+Traffic.11.Routing.ObjId = 89
+Traffic.11.StartPos.Type = Route
+Traffic.11.StartPos.ObjId = 89
+Traffic.11.StartPos = 20 -1.5
+Traffic.11.StartPos.Orientation.Type = Relative
+Traffic.11.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.11.nMan = 0
+Traffic.11.Man.Start.Velocity = 0.0
+Traffic.11.Man.TreatAtEnd = FreezePos
+Traffic.12.Name = CN12
+Traffic.12.Info:
+	Generic traffic object
+Traffic.12.DetectMask = 1 1
+Traffic.12.UpdRate = 200
+Traffic.12.AutoDrv.UpdRate = 200
+Traffic.12.Lighting = 0
+Traffic.12.FreeMotion = 0
+Traffic.12.TrailerName =
+Traffic.12.Template.FName = TrafficCone_Small_Blue
+Traffic.12.AutoDriver.FName =
+Traffic.12.Routing.Type = Route
+Traffic.12.Routing.ObjId = 89
+Traffic.12.StartPos.Type = Route
+Traffic.12.StartPos.ObjId = 89
+Traffic.12.StartPos = 25 1.5
+Traffic.12.StartPos.Orientation.Type = Relative
+Traffic.12.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.12.nMan = 0
+Traffic.12.Man.Start.Velocity = 0.0
+Traffic.12.Man.TreatAtEnd = FreezePos
+Traffic.13.Name = CN13
+Traffic.13.Info:
+	Generic traffic object
+Traffic.13.DetectMask = 1 1
+Traffic.13.UpdRate = 200
+Traffic.13.AutoDrv.UpdRate = 200
+Traffic.13.Lighting = 0
+Traffic.13.FreeMotion = 0
+Traffic.13.TrailerName =
+Traffic.13.Template.FName = TrafficCone_Small_Yellow
+Traffic.13.AutoDriver.FName =
+Traffic.13.Routing.Type = Route
+Traffic.13.Routing.ObjId = 89
+Traffic.13.StartPos.Type = Route
+Traffic.13.StartPos.ObjId = 89
+Traffic.13.StartPos = 25 -1.5
+Traffic.13.StartPos.Orientation.Type = Relative
+Traffic.13.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.13.nMan = 0
+Traffic.13.Man.Start.Velocity = 0.0
+Traffic.13.Man.TreatAtEnd = FreezePos
+Traffic.14.Name = CN14
+Traffic.14.Info:
+	Generic traffic object
+Traffic.14.DetectMask = 1 1
+Traffic.14.UpdRate = 200
+Traffic.14.AutoDrv.UpdRate = 200
+Traffic.14.Lighting = 0
+Traffic.14.FreeMotion = 0
+Traffic.14.TrailerName =
+Traffic.14.Template.FName = TrafficCone_Small_Blue
+Traffic.14.AutoDriver.FName =
+Traffic.14.Routing.Type = Route
+Traffic.14.Routing.ObjId = 89
+Traffic.14.StartPos.Type = Route
+Traffic.14.StartPos.ObjId = 89
+Traffic.14.StartPos = 30 1.5
+Traffic.14.StartPos.Orientation.Type = Relative
+Traffic.14.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.14.nMan = 0
+Traffic.14.Man.Start.Velocity = 0.0
+Traffic.14.Man.TreatAtEnd = FreezePos
+Traffic.15.Name = CN15
+Traffic.15.Info:
+	Generic traffic object
+Traffic.15.DetectMask = 1 1
+Traffic.15.UpdRate = 200
+Traffic.15.AutoDrv.UpdRate = 200
+Traffic.15.Lighting = 0
+Traffic.15.FreeMotion = 0
+Traffic.15.TrailerName =
+Traffic.15.Template.FName = TrafficCone_Small_Yellow
+Traffic.15.AutoDriver.FName =
+Traffic.15.Routing.Type = Route
+Traffic.15.Routing.ObjId = 89
+Traffic.15.StartPos.Type = Route
+Traffic.15.StartPos.ObjId = 89
+Traffic.15.StartPos = 30 -1.5
+Traffic.15.StartPos.Orientation.Type = Relative
+Traffic.15.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.15.nMan = 0
+Traffic.15.Man.Start.Velocity = 0.0
+Traffic.15.Man.TreatAtEnd = FreezePos
+Traffic.16.Name = CN16
+Traffic.16.Info:
+	Generic traffic object
+Traffic.16.DetectMask = 1 1
+Traffic.16.UpdRate = 200
+Traffic.16.AutoDrv.UpdRate = 200
+Traffic.16.Lighting = 0
+Traffic.16.FreeMotion = 0
+Traffic.16.TrailerName =
+Traffic.16.Template.FName = TrafficCone_Small_Blue
+Traffic.16.AutoDriver.FName =
+Traffic.16.Routing.Type = Route
+Traffic.16.Routing.ObjId = 89
+Traffic.16.StartPos.Type = Route
+Traffic.16.StartPos.ObjId = 89
+Traffic.16.StartPos = 35 1.5
+Traffic.16.StartPos.Orientation.Type = Relative
+Traffic.16.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.16.nMan = 0
+Traffic.16.Man.Start.Velocity = 0.0
+Traffic.16.Man.TreatAtEnd = FreezePos
+Traffic.17.Name = CN17
+Traffic.17.Info:
+	Generic traffic object
+Traffic.17.DetectMask = 1 1
+Traffic.17.UpdRate = 200
+Traffic.17.AutoDrv.UpdRate = 200
+Traffic.17.Lighting = 0
+Traffic.17.FreeMotion = 0
+Traffic.17.TrailerName =
+Traffic.17.Template.FName = TrafficCone_Small_Yellow
+Traffic.17.AutoDriver.FName =
+Traffic.17.Routing.Type = Route
+Traffic.17.Routing.ObjId = 89
+Traffic.17.StartPos.Type = Route
+Traffic.17.StartPos.ObjId = 89
+Traffic.17.StartPos = 35 -1.5
+Traffic.17.StartPos.Orientation.Type = Relative
+Traffic.17.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.17.nMan = 0
+Traffic.17.Man.Start.Velocity = 0.0
+Traffic.17.Man.TreatAtEnd = FreezePos
+Traffic.18.Name = CN18
+Traffic.18.Info:
+	Generic traffic object
+Traffic.18.DetectMask = 1 1
+Traffic.18.UpdRate = 200
+Traffic.18.AutoDrv.UpdRate = 200
+Traffic.18.Lighting = 0
+Traffic.18.FreeMotion = 0
+Traffic.18.TrailerName =
+Traffic.18.Template.FName = TrafficCone_Small_Blue
+Traffic.18.AutoDriver.FName =
+Traffic.18.Routing.Type = Route
+Traffic.18.Routing.ObjId = 89
+Traffic.18.StartPos.Type = Route
+Traffic.18.StartPos.ObjId = 89
+Traffic.18.StartPos = 40 1.5
+Traffic.18.StartPos.Orientation.Type = Relative
+Traffic.18.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.18.nMan = 0
+Traffic.18.Man.Start.Velocity = 0.0
+Traffic.18.Man.TreatAtEnd = FreezePos
+Traffic.19.Name = CN19
+Traffic.19.Info:
+	Generic traffic object
+Traffic.19.DetectMask = 1 1
+Traffic.19.UpdRate = 200
+Traffic.19.AutoDrv.UpdRate = 200
+Traffic.19.Lighting = 0
+Traffic.19.FreeMotion = 0
+Traffic.19.TrailerName =
+Traffic.19.Template.FName = TrafficCone_Small_Yellow
+Traffic.19.AutoDriver.FName =
+Traffic.19.Routing.Type = Route
+Traffic.19.Routing.ObjId = 89
+Traffic.19.StartPos.Type = Route
+Traffic.19.StartPos.ObjId = 89
+Traffic.19.StartPos = 40 -1.5
+Traffic.19.StartPos.Orientation.Type = Relative
+Traffic.19.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.19.nMan = 0
+Traffic.19.Man.Start.Velocity = 0.0
+Traffic.19.Man.TreatAtEnd = FreezePos
+Traffic.20.Name = CN20
+Traffic.20.Info:
+	Generic traffic object
+Traffic.20.DetectMask = 1 1
+Traffic.20.UpdRate = 200
+Traffic.20.AutoDrv.UpdRate = 200
+Traffic.20.Lighting = 0
+Traffic.20.FreeMotion = 0
+Traffic.20.TrailerName =
+Traffic.20.Template.FName = TrafficCone_Small_Blue
+Traffic.20.AutoDriver.FName =
+Traffic.20.Routing.Type = Route
+Traffic.20.Routing.ObjId = 89
+Traffic.20.StartPos.Type = Route
+Traffic.20.StartPos.ObjId = 89
+Traffic.20.StartPos = 45 1.5
+Traffic.20.StartPos.Orientation.Type = Relative
+Traffic.20.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.20.nMan = 0
+Traffic.20.Man.Start.Velocity = 0.0
+Traffic.20.Man.TreatAtEnd = FreezePos
+Traffic.21.Name = CN21
+Traffic.21.Info:
+	Generic traffic object
+Traffic.21.DetectMask = 1 1
+Traffic.21.UpdRate = 200
+Traffic.21.AutoDrv.UpdRate = 200
+Traffic.21.Lighting = 0
+Traffic.21.FreeMotion = 0
+Traffic.21.TrailerName =
+Traffic.21.Template.FName = TrafficCone_Small_Yellow
+Traffic.21.AutoDriver.FName =
+Traffic.21.Routing.Type = Route
+Traffic.21.Routing.ObjId = 89
+Traffic.21.StartPos.Type = Route
+Traffic.21.StartPos.ObjId = 89
+Traffic.21.StartPos = 45 -1.5
+Traffic.21.StartPos.Orientation.Type = Relative
+Traffic.21.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.21.nMan = 0
+Traffic.21.Man.Start.Velocity = 0.0
+Traffic.21.Man.TreatAtEnd = FreezePos
+Traffic.22.Name = CN22
+Traffic.22.Info:
+	Generic traffic object
+Traffic.22.DetectMask = 1 1
+Traffic.22.UpdRate = 200
+Traffic.22.AutoDrv.UpdRate = 200
+Traffic.22.Lighting = 0
+Traffic.22.FreeMotion = 0
+Traffic.22.TrailerName =
+Traffic.22.Template.FName = TrafficCone_Small_Blue
+Traffic.22.AutoDriver.FName =
+Traffic.22.Routing.Type = Route
+Traffic.22.Routing.ObjId = 89
+Traffic.22.StartPos.Type = Route
+Traffic.22.StartPos.ObjId = 89
+Traffic.22.StartPos = 50 1.5
+Traffic.22.StartPos.Orientation.Type = Relative
+Traffic.22.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.22.nMan = 0
+Traffic.22.Man.Start.Velocity = 0.0
+Traffic.22.Man.TreatAtEnd = FreezePos
+Traffic.23.Name = CN23
+Traffic.23.Info:
+	Generic traffic object
+Traffic.23.DetectMask = 1 1
+Traffic.23.UpdRate = 200
+Traffic.23.AutoDrv.UpdRate = 200
+Traffic.23.Lighting = 0
+Traffic.23.FreeMotion = 0
+Traffic.23.TrailerName =
+Traffic.23.Template.FName = TrafficCone_Small_Yellow
+Traffic.23.AutoDriver.FName =
+Traffic.23.Routing.Type = Route
+Traffic.23.Routing.ObjId = 89
+Traffic.23.StartPos.Type = Route
+Traffic.23.StartPos.ObjId = 89
+Traffic.23.StartPos = 50 -1.5
+Traffic.23.StartPos.Orientation.Type = Relative
+Traffic.23.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.23.nMan = 0
+Traffic.23.Man.Start.Velocity = 0.0
+Traffic.23.Man.TreatAtEnd = FreezePos
+Traffic.24.Name = CN24
+Traffic.24.Info:
+	Generic traffic object
+Traffic.24.DetectMask = 1 1
+Traffic.24.UpdRate = 200
+Traffic.24.AutoDrv.UpdRate = 200
+Traffic.24.Lighting = 0
+Traffic.24.FreeMotion = 0
+Traffic.24.TrailerName =
+Traffic.24.Template.FName = TrafficCone_Small_Blue
+Traffic.24.AutoDriver.FName =
+Traffic.24.Routing.Type = Route
+Traffic.24.Routing.ObjId = 89
+Traffic.24.StartPos.Type = Route
+Traffic.24.StartPos.ObjId = 89
+Traffic.24.StartPos = 55 1.5
+Traffic.24.StartPos.Orientation.Type = Relative
+Traffic.24.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.24.nMan = 0
+Traffic.24.Man.Start.Velocity = 0.0
+Traffic.24.Man.TreatAtEnd = FreezePos
+Traffic.25.Name = CN25
+Traffic.25.Info:
+	Generic traffic object
+Traffic.25.DetectMask = 1 1
+Traffic.25.UpdRate = 200
+Traffic.25.AutoDrv.UpdRate = 200
+Traffic.25.Lighting = 0
+Traffic.25.FreeMotion = 0
+Traffic.25.TrailerName =
+Traffic.25.Template.FName = TrafficCone_Small_Yellow
+Traffic.25.AutoDriver.FName =
+Traffic.25.Routing.Type = Route
+Traffic.25.Routing.ObjId = 89
+Traffic.25.StartPos.Type = Route
+Traffic.25.StartPos.ObjId = 89
+Traffic.25.StartPos = 55 -1.5
+Traffic.25.StartPos.Orientation.Type = Relative
+Traffic.25.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.25.nMan = 0
+Traffic.25.Man.Start.Velocity = 0.0
+Traffic.25.Man.TreatAtEnd = FreezePos
+Traffic.26.Name = CN26
+Traffic.26.Info:
+	Generic traffic object
+Traffic.26.DetectMask = 1 1
+Traffic.26.UpdRate = 200
+Traffic.26.AutoDrv.UpdRate = 200
+Traffic.26.Lighting = 0
+Traffic.26.FreeMotion = 0
+Traffic.26.TrailerName =
+Traffic.26.Template.FName = TrafficCone_Small_Blue
+Traffic.26.AutoDriver.FName =
+Traffic.26.Routing.Type = Route
+Traffic.26.Routing.ObjId = 89
+Traffic.26.StartPos.Type = Route
+Traffic.26.StartPos.ObjId = 89
+Traffic.26.StartPos = 60 1.5
+Traffic.26.StartPos.Orientation.Type = Relative
+Traffic.26.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.26.nMan = 0
+Traffic.26.Man.Start.Velocity = 0.0
+Traffic.26.Man.TreatAtEnd = FreezePos
+Traffic.27.Name = CN27
+Traffic.27.Info:
+	Generic traffic object
+Traffic.27.DetectMask = 1 1
+Traffic.27.UpdRate = 200
+Traffic.27.AutoDrv.UpdRate = 200
+Traffic.27.Lighting = 0
+Traffic.27.FreeMotion = 0
+Traffic.27.TrailerName =
+Traffic.27.Template.FName = TrafficCone_Small_Yellow
+Traffic.27.AutoDriver.FName =
+Traffic.27.Routing.Type = Route
+Traffic.27.Routing.ObjId = 89
+Traffic.27.StartPos.Type = Route
+Traffic.27.StartPos.ObjId = 89
+Traffic.27.StartPos = 60 -1.5
+Traffic.27.StartPos.Orientation.Type = Relative
+Traffic.27.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.27.nMan = 0
+Traffic.27.Man.Start.Velocity = 0.0
+Traffic.27.Man.TreatAtEnd = FreezePos
+Traffic.28.Name = CN28
+Traffic.28.Info:
+	Generic traffic object
+Traffic.28.DetectMask = 1 1
+Traffic.28.UpdRate = 200
+Traffic.28.AutoDrv.UpdRate = 200
+Traffic.28.Lighting = 0
+Traffic.28.FreeMotion = 0
+Traffic.28.TrailerName =
+Traffic.28.Template.FName = TrafficCone_Small_Blue
+Traffic.28.AutoDriver.FName =
+Traffic.28.Routing.Type = Route
+Traffic.28.Routing.ObjId = 89
+Traffic.28.StartPos.Type = Route
+Traffic.28.StartPos.ObjId = 89
+Traffic.28.StartPos = 65 1.5
+Traffic.28.StartPos.Orientation.Type = Relative
+Traffic.28.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.28.nMan = 0
+Traffic.28.Man.Start.Velocity = 0.0
+Traffic.28.Man.TreatAtEnd = FreezePos
+Traffic.29.Name = CN29
+Traffic.29.Info:
+	Generic traffic object
+Traffic.29.DetectMask = 1 1
+Traffic.29.UpdRate = 200
+Traffic.29.AutoDrv.UpdRate = 200
+Traffic.29.Lighting = 0
+Traffic.29.FreeMotion = 0
+Traffic.29.TrailerName =
+Traffic.29.Template.FName = TrafficCone_Small_Yellow
+Traffic.29.AutoDriver.FName =
+Traffic.29.Routing.Type = Route
+Traffic.29.Routing.ObjId = 89
+Traffic.29.StartPos.Type = Route
+Traffic.29.StartPos.ObjId = 89
+Traffic.29.StartPos = 65 -1.5
+Traffic.29.StartPos.Orientation.Type = Relative
+Traffic.29.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.29.nMan = 0
+Traffic.29.Man.Start.Velocity = 0.0
+Traffic.29.Man.TreatAtEnd = FreezePos
+Traffic.30.Name = CN30
+Traffic.30.Info:
+	Generic traffic object
+Traffic.30.DetectMask = 1 1
+Traffic.30.UpdRate = 200
+Traffic.30.AutoDrv.UpdRate = 200
+Traffic.30.Lighting = 0
+Traffic.30.FreeMotion = 0
+Traffic.30.TrailerName =
+Traffic.30.Template.FName = TrafficCone_Small_Blue
+Traffic.30.AutoDriver.FName =
+Traffic.30.Routing.Type = Route
+Traffic.30.Routing.ObjId = 89
+Traffic.30.StartPos.Type = Route
+Traffic.30.StartPos.ObjId = 89
+Traffic.30.StartPos = 70 1.5
+Traffic.30.StartPos.Orientation.Type = Relative
+Traffic.30.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.30.nMan = 0
+Traffic.30.Man.Start.Velocity = 0.0
+Traffic.30.Man.TreatAtEnd = FreezePos
+Traffic.31.Name = CN31
+Traffic.31.Info:
+	Generic traffic object
+Traffic.31.DetectMask = 1 1
+Traffic.31.UpdRate = 200
+Traffic.31.AutoDrv.UpdRate = 200
+Traffic.31.Lighting = 0
+Traffic.31.FreeMotion = 0
+Traffic.31.TrailerName =
+Traffic.31.Template.FName = TrafficCone_Small_Yellow
+Traffic.31.AutoDriver.FName =
+Traffic.31.Routing.Type = Route
+Traffic.31.Routing.ObjId = 89
+Traffic.31.StartPos.Type = Route
+Traffic.31.StartPos.ObjId = 89
+Traffic.31.StartPos = 70 -1.5
+Traffic.31.StartPos.Orientation.Type = Relative
+Traffic.31.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.31.nMan = 0
+Traffic.31.Man.Start.Velocity = 0.0
+Traffic.31.Man.TreatAtEnd = FreezePos
+Traffic.32.Name = CN32
+Traffic.32.Info:
+	Generic traffic object
+Traffic.32.DetectMask = 1 1
+Traffic.32.UpdRate = 200
+Traffic.32.AutoDrv.UpdRate = 200
+Traffic.32.Lighting = 0
+Traffic.32.FreeMotion = 0
+Traffic.32.TrailerName =
+Traffic.32.Template.FName = TrafficCone_Small_Blue
+Traffic.32.AutoDriver.FName =
+Traffic.32.Routing.Type = Route
+Traffic.32.Routing.ObjId = 89
+Traffic.32.StartPos.Type = Route
+Traffic.32.StartPos.ObjId = 89
+Traffic.32.StartPos = 75 1.5
+Traffic.32.StartPos.Orientation.Type = Relative
+Traffic.32.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.32.nMan = 0
+Traffic.32.Man.Start.Velocity = 0.0
+Traffic.32.Man.TreatAtEnd = FreezePos
+Traffic.33.Name = CN33
+Traffic.33.Info:
+	Generic traffic object
+Traffic.33.DetectMask = 1 1
+Traffic.33.UpdRate = 200
+Traffic.33.AutoDrv.UpdRate = 200
+Traffic.33.Lighting = 0
+Traffic.33.FreeMotion = 0
+Traffic.33.TrailerName =
+Traffic.33.Template.FName = TrafficCone_Small_Yellow
+Traffic.33.AutoDriver.FName =
+Traffic.33.Routing.Type = Route
+Traffic.33.Routing.ObjId = 89
+Traffic.33.StartPos.Type = Route
+Traffic.33.StartPos.ObjId = 89
+Traffic.33.StartPos = 75 -1.5
+Traffic.33.StartPos.Orientation.Type = Relative
+Traffic.33.StartPos.Orientation = 0.0 0.0 0.0
+Traffic.33.nMan = 0
+Traffic.33.Man.Start.Velocity = 0.0
+Traffic.33.Man.TreatAtEnd = FreezePos
+Traffic.N = 34
+Traffic.SmartGen.Mode = 0 0 0
+DrivMan.OW.Active = 0
+DrivMan.OW.Quantities =
+DrivMan.OW.StartGearNo = 1
+DrivMan.OW.StartVelocity =
+DrivMan.OW.GasMax = 0.5
+DrivMan.OW.RefCh = Time
+DrivMan.OW.ConsiderRoadSigns = 0
+DrivMan.OW.sRoute.Offset = 0
+ErrorClass.0.Action = abort
+ErrorClass.0.Save = 0
+ErrorClass.0.WarningLimit = 3 5
+ErrorClass.1.Action = abort
+ErrorClass.1.Save = 0
+ErrorClass.1.WarningLimit = 3 5
+ErrorClass.2.Action = abort
+ErrorClass.2.Save = 0
+ErrorClass.2.WarningLimit = 3 5
+ErrorClass.3.Action = abort
+ErrorClass.3.Save = 0
+ErrorClass.3.WarningLimit = 3 5
+ErrorClass.4.Action = abort
+ErrorClass.4.Save = 0
+ErrorClass.4.WarningLimit = 3 5
+ErrorClass.5.Action = abort
+ErrorClass.5.Save = 0
+ErrorClass.5.WarningLimit = 3 5
+ErrorClass.6.Action = abort
+ErrorClass.6.Save = 0
+ErrorClass.6.WarningLimit = 10 5
+ErrorClass.7.Action = abort
+ErrorClass.7.Save = 0
+ErrorClass.7.WarningLimit = 3 5
+ErrorClass.10.Action = abort
+ErrorClass.10.Save = 0
+ErrorClass.10.WarningLimit = 3 5
+ErrorClass.11.Action = abort
+ErrorClass.11.Save = 0
+ErrorClass.11.WarningLimit = 3 5

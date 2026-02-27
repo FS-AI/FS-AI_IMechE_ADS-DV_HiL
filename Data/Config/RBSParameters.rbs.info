@@ -1,0 +1,21 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-RBSParameters	1.0
+Description:
+	Generated with Rest Bus Configurator 3.3.2 for:
+	CarMaker/HIL 13.1.1
+	Rest Bus Simulation
+	0 - CAN
+Created = 2024/08/06 12:16:59 Honda@DESKTOP-EK5HSN4
+
+RBS.0.AutoStart = 0
+RBS.0.BusType = CAN
+RBS.0.CAN_If.0 = Test
+RBS.0.CANdb = CANdb/ADS-DV_2024_CAN1.dbc
+RBS.0.ConfigFile = CANParameters.can.info
+RBS.0.Description =
+RBS.0.Prefix = RBS_0
+RBS.0.RxMap.AI:
+	AI2VCU_Status.HANDSHAKE	AI2VCU.Status.HANDSHAKE
+RBS.0.SupportECUDeactivation = 0
+RBS.0.TxMap.VCU:
+	VCU2AI_Status.HANDSHAKE	VCU2AI.Status.HANDSHAKE

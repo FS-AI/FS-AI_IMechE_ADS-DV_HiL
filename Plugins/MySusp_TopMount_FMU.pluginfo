@@ -1,0 +1,30 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-PlugInfo 2
+FileCreator = CarMaker 9.0 2020-04-08 12:42 TEMPLATE
+
+FMU.Name = MySusp_TopMount_FMU
+FMU.Modelclass = Susp_TopMount
+FMU.GUID = {deadbeef-3df3-4a00-8276-176fa3c90747}
+
+FMU.Inputs.ShowInDDict = 0
+FMU.Outputs.ShowInDDict = 0
+FMU.MakePluginfo = 0
+FMU.DebugLogging = 0
+FMU.InitParamStartValues = 1
+
+FMUIn.damper_CtrlIn.Link = IFVar
+FMUIn.damper_CtrlIn.Rel = damper_CtrlIn
+FMUIn.damper_length.Link = IFVar
+FMUIn.damper_length.Rel = damper_length
+FMUIn.damper_vel.Link = IFVar
+FMUIn.damper_vel.Rel = damper_vel
+FMUIn.damper_Force.Link = IFVar
+FMUIn.damper_Force.Rel = damper_Force
+
+IFVar.length.Link = FMUVar
+IFVar.length.Rel = length
+IFVar.vel.Link = FMUVar
+IFVar.vel.Rel = vel
+IFVar.Force.Link = FMUVar
+IFVar.Force.Rel = Force
+

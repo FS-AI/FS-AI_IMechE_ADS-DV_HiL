@@ -1,0 +1,384 @@
+Logfile - Project update to CarMaker Office Extended 14.0
+===============================================================================
+
+Start: 2024-12-05 13:15:14
+
+Cleaning up temporary files...
+  Deleting temporary Test Run, Vehicle and Trailer files
+  Deleting temporary files in road cache
+  >> Finished.
+
+Creating source code backup ...
+  Plugins/MyBatteryCU_FMU.fmu
+  -  Info: Copied file to Plugins/MyBatteryCU_FMU_20241205_1315.fmu
+  Plugins/MyBattery_FMU.fmu
+  -  Info: Copied file to Plugins/MyBattery_FMU_20241205_1315.fmu
+  Plugins/MyBrakeSrc_FMU.fmu
+  -  Info: Copied file to Plugins/MyBrakeSrc_FMU_20241205_1315.fmu
+  Plugins/MyBrake_FMU.fmu
+  -  Info: Copied file to Plugins/MyBrake_FMU_20241205_1315.fmu
+  Plugins/MyBrake_FMU.pluginfo
+  -  Info: Copied file to Plugins/MyBrake_FMU_20241205_1315.pluginfo
+  Plugins/MyClutch_FMU.fmu
+  -  Info: Copied file to Plugins/MyClutch_FMU_20241205_1315.fmu
+  Plugins/MyDriveLineXWD_FMU.fmu
+  -  Info: Copied file to Plugins/MyDriveLineXWD_FMU_20241205_1315.fmu
+  Plugins/MyDriveLine_FMU.fmu
+  -  Info: Copied file to Plugins/MyDriveLine_FMU_20241205_1315.fmu
+  Plugins/MyEngineCU_FMU.fmu
+  -  Info: Copied file to Plugins/MyEngineCU_FMU_20241205_1315.fmu
+  Plugins/MyEngine_FMU.fmu
+  -  Info: Copied file to Plugins/MyEngine_FMU_20241205_1315.fmu
+  Plugins/MyEnvironment_FMU.fmu
+  -  Info: Copied file to Plugins/MyEnvironment_FMU_20241205_1315.fmu
+  Plugins/MyGearBox_FMU.fmu
+  -  Info: Copied file to Plugins/MyGearBox_FMU_20241205_1315.fmu
+  Plugins/MyGeneric_FMU.fmu
+  -  Info: Copied file to Plugins/MyGeneric_FMU_20241205_1315.fmu
+  Plugins/MyGeneric_FMU.pluginfo
+  -  Info: Copied file to Plugins/MyGeneric_FMU_20241205_1315.pluginfo
+  Plugins/MyMotorCU_FMU.fmu
+  -  Info: Copied file to Plugins/MyMotorCU_FMU_20241205_1315.fmu
+  Plugins/MyMotor_FMU.fmu
+  -  Info: Copied file to Plugins/MyMotor_FMU_20241205_1315.fmu
+  Plugins/MyPTControlOSM_FMU.fmu
+  -  Info: Copied file to Plugins/MyPTControlOSM_FMU_20241205_1315.fmu
+  Plugins/MyPTControl_FMU.fmu
+  -  Info: Copied file to Plugins/MyPTControl_FMU_20241205_1315.fmu
+  Plugins/MyPTGenCoupling_FMU.fmu
+  -  Info: Copied file to Plugins/MyPTGenCoupling_FMU_20241205_1315.fmu
+  Plugins/MyPowerSupply_FMU.fmu
+  -  Info: Copied file to Plugins/MyPowerSupply_FMU_20241205_1315.fmu
+  Plugins/MyPowerTrainXWD_FMU.fmu
+  -  Info: Copied file to Plugins/MyPowerTrainXWD_FMU_20241205_1315.fmu
+  Plugins/MyPowerTrain_FMU.fmu
+  -  Info: Copied file to Plugins/MyPowerTrain_FMU_20241205_1315.fmu
+  Plugins/MySteeringSrc_FMU.fmu
+  -  Info: Copied file to Plugins/MySteeringSrc_FMU_20241205_1315.fmu
+  Plugins/MySteering_FMU.fmu
+  -  Info: Copied file to Plugins/MySteering_FMU_20241205_1315.fmu
+  Plugins/MySteering_FMU.pluginfo
+  -  Info: Copied file to Plugins/MySteering_FMU_20241205_1315.pluginfo
+  Plugins/MySuspKnC_FMU.fmu
+  -  Info: Copied file to Plugins/MySuspKnC_FMU_20241205_1315.fmu
+  Plugins/MySusp_BufferSystem_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_BufferSystem_FMU_20241205_1315.fmu
+  Plugins/MySusp_Buffer_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_Buffer_FMU_20241205_1315.fmu
+  Plugins/MySusp_DamperSystem_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_DamperSystem_FMU_20241205_1315.fmu
+  Plugins/MySusp_Damper_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_Damper_FMU_20241205_1315.fmu
+  Plugins/MySusp_FrcSystem_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_FrcSystem_FMU_20241205_1315.fmu
+  Plugins/MySusp_ParasiticFriction_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_ParasiticFriction_FMU_20241205_1315.fmu
+  Plugins/MySusp_ParasiticStiffness_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_ParasiticStiffness_FMU_20241205_1315.fmu
+  Plugins/MySusp_SpringSystem_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_SpringSystem_FMU_20241205_1315.fmu
+  Plugins/MySusp_Spring_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_Spring_FMU_20241205_1315.fmu
+  Plugins/MySusp_StabiSystem_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_StabiSystem_FMU_20241205_1315.fmu
+  Plugins/MySusp_Stabi_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_Stabi_FMU_20241205_1315.fmu
+  Plugins/MySusp_TopMount_FMU.fmu
+  -  Info: Copied file to Plugins/MySusp_TopMount_FMU_20241205_1315.fmu
+  Plugins/MyTireCPMod_FMU.fmu
+  -  Info: Copied file to Plugins/MyTireCPMod_FMU_20241205_1315.fmu
+  Plugins/MyTire_FMU.fmu
+  -  Info: Copied file to Plugins/MyTire_FMU_20241205_1315.fmu
+  Plugins/MyTransmCU_FMU.fmu
+  -  Info: Copied file to Plugins/MyTransmCU_FMU_20241205_1315.fmu
+  Plugins/MyUserDriver_FMU.fmu
+  -  Info: Copied file to Plugins/MyUserDriver_FMU_20241205_1315.fmu
+  Plugins/MyVehicleControl_FMU.fmu
+  -  Info: Copied file to Plugins/MyVehicleControl_FMU_20241205_1315.fmu
+  Plugins/MyVhclOperator_FMU.fmu
+  -  Info: Copied file to Plugins/MyVhclOperator_FMU_20241205_1315.fmu
+  src/.project
+  -  Info: Copied file to src/.project_20241205_1315
+  src/.settings/org.eclipse.cdt.core.prefs
+  -  Info: Copied file to src/.settings/org.eclipse.cdt.core_20241205_1315.prefs
+  src/CM_Main.c
+  -  Info: Copied file to src/CM_Main_20241205_1315.c
+  src/CM_Vehicle.c
+  -  Info: Copied file to src/CM_Vehicle_20241205_1315.c
+  src/CarMaker.props
+  -  Info: Copied file to src/CarMaker_20241205_1315.props
+  src/CarMaker.vcxproj
+  -  Info: Copied file to src/CarMaker_20241205_1315.vcxproj
+  src/CarMakerInstall.vcxproj
+  -  Info: Copied file to src/CarMakerInstall_20241205_1315.vcxproj
+  src/ExtraModels/AccelCtrl.c
+  -  Info: Copied file to src/ExtraModels/AccelCtrl_20241205_1315.c
+  src/ExtraModels/MyAero.c
+  -  Info: Copied file to src/ExtraModels/MyAero_20241205_1315.c
+  src/ExtraModels/MyBattery.c
+  -  Info: Copied file to src/ExtraModels/MyBattery_20241205_1315.c
+  src/ExtraModels/MyBatteryCU.c
+  -  Info: Copied file to src/ExtraModels/MyBatteryCU_20241205_1315.c
+  src/ExtraModels/MyBrake.c
+  -  Info: Copied file to src/ExtraModels/MyBrake_20241205_1315.c
+  src/ExtraModels/MyBrake_HydESPWrap.c
+  -  Info: Copied file to src/ExtraModels/MyBrake_HydESPWrap_20241205_1315.c
+  src/ExtraModels/MyCar.c
+  -  Info: Copied file to src/ExtraModels/MyCar_20241205_1315.c
+  src/ExtraModels/MyClutch.c
+  -  Info: Copied file to src/ExtraModels/MyClutch_20241205_1315.c
+  src/ExtraModels/MyDriveLine.c
+  -  Info: Copied file to src/ExtraModels/MyDriveLine_20241205_1315.c
+  src/ExtraModels/MyDriveLineXWD.c
+  -  Info: Copied file to src/ExtraModels/MyDriveLineXWD_20241205_1315.c
+  src/ExtraModels/MyEngine.c
+  -  Info: Copied file to src/ExtraModels/MyEngine_20241205_1315.c
+  src/ExtraModels/MyEngineCU.c
+  -  Info: Copied file to src/ExtraModels/MyEngineCU_20241205_1315.c
+  src/ExtraModels/MyEnvironment.c
+  -  Info: Copied file to src/ExtraModels/MyEnvironment_20241205_1315.c
+  src/ExtraModels/MyGearBox.c
+  -  Info: Copied file to src/ExtraModels/MyGearBox_20241205_1315.c
+  src/ExtraModels/MyHydBrakeCU.c
+  -  Info: Copied file to src/ExtraModels/MyHydBrakeCU_20241205_1315.c
+  src/ExtraModels/MyModels.h
+  -  Info: Copied file to src/ExtraModels/MyModels_20241205_1315.h
+  src/ExtraModels/MyMotor.c
+  -  Info: Copied file to src/ExtraModels/MyMotor_20241205_1315.c
+  src/ExtraModels/MyMotorCU.c
+  -  Info: Copied file to src/ExtraModels/MyMotorCU_20241205_1315.c
+  src/ExtraModels/MyPTControl.c
+  -  Info: Copied file to src/ExtraModels/MyPTControl_20241205_1315.c
+  src/ExtraModels/MyPTControlOSM.c
+  -  Info: Copied file to src/ExtraModels/MyPTControlOSM_20241205_1315.c
+  src/ExtraModels/MyPTGenCoupling.c
+  -  Info: Copied file to src/ExtraModels/MyPTGenCoupling_20241205_1315.c
+  src/ExtraModels/MyPowerSupply.c
+  -  Info: Copied file to src/ExtraModels/MyPowerSupply_20241205_1315.c
+  src/ExtraModels/MyPowerTrain.c
+  -  Info: Copied file to src/ExtraModels/MyPowerTrain_20241205_1315.c
+  src/ExtraModels/MyPowerTrainXWD.c
+  -  Info: Copied file to src/ExtraModels/MyPowerTrainXWD_20241205_1315.c
+  src/ExtraModels/MySteering.c
+  -  Info: Copied file to src/ExtraModels/MySteering_20241205_1315.c
+  src/ExtraModels/MySuspKnC.c
+  -  Info: Copied file to src/ExtraModels/MySuspKnC_20241205_1315.c
+  src/ExtraModels/MySuspKnC_AuxFMU.c
+  -  Info: Copied file to src/ExtraModels/MySuspKnC_AuxFMU_20241205_1315.c
+  src/ExtraModels/MySusp_Buffer.c
+  -  Info: Copied file to src/ExtraModels/MySusp_Buffer_20241205_1315.c
+  src/ExtraModels/MySusp_BufferSystem.c
+  -  Info: Copied file to src/ExtraModels/MySusp_BufferSystem_20241205_1315.c
+  src/ExtraModels/MySusp_Damper.c
+  -  Info: Copied file to src/ExtraModels/MySusp_Damper_20241205_1315.c
+  src/ExtraModels/MySusp_DamperSystem.c
+  -  Info: Copied file to src/ExtraModels/MySusp_DamperSystem_20241205_1315.c
+  src/ExtraModels/MySusp_FrcSystem.c
+  -  Info: Copied file to src/ExtraModels/MySusp_FrcSystem_20241205_1315.c
+  src/ExtraModels/MySusp_ParasiticFriction.c
+  -  Info: Copied file to src/ExtraModels/MySusp_ParasiticFriction_20241205_1315.c
+  src/ExtraModels/MySusp_ParasiticStiffness.c
+  -  Info: Copied file to src/ExtraModels/MySusp_ParasiticStiffness_20241205_1315.c
+  src/ExtraModels/MySusp_Spring.c
+  -  Info: Copied file to src/ExtraModels/MySusp_Spring_20241205_1315.c
+  src/ExtraModels/MySusp_SpringSystem.c
+  -  Info: Copied file to src/ExtraModels/MySusp_SpringSystem_20241205_1315.c
+  src/ExtraModels/MySusp_Stabi.c
+  -  Info: Copied file to src/ExtraModels/MySusp_Stabi_20241205_1315.c
+  src/ExtraModels/MySusp_StabiSystem.c
+  -  Info: Copied file to src/ExtraModels/MySusp_StabiSystem_20241205_1315.c
+  src/ExtraModels/MySusp_TopMount.c
+  -  Info: Copied file to src/ExtraModels/MySusp_TopMount_20241205_1315.c
+  src/ExtraModels/MyTire.c
+  -  Info: Copied file to src/ExtraModels/MyTire_20241205_1315.c
+  src/ExtraModels/MyTireCPMod.c
+  -  Info: Copied file to src/ExtraModels/MyTireCPMod_20241205_1315.c
+  src/ExtraModels/MyTire_RTTireWrap.c
+  -  Info: Copied file to src/ExtraModels/MyTire_RTTireWrap_20241205_1315.c
+  src/ExtraModels/MyTransmCU.c
+  -  Info: Copied file to src/ExtraModels/MyTransmCU_20241205_1315.c
+  src/ExtraModels/MyUserDriver.c
+  -  Info: Copied file to src/ExtraModels/MyUserDriver_20241205_1315.c
+  src/ExtraModels/MyVehicleControl.c
+  -  Info: Copied file to src/ExtraModels/MyVehicleControl_20241205_1315.c
+  src/ExtraModels/MyVehicleControl_DigitalGearSelector.c
+  -  Info: Copied file to src/ExtraModels/MyVehicleControl_DigitalGearSelector_20241205_1315.c
+  src/ExtraModels/MyVhclOperator.c
+  -  Info: Copied file to src/ExtraModels/MyVhclOperator_20241205_1315.c
+  src/IO.c
+  -  Info: Copied file to src/IO_20241205_1315.c
+  src/IOVec.h
+  -  Info: Copied file to src/IOVec_20241205_1315.h
+  src/Makefile
+  -  Info: Copied file to src/Makefile_20241205_1315
+  src/User.c
+  -  Info: Copied file to src/User_20241205_1315.c
+  src/User.h
+  -  Info: Copied file to src/User_20241205_1315.h
+  src/app_tmp.c
+  -  Info: Copied file to src/app_tmp_20241205_1315.c
+  src/cmenv.m
+  -  Info: Copied file to src/cmenv_20241205_1315.m
+  src/makefile.defs
+  -  Info: Copied file to src/makefile_20241205_1315.defs
+  src/makefile.targets
+  -  Info: Copied file to src/makefile_20241205_1315.targets
+  src_cm4sl/ACC.mdl
+  -  Info: Copied file to src_cm4sl/ACC_20241205_1315.mdl
+  src_cm4sl/AccelCtrl_ACC.mdl
+  -  Info: Copied file to src_cm4sl/AccelCtrl_ACC_20241205_1315.mdl
+  src_cm4sl/BodyCtrl.mdl
+  -  Info: Copied file to src_cm4sl/BodyCtrl_20241205_1315.mdl
+  src_cm4sl/CM_Main.c
+  -  Info: Copied file to src_cm4sl/CM_Main_20241205_1315.c
+  src_cm4sl/CM_Vehicle.c
+  -  Info: Copied file to src_cm4sl/CM_Vehicle_20241205_1315.c
+  src_cm4sl/HydBrakeCU_ESP.mdl
+  -  Info: Copied file to src_cm4sl/HydBrakeCU_ESP_20241205_1315.mdl
+  src_cm4sl/IO.c
+  -  Info: Copied file to src_cm4sl/IO_20241205_1315.c
+  src_cm4sl/IOVec.h
+  -  Info: Copied file to src_cm4sl/IOVec_20241205_1315.h
+  src_cm4sl/Makefile
+  -  Info: Copied file to src_cm4sl/Makefile_20241205_1315
+  src_cm4sl/ModelUpdate/FindSubsFromParentSys.m
+  -  Info: Copied file to src_cm4sl/ModelUpdate/FindSubsFromParentSys_20241205_1315.m
+  src_cm4sl/ModelUpdate/FindSubsFromParentSys_wPath.m
+  -  Info: Copied file to src_cm4sl/ModelUpdate/FindSubsFromParentSys_wPath_20241205_1315.m
+  src_cm4sl/ModelUpdate/ReplaceAndReconnect.m
+  -  Info: Copied file to src_cm4sl/ModelUpdate/ReplaceAndReconnect_20241205_1315.m
+  src_cm4sl/ModelUpdate/generic_src.mdl
+  -  Info: Copied file to src_cm4sl/ModelUpdate/generic_src_20241205_1315.mdl
+  src_cm4sl/ModelUpdate/update_PT_Control_Example_in.m
+  -  Info: Copied file to src_cm4sl/ModelUpdate/update_PT_Control_Example_in_20241205_1315.m
+  src_cm4sl/ModelUpdate_README.txt
+  -  Info: Copied file to src_cm4sl/ModelUpdate_README_20241205_1315.txt
+  src_cm4sl/PTBatteryCU.mdl
+  -  Info: Copied file to src_cm4sl/PTBatteryCU_20241205_1315.mdl
+  src_cm4sl/PTControl.mdl
+  -  Info: Copied file to src_cm4sl/PTControl_20241205_1315.mdl
+  src_cm4sl/PTEngineCU.mdl
+  -  Info: Copied file to src_cm4sl/PTEngineCU_20241205_1315.mdl
+  src_cm4sl/PTMotorCU.mdl
+  -  Info: Copied file to src_cm4sl/PTMotorCU_20241205_1315.mdl
+  src_cm4sl/PTTransmCU.mdl
+  -  Info: Copied file to src_cm4sl/PTTransmCU_20241205_1315.mdl
+  src_cm4sl/SingleTrack.mdl
+  -  Info: Copied file to src_cm4sl/SingleTrack_20241205_1315.mdl
+  src_cm4sl/SoftABS.mdl
+  -  Info: Copied file to src_cm4sl/SoftABS_20241205_1315.mdl
+  src_cm4sl/TractCtrl.mdl
+  -  Info: Copied file to src_cm4sl/TractCtrl_20241205_1315.mdl
+  src_cm4sl/User.c
+  -  Info: Copied file to src_cm4sl/User_20241205_1315.c
+  src_cm4sl/User.h
+  -  Info: Copied file to src_cm4sl/User_20241205_1315.h
+  src_cm4sl/UserBrake.mdl
+  -  Info: Copied file to src_cm4sl/UserBrake_20241205_1315.mdl
+  src_cm4sl/UserPowerTrain.mdl
+  -  Info: Copied file to src_cm4sl/UserPowerTrain_20241205_1315.mdl
+  src_cm4sl/UserSteer.mdl
+  -  Info: Copied file to src_cm4sl/UserSteer_20241205_1315.mdl
+  src_cm4sl/UserSteerTorque.mdl
+  -  Info: Copied file to src_cm4sl/UserSteerTorque_20241205_1315.mdl
+  src_cm4sl/UserTire.mdl
+  -  Info: Copied file to src_cm4sl/UserTire_20241205_1315.mdl
+  src_cm4sl/app_tmp.c
+  -  Info: Copied file to src_cm4sl/app_tmp_20241205_1315.c
+  src_cm4sl/cmenv.m
+  -  Info: Copied file to src_cm4sl/cmenv_20241205_1315.m
+  src_cm4sl/generic_uservehicle.mdl
+  -  Info: Copied file to src_cm4sl/generic_uservehicle_20241205_1315.mdl
+  src_cm4sl/CarMaker for Simulink.props
+  -  Info: Copied file to src_cm4sl/CarMaker for Simulink_20241205_1315.props
+  src_cm4sl/CarMaker for Simulink.vcxproj
+  -  Info: Copied file to src_cm4sl/CarMaker for Simulink_20241205_1315.vcxproj
+  142 source code files have been copied
+  >> Finished.
+
+Deleting cached .node files of imported Movie NX assets...
+  0 Files deleted.
+  >> Finished.
+
+Deleting old unmodified template files...
+  0 Files deleted, 0 errors occurred
+  >> Finished.
+
+Copying new files to project directory...
+  203 Files copied, 0 errors occurred
+  >> Finished.
+
+Converting Simulink models...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting FMUs...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Test Runs and TestSeries...
+  Data/TestRun/FS_autonomous_Straight
+  Data/TestRun/FS_autonomous_Straight_001
+  Data/TestRun/FS_autonomous_TrackDrive
+  3 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting IPGRoad files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Vehicle files...
+  Data/Vehicle/.tmp_vehicle_startpos_SHRC34485_Z0005890
+  Data/Vehicle/Examples_FS/FS_Autonomous
+  Data/Vehicle/Examples_FS/FS_Autonomous_001
+  Data/Vehicle/Examples_FS/FS_Autonomous_002
+  Data/Vehicle/Examples_FS/FS_Autonomous_003
+  Data/Vehicle/Examples_FS/FS_Autonomous_004
+  Data/Vehicle/Examples_FS/FS_Autonomous_005
+  7 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Trailer files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting sensor material files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting external sensor parametrization files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Tire files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting configuration files...
+  Data/Config/OutputQuantities
+  -  Info: Quantity 'Sensor.Object.*' replaced by 'Sensor.Object.Vhcl.*'
+  Data/Config/OutputQuantities_Anim
+  -  Warning: Quantity 'Env.RainRate' removed
+  -  Info: Quantity 'Sensor.Camera.*' replaced by 'Sensor.Camera.Vhcl.*'
+  -  Info: Quantity 'Sensor.FSpace.*' replaced by 'Sensor.FSpace.Vhcl.*'
+  -  Info: Quantity 'Sensor.ObjByLane.*' replaced by 'Sensor.ObjByLane.Vhcl.*'
+  -  Info: Quantity 'Sensor.Object.*' replaced by 'Sensor.Object.Vhcl.*'
+  -  Info: Quantity 'Sensor.Radar.*' replaced by 'Sensor.Radar.Vhcl.*'
+  -  Info: Quantity 'Sensor.Road.*' replaced by 'Sensor.Road.Vhcl.*'
+  2 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting IO Configurations...
+  Data/Config/FSAI_CAN.iocfg
+  Data/Config/FSAI_PCAN.iocfg
+  2 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Scenario Editor template files...
+  >> Finished.
+
+-------------------------------------------------------------------------------
+Update finished successfully. No errors occurred
+-------------------------------------------------------------------------------
+
+End: 2024-12-05 13:15:52

@@ -1,0 +1,297 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-PlugInfo 2
+FileCreator = CarMaker 9.0 2020-04-08 12:42 TEMPLATE
+
+FMU.Name = MySusp_FrcSystem_FMU
+FMU.Modelclass = Susp_FrcSystem
+FMU.GUID = {b7d61a17-8243-46bf-b1b1-366cb80dcaeb}
+
+FMU.Inputs.ShowInDDict = 0
+FMU.Outputs.ShowInDDict = 0
+FMU.MakePluginfo = 0
+FMU.DebugLogging = 0
+FMU.InitParamStartValues = 1
+
+FMUIn.lBuf_FL.Link = IFVar
+FMUIn.lBuf_FL.Rel = lBuffer_FL
+FMUIn.lBuf_FR.Link = IFVar
+FMUIn.lBuf_FR.Rel = lBuffer_FR
+FMUIn.lBuf_RL.Link = IFVar
+FMUIn.lBuf_RL.Rel = lBuffer_RL
+FMUIn.lBuf_RR.Link = IFVar
+FMUIn.lBuf_RR.Rel = lBuffer_RR
+FMUIn.lSpring_FL.Link = IFVar
+FMUIn.lSpring_FL.Rel = lSpring_FL
+FMUIn.lSpring_FR.Link = IFVar
+FMUIn.lSpring_FR.Rel = lSpring_FR
+FMUIn.lSpring_RL.Link = IFVar
+FMUIn.lSpring_RL.Rel = lSpring_RL
+FMUIn.lSpring_RR.Link = IFVar
+FMUIn.lSpring_RR.Rel = lSpring_RR
+FMUIn.lStabi_FL.Link = IFVar
+FMUIn.lStabi_FL.Rel = lStabi_FL
+FMUIn.lStabi_FR.Link = IFVar
+FMUIn.lStabi_FR.Rel = lStabi_FR
+FMUIn.lStabi_RL.Link = IFVar
+FMUIn.lStabi_RL.Rel = lStabi_RL
+FMUIn.lStabi_RR.Link = IFVar
+FMUIn.lStabi_RR.Rel = lStabi_RR
+FMUIn.vDamp_FL.Link = IFVar
+FMUIn.vDamp_FL.Rel = vDamper_FL
+FMUIn.vDamp_FR.Link = IFVar
+FMUIn.vDamp_FR.Rel = vDamper_FR
+FMUIn.vDamp_RL.Link = IFVar
+FMUIn.vDamp_RL.Rel = vDamper_RL
+FMUIn.vDamp_RR.Link = IFVar
+FMUIn.vDamp_RR.Rel = vDamper_RR
+
+IFVar.FrcBuffer_FL.Link = FMUVar
+IFVar.FrcBuffer_FL.Rel = FrcBuf_FL
+IFVar.FrcBuffer_FR.Link = FMUVar
+IFVar.FrcBuffer_FR.Rel = FrcBuf_FR
+IFVar.FrcBuffer_RL.Link = FMUVar
+IFVar.FrcBuffer_RL.Rel = FrcBuf_RL
+IFVar.FrcBuffer_RR.Link = FMUVar
+IFVar.FrcBuffer_RR.Rel = FrcBuf_RR
+IFVar.FrcDamper_FL.Link = FMUVar
+IFVar.FrcDamper_FL.Rel = FrcDamp_FL
+IFVar.FrcDamper_FR.Link = FMUVar
+IFVar.FrcDamper_FR.Rel = FrcDamp_FR
+IFVar.FrcDamper_RL.Link = FMUVar
+IFVar.FrcDamper_RL.Rel = FrcDamp_RL
+IFVar.FrcDamper_RR.Link = FMUVar
+IFVar.FrcDamper_RR.Rel = FrcDamp_RR
+IFVar.FrcSpring_FL.Link = FMUVar
+IFVar.FrcSpring_FL.Rel = FrcSpring_FL
+IFVar.FrcSpring_FR.Link = FMUVar
+IFVar.FrcSpring_FR.Rel = FrcSpring_FR
+IFVar.FrcSpring_RL.Link = FMUVar
+IFVar.FrcSpring_RL.Rel = FrcSpring_RL
+IFVar.FrcSpring_RR.Link = FMUVar
+IFVar.FrcSpring_RR.Rel = FrcSpring_RR
+IFVar.FrcStabi_FL.Link = FMUVar
+IFVar.FrcStabi_FL.Rel = FrcStabi_FL
+IFVar.FrcStabi_FR.Link = FMUVar
+IFVar.FrcStabi_FR.Rel = FrcStabi_FR
+IFVar.FrcStabi_RL.Link = FMUVar
+IFVar.FrcStabi_RL.Rel = FrcStabi_RL
+IFVar.FrcStabi_RR.Link = FMUVar
+IFVar.FrcStabi_RR.Rel = FrcStabi_RR
+
+# Unstressed (i.e. force free) length of the FL spring
+# substitute model, the unit is m.
+Susp.FrcSystem.SubstModel.Spring.FL.l0 = 0.657
+
+# The spring characteristic of the spring FL substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Spring.FL:
+	0.0 0.0
+	1.0 60000
+
+# Unstressed (i.e. force free) length of the FR spring
+# substitute model, the unit is m.
+Susp.FrcSystem.SubstModel.Spring.FR.l0 = 0.657
+
+# The spring characteristic of the spring FR substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Spring.FR:
+	0.0 0.0
+	1.0 60000
+
+# Unstressed (i.e. force free) length of the RL spring
+# substitute model, the unit is m.
+Susp.FrcSystem.SubstModel.Spring.RL.l0 = 0.647
+
+# The spring characteristic of the spring RL substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Spring.RL:
+	0.0 0.0
+	1.0 70000
+
+# Unstressed (i.e. force free) length of the RR spring
+# substitute model, the unit is m.
+Susp.FrcSystem.SubstModel.Spring.RR.l0 = 0.647
+
+# The spring characteristic of the spring RR substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Spring.RR:
+	0.0 0.0
+	1.0 70000
+
+# The spring characteristic of the parasitic stiffness FL
+# substitute model defined with a data table
+# describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.ParasiticStiff.FL:
+	0.0 0.0
+	1.0 0.0
+
+# The spring characteristic of the parasitic stiffness FR
+# substitute model defined with a data table
+# describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.ParasiticStiff.FR:
+	0.0 0.0
+	1.0 0.0
+
+# The spring characteristic of the parasitic stiffness RL
+# substitute model defined with a data table
+# describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.ParasiticStiff.RL:
+	0.0 0.0
+	1.0 0.0
+
+# The spring characteristic of the parasitic stiffness RR
+# substitute model defined with a data table
+# describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.ParasiticStiff.RR:
+	0.0 0.0
+	1.0 0.0
+
+# Unstressed (i.e. force free) length of the FL damper",
+# substitute model, the unit is m.
+Susp.FrcSystem.SubstModel.Damper.FL.Spring.l0 = 0.0
+
+# The spring characteristic of the damper FL substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Damper.FL.Spring:
+	0.0 0.0
+	1.0 0.0
+
+# Unstressed (i.e. force free) length of the FR damper",
+# substitute model, the unit is m.
+Susp.FrcSystem.SubstModel.Damper.FR.Spring.l0 = 0.0
+
+# The spring characteristic of the damper FR substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Damper.FR.Spring:
+	0.0 0.0
+	1.0 0.0
+
+# Unstressed (i.e. force free) length of the RL damper",
+# substitute model, the unit is m.
+Susp.FrcSystem.SubstModel.Damper.RL.Spring.l0 = 0.0
+
+# The spring characteristic of the damper RL substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Damper.RL.Spring:
+	0.0 0.0
+	1.0 0.0
+
+# Unstressed (i.e. force free) length of the RR damper",
+# substitute model, the unit is m.
+Susp.FrcSystem.SubstModel.Damper.RR.Spring.l0 = 0.0
+
+# The spring characteristic of the damper RR substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Damper.RR.Spring:
+	0.0 0.0
+	1.0 0.0
+
+# Buffer FL push substitute model position
+# the unit is m.
+Susp.FrcSystem.SubstModel.Buffer.FL.Push.tz0 = 0.055
+
+# Buffer FL pull substitute model position
+# the unit is m.
+Susp.FrcSystem.SubstModel.Buffer.FL.Pull.tz0 = -0.09
+
+# The spring characteristic of the buffer push FL
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Buffer.FL.Push:
+	0.0 0.0
+	1.0 50000.0
+
+# The spring characteristic of the buffer pull FL
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Buffer.FL.Pull:
+	0.0 0.0
+	1.0 50000.0
+
+# Buffer FR push substitute model position
+# the unit is m.
+Susp.FrcSystem.SubstModel.Buffer.FR.Push.tz0 = 0.055
+
+# Buffer FR pull substitute model position
+# the unit is m.
+Susp.FrcSystem.SubstModel.Buffer.FR.Pull.tz0 = -0.09
+
+# The spring characteristic of the buffer push FR
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Buffer.FR.Push:
+	0.0 0.0
+	1.0 50000.0
+
+# The spring characteristic of the buffer pull FR
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Buffer.FR.Pull:
+	0.0 0.0
+	1.0 50000.0
+
+# Buffer RL push substitute model position
+# the unit is m.
+Susp.FrcSystem.SubstModel.Buffer.RL.Push.tz0 = 0.08
+
+# Buffer RL pull substitute model position
+# the unit is m.
+Susp.FrcSystem.SubstModel.Buffer.RL.Pull.tz0 = -0.065
+
+# The spring characteristic of the buffer push RL
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Buffer.RL.Push:
+	0.0 0.0
+	1.0 50000.0
+
+# The spring characteristic of the buffer pull RL
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Buffer.RL.Pull:
+	0.0 0.0
+	1.0 50000.0
+
+# Buffer RR push substitute model position
+# the unit is m.
+Susp.FrcSystem.SubstModel.Buffer.RR.Push.tz0 = 0.08
+
+# Buffer RR pull substitute model position
+# the unit is m.
+Susp.FrcSystem.SubstModel.Buffer.RR.Pull.tz0 = -0.065
+
+# The spring characteristic of the buffer push RR
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Buffer.RR.Push:
+	0.0 0.0
+	1.0 50000.0
+
+# The spring characteristic of the buffer pull RR
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Buffer.RR.Pull:
+	0.0 0.0
+	1.0 50000.0
+
+#The spring characteristic of the stabi F substitute
+# model can be defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Stabi.F:
+    0.0 0.0
+    1.0 15000
+
+#The spring characteristic of the stabi R substitute
+# model can be defined with a data table describing
+# the non-linear spring behavior.
+Susp.FrcSystem.SubstModel.Stabi.R:
+    0.0 0.0
+    1.0 15000

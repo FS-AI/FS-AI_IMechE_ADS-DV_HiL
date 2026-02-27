@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MySuspKnC_FMU"
+  modelIdentifier="MySuspKnC_FMU"
+  guid="{152272f5-9456-4018-9909-776c30200450}"
+  numberOfContinuousStates="2"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+    <ScalarVariable name="ForceCoupling"  valueReference="0" description=""  causality = "input">
+        <Integer start="0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="Frc2WC_x"  valueReference="0" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Frc2WC_y"  valueReference="1" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Frc2WC_z"  valueReference="2" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="Trq2WC_x"  valueReference="3" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Trq2WC_y"  valueReference="4" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Trq2WC_z"  valueReference="5" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="FrcSpring"  valueReference="6" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="FrcDamp"  valueReference="7" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="FrcStabi"  valueReference="8" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="FrcBuf"  valueReference="9" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="qCompIn"  valueReference="10" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="qpCompIn"  valueReference="11" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="qppCompIn"  valueReference="12" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="qCompOut"  valueReference="10" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="qpCompOut"  valueReference="11" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="qCalc"  valueReference="1" description=""  causality = "input">
+        <Integer start="0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="AF_t_0_x"  valueReference="13" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_t_0_y"  valueReference="14" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_t_0_z"  valueReference="15" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="AF_v_0_x"  valueReference="16" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_v_0_y"  valueReference="17" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_v_0_z"  valueReference="18" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="AF_Tr2Fr0_x_x"  valueReference="19" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Tr2Fr0_x_y"  valueReference="20" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Tr2Fr0_x_z"  valueReference="21" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Tr2Fr0_y_x"  valueReference="22" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Tr2Fr0_y_y"  valueReference="23" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Tr2Fr0_y_z"  valueReference="24" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Tr2Fr0_z_x"  valueReference="25" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Tr2Fr0_z_y"  valueReference="26" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Tr2Fr0_z_z"  valueReference="27" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="AF_omega_0_x"  valueReference="28" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_omega_0_y"  valueReference="29" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_omega_0_z"  valueReference="30" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="Tire_P_0_x"  valueReference="31" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Tire_P_0_y"  valueReference="32" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Tire_P_0_z"  valueReference="33" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="Kin_ixtx"  valueReference="34" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Kin_ixty"  valueReference="35" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Kin_ixtz"  valueReference="36" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Kin_ixrx"  valueReference="37" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Kin_ixry"  valueReference="38" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Kin_ixrz"  valueReference="39" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Kin_ixSpring"  valueReference="40" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Kin_ixDamp"  valueReference="41" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Kin_ixBuf"  valueReference="42" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Kin_ixStabi"  valueReference="43" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="dqComp_ixtx"  valueReference="44" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="dqComp_ixty"  valueReference="45" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="dqComp_ixtz"  valueReference="46" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="dqComp_ixrx"  valueReference="47" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="dqComp_ixry"  valueReference="48" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="dqComp_ixrz"  valueReference="49" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="dqComp_ixSpring"  valueReference="50" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="dqComp_ixDamp"  valueReference="51" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="dqComp_ixBuf"  valueReference="52" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="dqComp_ixStabi"  valueReference="53" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="WC_t_0_x"  valueReference="54" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_t_0_y"  valueReference="55" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_t_0_z"  valueReference="56" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="WC_v_0_x"  valueReference="57" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_v_0_y"  valueReference="58" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_v_0_z"  valueReference="59" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="WC_Tr2Fr0_x_x"  valueReference="60" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_Tr2Fr0_x_y"  valueReference="61" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_Tr2Fr0_x_z"  valueReference="62" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_Tr2Fr0_y_x"  valueReference="63" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_Tr2Fr0_y_y"  valueReference="64" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_Tr2Fr0_y_z"  valueReference="65" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_Tr2Fr0_z_x"  valueReference="66" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_Tr2Fr0_z_y"  valueReference="67" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_Tr2Fr0_z_z"  valueReference="68" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="WC_omega_0_x"  valueReference="69" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_omega_0_y"  valueReference="70" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_omega_0_z"  valueReference="71" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="Spring_xtof_x"  valueReference="72" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Spring_xtof_y"  valueReference="73" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Spring_xtof_z"  valueReference="74" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="Spring_TransAx_x"  valueReference="75" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Spring_TransAx_y"  valueReference="76" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Spring_TransAx_z"  valueReference="77" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="Damper_xtof_x"  valueReference="78" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Damper_xtof_y"  valueReference="79" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Damper_xtof_z"  valueReference="80" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="Damper_TransAx_x"  valueReference="81" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Damper_TransAx_y"  valueReference="82" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Damper_TransAx_z"  valueReference="83" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="AF_Frc_1_x"  valueReference="84" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Frc_1_y"  valueReference="85" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Frc_1_z"  valueReference="86" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="AF_Trq_1_x"  valueReference="87" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Trq_1_y"  valueReference="88" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="AF_Trq_1_z"  valueReference="89" description=""  causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="TireSubs_NomRadius"  valueReference="90" description=""  causality = "internal" variability="parameter">
+        <Real start="0.318"/>
+    </ScalarVariable>
+    <ScalarVariable name="WC_mass"  valueReference="91" description=""  causality = "internal" variability="parameter">
+        <Real start="25.0"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="WheelBodyPos_x"  valueReference="92" description=""  causality = "input" >
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WheelBodyPos_y"  valueReference="93" description=""  causality = "input" >
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="WheelBodyPos_z"  valueReference="94" description=""  causality = "input" >
+        <Real start="0.29"/>
+    </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+    <CoSimulation_StandAlone>
+	<Capabilities
+		     canHandleVariableCommunicationStepSize="true"
+		     canHandleEvents="true"/>
+    </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>
+

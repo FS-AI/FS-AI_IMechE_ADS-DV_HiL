@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MySusp_Stabi_FMU"
+  modelIdentifier="MySusp_Stabi_FMU"
+  guid="{df6d0958-156a-469d-81e9-7eeddeec2de4}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>  
+  <ScalarVariable name="dFrc_dl" valueReference="0" description="" causality = "internal" variability="parameter">
+      <Real start="15000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="l_L"  valueReference="1" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="l_R"  valueReference="2" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_L" valueReference="3" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_R" valueReference="4" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+    <CoSimulation_StandAlone>
+	<Capabilities
+		     canHandleVariableCommunicationStepSize="true"
+		     canHandleEvents="true"/>
+    </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>
+

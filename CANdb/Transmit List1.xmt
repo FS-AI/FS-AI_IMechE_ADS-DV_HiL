@@ -1,0 +1,15 @@
+;$FORMATVERSION=5.1
+; C:\Users\Honda\Downloads\FSAI_CM13_1_1\FSAI_CM13_1_1\CANdb\Transmit List1.xmt
+; CAN messages saved by PCAN-Explorer 6.7.0.2830
+;
+; Columns descriptions:
+; ~~~~~~~~~~~~~~~~~~~~~
+;+Bus
+;|  +Message ID
+;|  |         +Reserved
+;|  |         |  +Cycle time in ms (0=manual)
+;|  |         |  |     +Length of message
+;|  |         |  |     |    +Frame type: D)ata or R)emote request
+;|  |         |  |     |    | +Message data
+;|  |         |  |     |    | |
+ 1  510h      -  10    8    D 01h 00h 00h 00h 00h 00h 00h 00h

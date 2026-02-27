@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MyPowerSupply_FMU"
+  modelIdentifier="MyPowerSupply_FMU"
+  guid="{25b38b60-3862-4873-a102-b3367d7c3145}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+ <ScalarVariable name="Pwr_LV" valueReference="0" causality = "input">
+     <Real start="0.0"/>
+  </ScalarVariable>
+ <ScalarVariable name="BattLV.TempCool_in" valueReference="1" causality = "input">
+     <Real start="298.15"/>
+  </ScalarVariable>
+ <ScalarVariable name="BattLV.MassFlowCool" valueReference="2" causality = "input">
+     <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="BattLV.Voltage" valueReference="3" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  <ScalarVariable name="BattLV.Current" valueReference="4" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.Pwr_max" valueReference="5" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.AOC" valueReference="6" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.Energy" valueReference="7" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.Temp" valueReference="8" causality = "output">
+     <Real start="298.15" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.TempCool_out" valueReference="9" causality = "output">
+     <Real start="298.15" fixed="true"/>
+ </ScalarVariable>
+ 
+ <ScalarVariable name="SOC_init" valueReference="13" causality = "internal" variability = "parameter">
+     <Real start="70.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Volt_oc0" valueReference="15" causality = "internal" variability = "parameter">
+     <Real start="12.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="R0" valueReference="20" causality = "internal" variability = "parameter">
+     <Real start="0.0012" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Pwr_max" valueReference="21" causality = "internal" variability = "parameter">
+     <Real start="1e5" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.Temp_init" valueReference="23" causality = "internal" variability = "parameter">
+     <Real start="25.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.TempCool_init" valueReference="24" causality = "internal" variability = "parameter">
+     <Real start="25.0" fixed="true"/>
+ </ScalarVariable>
+
+</ModelVariables>
+
+<Implementation>
+  <CoSimulation_StandAlone>
+    <Capabilities
+      canHandleVariableCommunicationStepSize="true"
+      canHandleEvents="true"/>
+  </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>

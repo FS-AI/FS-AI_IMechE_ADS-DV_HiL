@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MySusp_TopMount_FMU"
+  modelIdentifier="MySusp_TopMount_FMU"
+  guid="{deadbeef-3df3-4a00-8276-176fa3c90747}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+  <ScalarVariable name="cTM" valueReference="0" description="" causality = "internal" variability="parameter">
+      <Real start="1e5" fixed="true"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="dTM" valueReference="1" description="" causality = "internal" variability="parameter">
+      <Real start="1e4" fixed="true"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="mTM" valueReference="2" description="" causality = "internal" variability="parameter">
+      <Real start="10.0" fixed="true"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="damper_CtrlIn"  valueReference="3" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+
+    <ScalarVariable name="damper_length"  valueReference="4" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="damper_vel"  valueReference="5" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="damper_Force"  valueReference="6" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="length" valueReference="7" description="" causality = "output">
+      <Real start="0.0"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="vel" valueReference="8" description="" causality = "output">
+      <Real start="0.0"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="Force" valueReference="9" description="" causality = "output">
+      <Real start="0.0"/>
+  </ScalarVariable>
+
+</ModelVariables>
+
+<Implementation>
+    <CoSimulation_StandAlone>
+	<Capabilities
+		     canHandleVariableCommunicationStepSize="true"
+		     canHandleEvents="true"/>
+    </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>
+

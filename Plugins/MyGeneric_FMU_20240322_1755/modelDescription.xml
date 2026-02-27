@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MyGeneric_FMU"
+  modelIdentifier="MyGeneric_FMU"
+  guid="{abb23122-b161-4b9f-a4f4-e79bb070965b}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+  <ScalarVariable name="SinFac" valueReference="0" description="Sine factor: sin_x = SinFac * sin(x)" causality = "internal" variability="parameter">
+     <Real start="1.0" fixed="true"/>
+  </ScalarVariable>
+  <ScalarVariable name="CosFac" valueReference="1" description="Cosine factor: cos_x = CosFac * cos(x)" causality = "internal" variability="parameter">
+     <Real start="1.0" fixed="true"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="x"  valueReference="2" description="Sine/cosine argument"  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="sin_x" valueReference="3" description="Output sine signal" causality = "output">
+     <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  <ScalarVariable name="cos_x" valueReference="4" description="Output cosine signal" causality = "output">
+     <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+  <CoSimulation_StandAlone>
+    <Capabilities
+      canHandleVariableCommunicationStepSize="true"
+      canHandleEvents="true"/>
+  </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>

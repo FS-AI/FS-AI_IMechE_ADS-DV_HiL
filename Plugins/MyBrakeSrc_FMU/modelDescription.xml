@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="2.0"
+  modelName="MyBrakeSrc_FMU"
+  guid="{8dda525c-73b1-4999-ba15-404c3219fe6c}">
+
+<CoSimulation
+    modelIdentifier="MyBrakeSrc_FMU"
+    canHandleVariableCommunicationStepSize="true"
+    canGetAndSetFMUstate = "true"
+    canSerializeFMUstate = "true"
+    providesDirectionalDerivative = "false"
+    canInterpolateInputs = "false">
+    <SourceFiles>
+	<File name = "MyBrakeSrc_FMU.c"/>
+    </SourceFiles>
+</CoSimulation>/>
+
+<UnitDefinitions>
+  <Unit name="Nm">
+    <BaseUnit kg="1" m="2" s="-2" factor="1" offset="0"/>
+  </Unit>
+</UnitDefinitions>
+
+<ModelVariables>
+  <ScalarVariable name="Pedal2Trq_FL" valueReference="0" description="Pedal2Trq FL" causality = "parameter" variability="fixed" initial="exact">
+     <Real start="1000.0"/>
+  </ScalarVariable>
+  <ScalarVariable name="Pedal2Trq_FR" valueReference="1" description="Pedal2Trq FR" causality = "parameter" variability="fixed" initial="exact">
+     <Real start="1000.0"/>
+  </ScalarVariable>
+  <ScalarVariable name="Pedal2Trq_RL" valueReference="2" description="Pedal2Trq RL" causality = "parameter" variability="tunable" initial="exact">
+     <Real start="800.0"/>
+  </ScalarVariable>
+  <ScalarVariable name="Pedal2Trq_RR" valueReference="3" description="Pedal2Trq RR" causality = "parameter" variability="tunable" initial="exact">
+     <Real start="800.0"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="Pedal"        valueReference="4" description="Pedal" causality = "input" variability="discrete">
+     <Real start="0.0"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="Trq_WB_FL" valueReference="5" description="Trq_WB FL" causality = "output" variability="discrete" initial="exact">
+     <Real unit="Nm" start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable name="Trq_WB_FR" valueReference="6" description="Trq_WB FR" causality = "output" variability="discrete" initial="exact">
+     <Real unit="Nm" start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable name="Trq_WB_RL" valueReference="7" description="Trq_WB RL" causality = "output" variability="discrete" initial="exact">
+     <Real unit="Nm" start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable name="Trq_WB_RR" valueReference="8" description="Trq_WB RR" causality = "output" variability="discrete" initial="exact">
+     <Real unit="Nm" start="0.0"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<ModelStructure>
+  <Outputs>
+    <Unknown index="6" />
+    <Unknown index="7" />
+    <Unknown index="8" />
+    <Unknown index="9" />
+  </Outputs>
+</ModelStructure>
+
+</fmiModelDescription>

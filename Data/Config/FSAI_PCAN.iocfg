@@ -1,0 +1,54 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-IOParameters 14
+FileCreator = CarMaker Office Extended 14.0.1
+
+IOConf.Active = 1
+
+IOConf.RawUAQ = 1
+IOConf.DefineUAQ = 1
+
+IOConf.Groups =
+IOConf.ActiveGroups =
+
+IOConf.Tasks = IOTask
+IOConf.IOTask.Parallelization = 1
+IOConf.IOTask.Parallelization.Sampling.DeltaT = 0.001
+IOConf.IOTask.Parallelization.Sampling.Offset = 0
+IOConf.IOTask.AutoCore = 1
+IOConf.IOTask.CPUAffinity = -1
+IOConf.IOTask.CPUAffinityUser = 0
+IOConf.IOTask.Priority = Max
+IOConf.IOTask.PriorityUser = 0
+IOConf.IOTask.Parallelization.TCPU = 0
+IOConf.IOTask.Parallelization.CTMonitor = 0
+IOConf.CANTask.Name = IOTask
+
+IOConf.CANIf = FSAI_PCAN.cancfg
+IOConf.FlexCard = FSAI_PCAN.frcfg
+
+IOConf.Rack = None
+IOConf.SubRack = cPCI
+IOConf.CarrierSlots =
+IOConf.EthCardSlots =
+IOConf.FlexCardSlots =
+
+IOConf.vBus = vBus1
+IOConf.vBusSlots =
+
+IOConf.Interface = Interface1
+IOConf.InterfaceSlots = 200
+
+Slot.200.Module = PCAN-USB
+Slot.200.Desc:
+Slot.200.Active = 1
+Slot.200.CANTaskName = Default
+Slot.200.Bus0.Desc:
+Slot.200.Bus0.Active = 1
+Slot.200.Bus0.Group =
+Slot.200.Bus0.ChName = PCAN_USBVCU
+Slot.200.Bus0.Baudrate = 500
+Slot.200.Bus0.StartId1 =
+Slot.200.Bus0.NumId1 =
+Slot.200.Bus0.StartId2 =
+Slot.200.Bus0.NumId2 =
+

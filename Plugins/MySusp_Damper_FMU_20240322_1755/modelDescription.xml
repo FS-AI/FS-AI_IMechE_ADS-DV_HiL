@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MySusp_Damper_FMU"
+  modelIdentifier="MySusp_Damper_FMU"
+  guid="{1be1690d-f4e9-4647-a04b-3d7a853b9c35}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+  <ScalarVariable name="dFrc_dlpPull" valueReference="0" description="" causality = "internal" variability="parameter">
+      <Real start="10000.0" fixed="true"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="dFrc_dlpPush" valueReference="1" description="" causality = "internal" variability="parameter">
+      <Real start="5000.0" fixed="true"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="v"  valueReference="2" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc" valueReference="3" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+    <CoSimulation_StandAlone>
+	<Capabilities
+		     canHandleVariableCommunicationStepSize="true"
+		     canHandleEvents="true"/>
+    </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>
+

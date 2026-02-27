@@ -1,0 +1,8 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-FlexCardParameters 1
+FileCreator = CarMaker Office Extended 14.0.1
+
+FlexCard.LogCards = 0
+FlexCard.LogFrames.Tx = 0
+FlexCard.LogFrames.Rx = 0
+

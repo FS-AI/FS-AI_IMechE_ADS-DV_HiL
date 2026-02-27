@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MySusp_ParasiticFriction_FMU"
+  modelIdentifier="MySusp_ParasiticFriction_FMU"
+  guid="{3027f980-5fc4-4d87-bcfd-cc54b4a17646}"
+  numberOfContinuousStates="1"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+  <ScalarVariable name="sigma0" valueReference="0" description="" causality = "internal" variability="parameter">
+      <Real start="50000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="sigma1" valueReference="1" description="" causality = "internal" variability="parameter">
+      <Real start="150.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="v0" valueReference="2" description="" causality = "internal" variability="parameter">
+      <Real start="0.01" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="mu_c" valueReference="3" description="" causality = "internal" variability="parameter">
+      <Real start="1.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="PreloadForce" valueReference="4" description="" causality = "internal" variability="parameter">
+      <Real start="30.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="vWheelCarrier_z"  valueReference="6" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="z" valueReference="7" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="z_dot" valueReference="8" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc" valueReference="9" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+    <CoSimulation_StandAlone>
+	<Capabilities
+		     canHandleVariableCommunicationStepSize="true"
+		     canHandleEvents="true"/>
+    </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>
+

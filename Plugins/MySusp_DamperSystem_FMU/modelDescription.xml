@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MySusp_DamperSystem_FMU"
+  modelIdentifier="MySusp_DamperSystem_FMU"
+  guid="{040ba99d-5546-4b60-938a-60ffd1fe09f0}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+  <ScalarVariable name="PullDamp_FL" valueReference="0" description="" causality = "internal" variability="parameter">
+      <Real start="10000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="PullDamp_FR" valueReference="1" description="" causality = "internal" variability="parameter">
+      <Real start="10000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="PullDamp_RL" valueReference="2" description="" causality = "internal" variability="parameter">
+      <Real start="60000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="PullDamp_RR" valueReference="3" description="" causality = "internal" variability="parameter">
+      <Real start="60000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="PushDamp_FL" valueReference="4" description="" causality = "internal" variability="parameter">
+      <Real start="5000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="PushDamp_FR" valueReference="5" description="" causality = "internal" variability="parameter">
+      <Real start="5000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="PushDamp_RL" valueReference="6" description="" causality = "internal" variability="parameter">
+      <Real start="21000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="PushDamp_RR" valueReference="7" description="" causality = "internal" variability="parameter">
+      <Real start="21000.0" fixed="true"/>
+  </ScalarVariable>
+ .
+  <ScalarVariable name="v_FL"  valueReference="8" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="v_FR"  valueReference="9" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="v_RL"  valueReference="10" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="v_RR"  valueReference="11" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_FL" valueReference="12" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_FR" valueReference="13" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_RL" valueReference="14" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_RR" valueReference="15" description="" causality = "output">
+      <Real start="0." fixed="true"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+    <CoSimulation_StandAlone>
+	<Capabilities
+		     canHandleVariableCommunicationStepSize="true"
+		     canHandleEvents="true"/>
+    </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>
+

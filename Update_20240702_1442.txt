@@ -1,0 +1,74 @@
+Logfile - Project update to CarMaker Office Extended 13.0.1
+===============================================================================
+
+Start: 2024-07-02 14:42:43
+
+Cleaning up temporary files...
+  Deleting temporary Test Run, Vehicle and Trailer files
+  Deleting temporary files in road cache
+  >> Finished.
+
+Creating source code backup ...
+  No modifications to source code files found
+  >> Finished.
+
+Deleting old unmodified template files...
+  0 Files deleted, 0 errors occurred
+  >> Finished.
+
+Copying new files to project directory...
+  119 Files copied, 0 errors occurred
+  >> Finished.
+
+Converting Simulink models...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting hydraulic models...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting FMUs...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Test Runs and TestSeries...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting IPGRoad files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Vehicle files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Trailer files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting sensor material files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting external sensor parametrization files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Tire files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting configuration files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Scenario Editor template files...
+  >> Finished.
+
+-------------------------------------------------------------------------------
+Update finished successfully. No errors occurred
+-------------------------------------------------------------------------------
+
+End: 2024-07-02 14:42:59

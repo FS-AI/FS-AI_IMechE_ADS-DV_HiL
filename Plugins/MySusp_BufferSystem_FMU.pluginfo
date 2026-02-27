@@ -1,0 +1,119 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-PlugInfo 2
+FileCreator = CarMaker 9.0 2020-04-08 12:42 TEMPLATE
+
+FMU.Name = MySusp_BufferSystem_FMU
+FMU.Modelclass = Susp_BufferSystem
+FMU.GUID = {c5857296-aefe-4fc6-bb75-d4cfa63de70c}
+
+FMU.Inputs.ShowInDDict = 0
+FMU.Outputs.ShowInDDict = 0
+FMU.MakePluginfo = 0
+FMU.DebugLogging = 0
+FMU.InitParamStartValues = 1
+
+FMUIn.l_FL.Link = IFVar
+FMUIn.l_FL.Rel = length_FL
+FMUIn.l_FR.Link = IFVar
+FMUIn.l_FR.Rel = length_FR
+FMUIn.l_RL.Link = IFVar
+FMUIn.l_RL.Rel = length_RL
+FMUIn.l_RR.Link = IFVar
+FMUIn.l_RR.Rel = length_RR
+
+IFVar.Force_FL.Link = FMUVar
+IFVar.Force_FL.Rel = Frc_FL
+IFVar.Force_FR.Link = FMUVar
+IFVar.Force_FR.Rel = Frc_FR
+IFVar.Force_RL.Link = FMUVar
+IFVar.Force_RL.Rel = Frc_RL
+IFVar.Force_RR.Link = FMUVar
+IFVar.Force_RR.Rel = Frc_RR
+
+# Buffer FL push substitute model position
+# the unit is m.
+Susp.BufferSystem.SubstModel.FL.Push.tz0 = 0.055
+
+# Buffer FL pull substitute model position
+# the unit is m.
+Susp.BufferSystem.SubstModel.FL.Pull.tz0 = -0.09
+
+# The spring characteristic of the buffer push FL
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.BufferSystem.SubstModel.FL.Push:
+	0.0 0.0
+	1.0 50000.0
+
+# The spring characteristic of the buffer pull FL
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.BufferSystem.SubstModel.FL.Pull:
+	0.0 0.0
+	1.0 50000.0
+
+# Buffer FR push substitute model position
+# the unit is m.
+Susp.BufferSystem.SubstModel.FR.Push.tz0 = 0.055
+
+# Buffer FR pull substitute model position
+# the unit is m.
+Susp.BufferSystem.SubstModel.FR.Pull.tz0 = -0.09
+
+# The spring characteristic of the buffer push FR
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.BufferSystem.SubstModel.FR.Push:
+	0.0 0.0
+	1.0 50000.0
+
+# The spring characteristic of the buffer pull FR
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.BufferSystem.SubstModel.FR.Pull:
+	0.0 0.0
+	1.0 50000.0
+
+# Buffer RL push substitute model position
+# the unit is m.
+Susp.BufferSystem.SubstModel.RL.Push.tz0 = 0.08
+
+# Buffer RL pull substitute model position
+# the unit is m.
+Susp.BufferSystem.SubstModel.RL.Pull.tz0 = -0.065
+
+# The spring characteristic of the buffer push RL
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.BufferSystem.SubstModel.RL.Push:
+	0.0 0.0
+	1.0 50000.0
+
+# The spring characteristic of the buffer pull RL
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.BufferSystem.SubstModel.RL.Pull:
+	0.0 0.0
+	1.0 50000.0
+
+# Buffer RR push substitute model position
+# the unit is m.
+Susp.BufferSystem.SubstModel.RR.Push.tz0 = 0.08
+
+# Buffer RR pull substitute model position
+# the unit is m.
+Susp.BufferSystem.SubstModel.RR.Pull.tz0 = -0.065
+
+# The spring characteristic of the buffer push RR
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.BufferSystem.SubstModel.RR.Push:
+	0.0 0.0
+	1.0 50000.0
+
+# The spring characteristic of the buffer pull RR
+# substitute model can be defined with a data
+# table describing the non-linear spring behavior.
+Susp.BufferSystem.SubstModel.RR.Pull:
+	0.0 0.0
+	1.0 50000.0

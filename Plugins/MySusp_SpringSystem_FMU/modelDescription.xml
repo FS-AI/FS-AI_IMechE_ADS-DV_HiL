@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MySusp_SpringSystem_FMU"
+  modelIdentifier="MySusp_SpringSystem_FMU"
+  guid="{ed0d3d07-b6f2-4b09-b038-1805d6e54147}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+  <ScalarVariable name="l0_FL" valueReference="0" description="" causality = "internal" variability="parameter">
+     <Real start="0.657" fixed="true"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="l0_FR" valueReference="1" description="" causality = "internal" variability="parameter">
+      <Real start="0.657" fixed="true"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="l0_RL" valueReference="2" description="" causality = "internal" variability="parameter">
+      <Real start="0.647" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="l0_RR" valueReference="3" description="" causality = "internal" variability="parameter">
+      <Real start="0.647" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc0_FL" valueReference="4" description="" causality = "internal" variability="parameter">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc0_FR" valueReference="5" description="" causality = "internal" variability="parameter">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc0_RL" valueReference="6" description="" causality = "internal" variability="parameter">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc0_RR" valueReference="7" description="" causality = "internal" variability="parameter">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="dFrc_dl_FL" valueReference="8" description="" causality = "internal" variability="parameter">
+      <Real start="60000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="dFrc_dl_FR" valueReference="9" description="" causality = "internal" variability="parameter">
+      <Real start="60000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="dFrc_dl_RL" valueReference="10" description="" causality = "internal" variability="parameter">
+      <Real start="70000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="dFrc_dl_RR" valueReference="11" description="" causality = "internal" variability="parameter">
+      <Real start="70000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="l_FL"  valueReference="12" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+ 
+  <ScalarVariable name="l_FR"  valueReference="13" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+ 
+  <ScalarVariable name="l_RL"  valueReference="14" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+ 
+  <ScalarVariable name="l_RR"  valueReference="15" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_FL" valueReference="16" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_FR" valueReference="17" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_RL" valueReference="18" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_RR" valueReference="19" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+    <CoSimulation_StandAlone>
+	<Capabilities
+		     canHandleVariableCommunicationStepSize="true"
+		     canHandleEvents="true"/>
+    </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MyMotor_FMU"
+  modelIdentifier="MyMotor_FMU"
+  guid="{623f2ea4-2926-4aba-97af-6ed19af856db}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+ <ScalarVariable name="rotv" valueReference="0" causality = "input">
+     <Real start="0.0"/>
+ </ScalarVariable>
+ <ScalarVariable name="Load" valueReference="1" causality = "input">
+     <Real start="0.0"/>
+ </ScalarVariable>
+
+ <ScalarVariable name="Trq" valueReference="2" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="PwrElec" valueReference="3" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Inert" valueReference="4" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+
+ <ScalarVariable name="Ratio" valueReference="5" causality = "input" variability="parameter">
+     <Real start="0.0"/>
+ </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+  <CoSimulation_StandAlone>
+    <Capabilities
+      canHandleVariableCommunicationStepSize="true"
+      canHandleEvents="true"/>
+  </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>

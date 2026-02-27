@@ -1,0 +1,76 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-PlugInfo 2
+FileCreator = CarMaker 9.0 2020-04-08 12:42 TEMPLATE
+
+FMU.Name = MySusp_DamperSystem_FMU
+FMU.Modelclass = Susp_DamperSystem
+FMU.GUID = {040ba99d-5546-4b60-938a-60ffd1fe09f0}
+
+FMU.Inputs.ShowInDDict = 0
+FMU.Outputs.ShowInDDict = 0
+FMU.MakePluginfo = 0
+FMU.DebugLogging = 0
+FMU.InitParamStartValues = 1
+
+FMUIn.v_FL.Link = IFVar
+FMUIn.v_FL.Rel = vel_FL
+FMUIn.v_FR.Link = IFVar
+FMUIn.v_FR.Rel = vel_FR
+FMUIn.v_RL.Link = IFVar
+FMUIn.v_RL.Rel = vel_RL
+FMUIn.v_RR.Link = IFVar
+FMUIn.v_RR.Rel = vel_RR
+
+IFVar.Force_FL.Link = FMUVar
+IFVar.Force_FL.Rel = Frc_FL
+IFVar.Force_FR.Link = FMUVar
+IFVar.Force_FR.Rel = Frc_FR
+IFVar.Force_RL.Link = FMUVar
+IFVar.Force_RL.Rel = Frc_RL
+IFVar.Force_RR.Link = FMUVar
+IFVar.Force_RR.Rel = Frc_RR
+
+# Unstressed (i.e. force free) length of the FL damper",
+# substitute model, the unit is m.
+Susp.DamperSystem.SubstModel.FL.Spring.l0 = 0.0
+
+# The spring characteristic of the damper FL substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.DamperSystem.SubstModel.FL.Spring:
+	0.0 0.0
+	1.0 0.0
+
+# Unstressed (i.e. force free) length of the FR damper",
+# substitute model, the unit is m.
+Susp.DamperSystem.SubstModel.FR.Spring.l0 = 0.0
+
+# The spring characteristic of the damper FR substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.DamperSystem.SubstModel.FR.Spring:
+	0.0 0.0
+	1.0 0.0
+
+# Unstressed (i.e. force free) length of the RL damper",
+# substitute model, the unit is m.
+Susp.DamperSystem.SubstModel.RL.Spring.l0 = 0.0
+
+# The spring characteristic of the damper RL substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.DamperSystem.SubstModel.RL.Spring:
+	0.0 0.0
+	1.0 0.0
+
+# Unstressed (i.e. force free) length of the RR damper",
+# substitute model, the unit is m.
+Susp.DamperSystem.SubstModel.RR.Spring.l0 = 0.0
+
+# The spring characteristic of the damper RR substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.DamperSystem.SubstModel.RR.Spring:
+	0.0 0.0
+	1.0 0.0
+

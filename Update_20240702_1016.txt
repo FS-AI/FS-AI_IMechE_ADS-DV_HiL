@@ -1,0 +1,88 @@
+Logfile - Project update to CarMaker Office Extended 13.0.1
+===============================================================================
+
+Start: 2024-07-02 10:16:57
+
+Cleaning up temporary files...
+  Deleting temporary Test Run, Vehicle and Trailer files
+  Deleting temporary files in road cache
+  >> Finished.
+
+Creating source code backup ...
+  src/.project
+  -  Info: Copied file to src/.project_20240702_1016
+  src/.settings/org.eclipse.cdt.core.prefs
+  -  Info: Copied file to src/.settings/org.eclipse.cdt.core_20240702_1016.prefs
+  src/makefile.defs
+  -  Info: Copied file to src/makefile_20240702_1016.defs
+  src_cm4sl/.project
+  -  Info: Copied file to src_cm4sl/.project_20240702_1016
+  src_cm4sl/.settings/org.eclipse.cdt.core.prefs
+  -  Info: Copied file to src_cm4sl/.settings/org.eclipse.cdt.core_20240702_1016.prefs
+  src_cm4sl/generic.mdl
+  -  Info: Copied file to src_cm4sl/generic_20240702_1016.mdl
+  src_cm4sl/makefile.defs
+  -  Info: Copied file to src_cm4sl/makefile_20240702_1016.defs
+  7 source code files have been copied
+  >> Finished.
+
+Deleting old unmodified template files...
+  0 Files deleted, 0 errors occurred
+  >> Finished.
+
+Copying new files to project directory...
+  119 Files copied, 0 errors occurred
+  >> Finished.
+
+Converting Simulink models...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting hydraulic models...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting FMUs...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Test Runs and TestSeries...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting IPGRoad files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Vehicle files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Trailer files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting sensor material files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting external sensor parametrization files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Tire files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting configuration files...
+  0 Files converted, 0 errors occurred
+  >> Finished.
+
+Converting Scenario Editor template files...
+  >> Finished.
+
+-------------------------------------------------------------------------------
+Update finished successfully. No errors occurred
+-------------------------------------------------------------------------------
+
+End: 2024-07-02 10:17:14

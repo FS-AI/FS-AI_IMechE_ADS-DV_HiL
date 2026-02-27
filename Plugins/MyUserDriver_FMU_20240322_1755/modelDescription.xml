@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MyUserDriver_FMU"
+  modelIdentifier="MyUserDriver_FMU"
+  guid="{d3cd6322-7c30-4313-ab06-5b6f334cc70c}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+    <ScalarVariable name="vTrgt" valueReference="0" description="" causality = "internal" variability="parameter">
+     <Real start="70.0" fixed="true"/>
+    </ScalarVariable>
+    <ScalarVariable name="tPrev" valueReference="1" description="" causality = "internal" variability="parameter">
+        <Real start="5.0" fixed="true"/>
+    </ScalarVariable>
+    <ScalarVariable name="kp" valueReference="2" description="" causality = "internal" variability="parameter">
+        <Real start="0.5" fixed="true"/>
+    </ScalarVariable>
+    <ScalarVariable name="ki" valueReference="3" description="" causality = "internal" variability="parameter">
+        <Real start="0.5" fixed="true"/>
+    </ScalarVariable>
+    <ScalarVariable name="kd" valueReference="4" description="" causality = "internal" variability="parameter">
+        <Real start="0.0" fixed="true"/>
+    </ScalarVariable>
+    <ScalarVariable name="CtrlInt" valueReference="5" description="" causality = "internal" variability="parameter">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="CtrlDiff" valueReference="6" description="" causality = "internal" variability="parameter">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="TLPF" valueReference="7" description="" causality = "internal" variability="parameter">
+        <Real start="0.5" fixed="true"/>
+    </ScalarVariable>
+    <ScalarVariable name="f_old" valueReference="8" description="" causality = "internal" variability="parameter">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Init" valueReference="0" description="" causality = "internal" variability="parameter">
+        <Integer start="1"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="Active"  valueReference="9" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="SST"  valueReference="10" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Key"  valueReference="11" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="GearNo"  valueReference="12" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="SelectorCtrl"  valueReference="13" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Brake"  valueReference="14" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="BrakeLever"  valueReference="15" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="BrakePark"  valueReference="16" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Clutch"  valueReference="17" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Gas"  valueReference="18" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Rider_RollAng"  valueReference="19" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Rider_RollAngVel"  valueReference="20" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Vhcl_PoI_Vel1_x"  valueReference="21" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Vhcl_PoI_Acc1_x"  valueReference="22" description=""  causality = "input">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="DeltaT"  valueReference="23" description=""  causality = "input">
+        <Real start="0.001"/>
+    </ScalarVariable>
+
+    <ScalarVariable name="SST_out" valueReference="24" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Key_out" valueReference="25" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="SelectorCtrl_out" valueReference="26" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="GearNo_out" valueReference="27" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Brake_out" valueReference="28" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="BrakeLever_out" valueReference="29" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="BrakePark_out" valueReference="30" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Clutch_out" valueReference="31" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Gas_out" valueReference="32" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Rider_RollAng_out" valueReference="33" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Rider_RollAngVel_out" valueReference="34" description="" causality = "output">
+        <Real start="0.0"/>
+    </ScalarVariable>
+
+</ModelVariables>
+
+<Implementation>
+  <CoSimulation_StandAlone>
+    <Capabilities
+      canHandleVariableCommunicationStepSize="true"
+      canHandleEvents="true"/>
+  </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>

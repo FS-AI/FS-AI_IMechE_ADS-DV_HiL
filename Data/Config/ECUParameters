@@ -1,0 +1,8 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent =	CarMaker-ECUParameters	3
+
+
+IOParameters = FSAI_PCAN.iocfg
+CANIfParameters = FSAI_PCAN.cancfg
+FlexCardParameters = FSAI_PCAN.frcfg
+RBSParameters = RBSParameters_13_1_1.rbs.info

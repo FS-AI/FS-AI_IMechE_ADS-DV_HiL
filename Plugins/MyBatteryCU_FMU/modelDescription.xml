@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MyBatteryCU_FMU"
+  modelIdentifier="MyBatteryCU_FMU"
+  guid="{8348e19b-beb0-4cc3-9712-1738e3b9c4da}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+ <ScalarVariable name="Ignition" valueReference="0" causality = "input">
+     <Real start="0.0"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.AOC" valueReference="1" causality = "input">
+     <Real start="0.0"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.Temp" valueReference="2" causality = "input">
+     <Real start="25.0"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.TempCool_out" valueReference="3" causality = "input">
+     <Real start="25.0"/>
+ </ScalarVariable>
+ <ScalarVariable name="Pwr_HV1toLV_trg_In" valueReference="4" causality = "input">
+     <Real start="0.0"/>
+ </ScalarVariable>
+
+ <ScalarVariable name="Pwr_HV1toLV_trg_Out" valueReference="4" alias = "alias" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.SOC" valueReference="5" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.SOH" valueReference="6" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.TempCool_in" valueReference="7" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+
+ <ScalarVariable name="Capacity_LV" valueReference="8" causality = "internal" variability="parameter">
+     <Real start="10.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.Temp_init" valueReference="9" causality = "internal" variability="parameter">
+     <Real start="25.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattLV.TempCool_init" valueReference="10" causality = "internal" variability="parameter">
+     <Real start="25.0" fixed="true"/>
+ </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+  <CoSimulation_StandAlone>
+    <Capabilities
+      canHandleVariableCommunicationStepSize="true"
+      canHandleEvents="true"/>
+  </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>

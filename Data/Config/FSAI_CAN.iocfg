@@ -1,0 +1,116 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-IOParameters 14
+FileCreator = CarMaker Office Extended 14.0.1
+
+IOConf.Active = 1
+
+IOConf.RawUAQ = 1
+IOConf.DefineUAQ = 1
+
+IOConf.Groups =
+IOConf.ActiveGroups =
+
+IOConf.Tasks =
+IOConf.CANTask.Name = Default
+
+IOConf.CANIf = FSAI_CAN.cancfg
+IOConf.FlexCard = FSAI_CAN.frcfg
+
+IOConf.Rack = None
+IOConf.SubRack = cPCI
+IOConf.CarrierSlots =
+IOConf.EthCardSlots =
+IOConf.FlexCardSlots =
+
+IOConf.vBus = vBus1
+IOConf.vBusSlots =
+
+IOConf.Interface = Interface1
+IOConf.InterfaceSlots = 200
+
+Slot.200.Module = VN1630
+Slot.200.Desc:
+Slot.200.Active = 1
+Slot.200.CANTaskName = Default
+Slot.200.SN =
+Slot.200.Bus0.Desc:
+Slot.200.Bus0.Active = 1
+Slot.200.Bus0.Group =
+Slot.200.Bus0.ChName = FSAI
+Slot.200.Bus0.CANFD = 0
+Slot.200.Bus0.Baudrate = 500
+Slot.200.Bus0.ExpTiming = 0
+Slot.200.Bus0.BaudrateFD = 2000
+Slot.200.Bus0.IsIso = 1
+Slot.200.Bus0.NomTseg1 =
+Slot.200.Bus0.NomTseg2 =
+Slot.200.Bus0.NomSJW =
+Slot.200.Bus0.Sample3 = 0
+Slot.200.Bus0.DataTseg1 =
+Slot.200.Bus0.DataTseg2 =
+Slot.200.Bus0.DataSJW =
+Slot.200.Bus0.StartId1 =
+Slot.200.Bus0.NumId1 =
+Slot.200.Bus0.StartId2 =
+Slot.200.Bus0.NumId2 =
+Slot.200.Bus1.Desc:
+Slot.200.Bus1.Active = 0
+Slot.200.Bus1.Group =
+Slot.200.Bus1.ChName =
+Slot.200.Bus1.CANFD = 0
+Slot.200.Bus1.Baudrate = 500
+Slot.200.Bus1.ExpTiming = 0
+Slot.200.Bus1.BaudrateFD = 2000
+Slot.200.Bus1.IsIso = 1
+Slot.200.Bus1.NomTseg1 =
+Slot.200.Bus1.NomTseg2 =
+Slot.200.Bus1.NomSJW =
+Slot.200.Bus1.Sample3 = 0
+Slot.200.Bus1.DataTseg1 =
+Slot.200.Bus1.DataTseg2 =
+Slot.200.Bus1.DataSJW =
+Slot.200.Bus1.StartId1 =
+Slot.200.Bus1.NumId1 =
+Slot.200.Bus1.StartId2 =
+Slot.200.Bus1.NumId2 =
+Slot.200.Bus2.Desc:
+Slot.200.Bus2.Active = 0
+Slot.200.Bus2.Group =
+Slot.200.Bus2.ChName =
+Slot.200.Bus2.CANFD = 0
+Slot.200.Bus2.Baudrate = 500
+Slot.200.Bus2.ExpTiming = 0
+Slot.200.Bus2.BaudrateFD = 2000
+Slot.200.Bus2.IsIso = 1
+Slot.200.Bus2.NomTseg1 =
+Slot.200.Bus2.NomTseg2 =
+Slot.200.Bus2.NomSJW =
+Slot.200.Bus2.Sample3 = 0
+Slot.200.Bus2.DataTseg1 =
+Slot.200.Bus2.DataTseg2 =
+Slot.200.Bus2.DataSJW =
+Slot.200.Bus2.StartId1 =
+Slot.200.Bus2.NumId1 =
+Slot.200.Bus2.StartId2 =
+Slot.200.Bus2.NumId2 =
+Slot.200.Bus3.Desc:
+Slot.200.Bus3.Active = 0
+Slot.200.Bus3.Group =
+Slot.200.Bus3.ChName =
+Slot.200.Bus3.CANFD = 0
+Slot.200.Bus3.Baudrate = 500
+Slot.200.Bus3.ExpTiming = 0
+Slot.200.Bus3.BaudrateFD = 2000
+Slot.200.Bus3.IsIso = 1
+Slot.200.Bus3.NomTseg1 =
+Slot.200.Bus3.NomTseg2 =
+Slot.200.Bus3.NomSJW =
+Slot.200.Bus3.Sample3 = 0
+Slot.200.Bus3.DataTseg1 =
+Slot.200.Bus3.DataTseg2 =
+Slot.200.Bus3.DataSJW =
+Slot.200.Bus3.StartId1 =
+Slot.200.Bus3.NumId1 =
+Slot.200.Bus3.StartId2 =
+Slot.200.Bus3.NumId2 =
+

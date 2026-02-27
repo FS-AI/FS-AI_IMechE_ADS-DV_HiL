@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MySusp_StabiSystem_FMU"
+  modelIdentifier="MySusp_StabiSystem_FMU"
+  guid="{1a52f68c-d976-4fba-9cb9-51e50b2bb078}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>  
+  <ScalarVariable name="dFrc_dl_F" valueReference="0" description="" causality = "internal" variability="parameter">
+      <Real start="15000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="dFrc_dl_R" valueReference="1" description="" causality = "internal" variability="parameter">
+      <Real start="15000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="l_FL"  valueReference="2" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="l_FR"  valueReference="3" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="l_RL"  valueReference="4" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="l_RR"  valueReference="5" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_FL" valueReference="6" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_FR" valueReference="7" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_RL" valueReference="8" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc_RR" valueReference="9" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+    <CoSimulation_StandAlone>
+	<Capabilities
+		     canHandleVariableCommunicationStepSize="true"
+		     canHandleEvents="true"/>
+    </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>
+

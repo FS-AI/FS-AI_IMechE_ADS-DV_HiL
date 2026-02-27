@@ -1,0 +1,6 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent =	CarMaker-SimParameters	3
+FirstInit.TestRun = FS_autonomous_Straight_001
+SimParam.DeltaT = 0.001
+
+

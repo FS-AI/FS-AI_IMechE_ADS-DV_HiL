@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MyPowerTrainXWD_FMU"
+  modelIdentifier="MyPowerTrainXWD_FMU"
+  guid="{d8551a6d-7066-4c8c-ad05-849d51b58df7}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+ <ScalarVariable name="WheelIn_FL_rotv" valueReference="0" causality = "input">
+     <Real start="0.0"/>
+ </ScalarVariable>
+ <ScalarVariable name="WheelIn_FR_rotv" valueReference="1" causality = "input">
+     <Real start="0.0"/>
+ </ScalarVariable>
+ <ScalarVariable name="Motor_Load" valueReference="2" causality = "input">
+     <Real start="0.0"/>
+ </ScalarVariable>
+ <ScalarVariable name="iDiff_mean" valueReference="3" causality = "input">
+     <Real start="0.0"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Drive_FL" valueReference="4" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Drive_FR" valueReference="5" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Drive_RL" valueReference="6" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Drive_RR" valueReference="7" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Supp2WC_FL" valueReference="8" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Supp2WC_FR" valueReference="9" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Supp2WC_RL" valueReference="10" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Supp2WC_RR" valueReference="11" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Supp2Bdy1_y" valueReference="12" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Trq_Supp2Bdy1B_y" valueReference="13" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="BattHV_Pwr_max" valueReference="14" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Motor_rotv" valueReference="15" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Motor_Trq" valueReference="16" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Motor_PwrElec" valueReference="17" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+  <CoSimulation_StandAlone>
+    <Capabilities
+      canHandleVariableCommunicationStepSize="true"
+      canHandleEvents="true"/>
+  </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>

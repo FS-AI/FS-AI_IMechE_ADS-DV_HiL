@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MySusp_Spring_FMU"
+  modelIdentifier="MySusp_Spring_FMU"
+  guid="{0c04758a-5de7-476d-95ed-57967ae537b3}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+  <ScalarVariable name="l0" valueReference="0" description="" causality = "internal" variability="parameter">
+     <Real start="0.3541" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc0" valueReference="1" description="" causality = "internal" variability="parameter">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="dFrc_dl" valueReference="2" description="" causality = "internal" variability="parameter">
+      <Real start="24000.0" fixed="true"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="l"  valueReference="3" description=""  causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  
+  <ScalarVariable name="Frc" valueReference="4" description="" causality = "output">
+      <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+    <CoSimulation_StandAlone>
+	<Capabilities
+		     canHandleVariableCommunicationStepSize="true"
+		     canHandleEvents="true"/>
+    </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>
+

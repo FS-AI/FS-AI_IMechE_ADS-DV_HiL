@@ -1,0 +1,32 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-PlugInfo 2
+FileCreator = CarMaker Office 14.0 TEMPLATE
+
+FMU.Name = MySelectorCtrlMapping_FMU
+FMU.Modelclass = SelectorCtrlMapping
+FMU.GUID = {6d91a042-4d56-4896-ba29-59e9e4dec7f0}
+
+FMU.Inputs.ShowInDDict = 0
+FMU.Outputs.ShowInDDict = 0
+FMU.Locals.ShowInDDict = 0
+FMU.Tunables.ShowInDDict = 1
+FMU.MakePluginfo = 0
+FMU.DebugLogging = 0
+FMU.InitParamStartValues = 1
+FMU.InitParamValuesEarly = 0
+FMU.TerminateAfterTestrun = 0
+
+FMUIn.SelectorCtrlAction.Link = IFVar
+FMUIn.SelectorCtrlAction.Rel = SelectotrCtrlAction
+FMUIn.SelectorCtrlCurrent.Link = IFVar
+FMUIn.SelectorCtrlCurrent.Rel = VC.SelectorCtrl
+
+IFVar.DM.DigitalSelectorCtrl_out.0.Link = FMUVar
+IFVar.DM.DigitalSelectorCtrl_out.0.Rel = DigitalSelectorCtrl0
+IFVar.DM.DigitalSelectorCtrl_out.1.Link = FMUVar
+IFVar.DM.DigitalSelectorCtrl_out.1.Rel = DigitalSelectorCtrl1
+IFVar.DM.DigitalSelectorCtrl_out.2.Link = FMUVar
+IFVar.DM.DigitalSelectorCtrl_out.2.Rel = DigitalSelectorCtrl2
+IFVar.DM.SelectorCtrl.Link = FMUVar
+IFVar.DM.SelectorCtrl.Rel = SelectorCtrlOut
+

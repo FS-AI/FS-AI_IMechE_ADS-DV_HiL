@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="MyBattery_FMU"
+  modelIdentifier="MyBattery_FMU"
+  guid="{7174abeb-a22c-4485-bb6e-796cfd135f25}"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="0">
+
+<ModelVariables>
+  <ScalarVariable name="Current" valueReference="0" description="Current" causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable name="TempCool_in" valueReference="1" description="Coolant inlet temperature" causality = "input">
+      <Real start="25.0"/>
+  </ScalarVariable>
+  <ScalarVariable name="MassFlowCool" valueReference="2" description="Coolant mass flow rate" causality = "input">
+      <Real start="0.0"/>
+  </ScalarVariable>
+
+  <ScalarVariable name="AOC" valueReference="3" description="Amount of Charge" causality = "output">
+     <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  <ScalarVariable name="Energy" valueReference="4" description="Energy" causality = "output">
+     <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  <ScalarVariable name="Pwr_max" valueReference="5" description="maximum Power" causality = "output">
+     <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+  <ScalarVariable name="Voltage" valueReference="6" description="Voltage" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+  <ScalarVariable name="Temp" valueReference="7" description="Battery temperature" causality = "output">
+     <Real start="25.0" fixed="true"/>
+ </ScalarVariable>
+  <ScalarVariable name="TempCool_out" valueReference="8" description="Coolant outlet temperature" causality = "output">
+     <Real start="25.0" fixed="true"/>
+ </ScalarVariable>
+ 
+ <ScalarVariable name="Capacity" valueReference="9" description="Capacity" causality = "internal" variability="parameter">
+     <Real start="6.0" fixed="true"/>
+ </ScalarVariable>
+ <ScalarVariable name="Volt_oc0" valueReference="10" description="Voltage oc0" causality = "internal" variability="parameter">
+     <Real start="100.0" fixed="true"/>
+ </ScalarVariable>
+  <ScalarVariable name="AOC_init" valueReference="11" description="AOC init" causality = "internal" variability="parameter">
+     <Real start="5.0" fixed="true"/>
+  </ScalarVariable>
+  <ScalarVariable name="Temp_init" valueReference="12" description="Inital battery temperature" causality = "internal" variability="parameter">
+     <Real start="25.0" fixed="true"/>
+  </ScalarVariable>
+  <ScalarVariable name="TempCool_init" valueReference="13" description="Initial coolant temperature" causality = "internal" variability="parameter">
+     <Real start="25.0" fixed="true"/>
+  </ScalarVariable>
+    <ScalarVariable name="CurrentAccumulator" valueReference="15" description="CurrentAccumulator" causality = "output">
+     <Real start="0.0" fixed="true"/>
+ </ScalarVariable>
+  <ScalarVariable name="lastT" valueReference="14" description="Last time value " causality = "internal" variability="parameter">
+     <Real start="0.0" fixed="true"/>
+  </ScalarVariable>
+</ModelVariables>
+
+<Implementation>
+  <CoSimulation_StandAlone>
+    <Capabilities
+      canHandleVariableCommunicationStepSize="true"
+      canHandleEvents="true"/>
+  </CoSimulation_StandAlone>
+</Implementation>
+
+</fmiModelDescription>

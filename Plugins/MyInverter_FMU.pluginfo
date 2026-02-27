@@ -1,0 +1,51 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-PlugInfo 2
+FileCreator = CarMaker Office 13.0 2024-01-16 12:57 TEMPLATE
+
+FMU.Name = MyInverter_FMU
+FMU.Modelclass = PTInverter
+FMU.GUID = {a40969db-3892-4e83-a406-3618408171cc}
+
+FMU.Inputs.ShowInDDict = 0
+FMU.Outputs.ShowInDDict = 0
+FMU.Tunables.ShowInDDict = 1
+FMU.MakePluginfo = 0
+FMU.DebugLogging = 0
+FMU.InitParamStartValues = 1
+FMU.InitParamValuesEarly = 0
+FMU.TerminateAfterTestrun = 0
+
+FMUIn.GateSignal0.Link = IFVar
+FMUIn.GateSignal0.Rel = GateSignal_uvw.0
+FMUIn.GateSignal1.Link = IFVar
+FMUIn.GateSignal1.Rel = GateSignal_uvw.1
+FMUIn.GateSignal2.Link = IFVar
+FMUIn.GateSignal2.Rel = GateSignal_uvw.2
+FMUIn.Load_in.Link = IFVar
+FMUIn.Load_in.Rel = Load_in
+FMUIn.Motor_rot.Link = IFVar
+FMUIn.Motor_rot.Rel = Motor_rot
+FMUIn.Motor_rotv.Link = IFVar
+FMUIn.Motor_rotv.Rel = Motor_rotv
+FMUIn.Motor_Trq.Link = IFVar
+FMUIn.Motor_Trq.Rel = Motor_Trq
+FMUIn.MotorType.Link = IFVar
+FMUIn.MotorType.Rel = CfgIF.MotorType
+FMUIn.nPolePairs.Link = IFVar
+FMUIn.nPolePairs.Rel = CfgIF.nPolePairs
+FMUIn.PwrElec.Link = IFVar
+FMUIn.PwrElec.Rel = PwrElec
+FMUIn.Volt_Batt.Link = IFVar
+FMUIn.Volt_Batt.Rel = Volt_Batt
+
+IFVar.Current_Batt.Link = FMUVar
+IFVar.Current_Batt.Rel = Current_Batt
+IFVar.Load_out.Link = FMUVar
+IFVar.Load_out.Rel = Load_out
+IFVar.PwrLoss.Link = FMUVar
+IFVar.PwrLoss.Rel = PwrLoss
+IFVar.Voltage.d.Link = FMUVar
+IFVar.Voltage.d.Rel = Voltage_d
+IFVar.Voltage.q.Link = FMUVar
+IFVar.Voltage.q.Rel = Voltage_q
+

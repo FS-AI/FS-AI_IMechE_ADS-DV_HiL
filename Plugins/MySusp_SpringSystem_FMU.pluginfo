@@ -1,0 +1,74 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-PlugInfo 2
+FileCreator = CarMaker 9.0 2020-04-08 12:42 TEMPLATE
+
+FMU.Name = MySusp_SpringSystem_FMU
+FMU.Modelclass = Susp_SpringSystem
+FMU.GUID = {ed0d3d07-b6f2-4b09-b038-1805d6e54147}
+
+FMU.Inputs.ShowInDDict = 0
+FMU.Outputs.ShowInDDict = 0
+FMU.MakePluginfo = 0
+FMU.DebugLogging = 0
+FMU.InitParamStartValues = 1
+
+FMUIn.l_FL.Link = IFVar
+FMUIn.l_FL.Rel = length_FL
+FMUIn.l_FR.Link = IFVar
+FMUIn.l_FR.Rel = length_FR
+FMUIn.l_RL.Link = IFVar
+FMUIn.l_RL.Rel = length_RL
+FMUIn.l_RR.Link = IFVar
+FMUIn.l_RR.Rel = length_RR
+IFVar.Force_FL.Link = FMUVar
+IFVar.Force_FL.Rel = Frc_FL
+IFVar.Force_FR.Link = FMUVar
+IFVar.Force_FR.Rel = Frc_FR
+IFVar.Force_RL.Link = FMUVar
+IFVar.Force_RL.Rel = Frc_RL
+IFVar.Force_RR.Link = FMUVar
+IFVar.Force_RR.Rel = Frc_RR
+
+#Unstressed (i.e. force free) length of the FL spring
+# substitute model, the unit is m.
+Susp.SpringSystem.SubstModel.FL.l0 = 0.657
+
+# The spring characteristic of the spring FL substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.SpringSystem.SubstModel.FL:
+	0.0 0.0
+	1.0 60000
+
+#Unstressed (i.e. force free) length of the FR spring
+# substitute model, the unit is m.
+Susp.SpringSystem.SubstModel.FR.l0 = 0.657
+
+# The spring characteristic of the spring FR substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.SpringSystem.SubstModel.FR:
+	0.0 0.0
+	1.0 60000
+
+#Unstressed (i.e. force free) length of the RL spring
+# substitute model, the unit is m.
+Susp.SpringSystem.SubstModel.RL.l0 = 0.647
+
+# The spring characteristic of the spring RL substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.SpringSystem.SubstModel.RL:
+	0.0 0.0
+	1.0 70000
+
+#Unstressed (i.e. force free) length of the RR spring
+# substitute model, the unit is m.
+Susp.SpringSystem.SubstModel.RR.l0 = 0.647
+
+# The spring characteristic of the spring RR substitute model
+# defined with a data table describing
+# the non-linear spring behavior.
+Susp.SpringSystem.SubstModel.RR:
+	0.0 0.0
+	1.0 70000
