@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.18.0.1">
-	<guid>8a0617fddb2a523b912566ea5f8e68e1d2b63f18</guid>
+	<guid>c002ccac6a2192258dea8f1ab5602fc091a1bba2</guid>
 	<type>material</type>
-	<hash>966101459</hash>
+	<hash>3980446296</hash>
 	<runtimes>
-		<runtime id="8a0617fddb2a523b912566ea5f8e68e1d2b63f18" name="glass_black.mat" link="0"/>
+		<runtime id="c002ccac6a2192258dea8f1ab5602fc091a1bba2" name="glass_black.mat" link="0"/>
 	</runtimes>
 	<parameters>
 		<parameter type="bool" name="unchanged">1</parameter>

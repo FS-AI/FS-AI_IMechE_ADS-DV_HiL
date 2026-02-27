@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.18.0.1">
-	<guid>5f6c07a3b8f8aa8814880948d1e50d8ed6f90a46</guid>
+	<guid>9a5a77712d94c1746f1d869b56f4ee765b9ec529</guid>
 	<type>material</type>
-	<hash>3774983136</hash>
+	<hash>2611047780</hash>
 	<runtimes>
-		<runtime id="5f6c07a3b8f8aa8814880948d1e50d8ed6f90a46" name="tire.mat" link="0"/>
+		<runtime id="9a5a77712d94c1746f1d869b56f4ee765b9ec529" name="tire.mat" link="0"/>
 	</runtimes>
 	<parameters>
 		<parameter type="bool" name="unchanged">1</parameter>

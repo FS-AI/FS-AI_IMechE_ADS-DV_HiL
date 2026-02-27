@@ -1,13 +1,12 @@
 #INFOFILE1.1 (UTF-8) - Do not remove this line!
 FileIdent = CarMaker-TestRun 14
-FileCreator = CarMaker Office Extended 14.0.1
+FileCreator = CarMaker Office Extended 14.1.1
 Description:
-	Driving on Autocross Circuit.
 Vehicle = FS-AI_IMechE_ADS-DV_2026_HiL
 Trailer =
 Tire.0 =
 Tire.1 =
-Tire.2 = RT_185_50R13
+Tire.2 =
 Tire.3 =
 Snapshot.TimeLimit =
 Snapshot.DistLimit =

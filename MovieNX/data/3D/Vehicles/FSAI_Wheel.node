@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.18.0.1">
-	<node type="NodeDummy" id="994000523" name="FSAI_wheel">
+	<node type="NodeDummy" id="1246474352" name="FSAI_wheel">
 		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-		<node type="ObjectMeshStatic" id="220430958" name="FSAI_Wheel">
+		<node type="ObjectMeshStatic" id="1703119119" name="FSAI_Wheel">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
-			<mesh_name>guid://1e9f6bffe5e0de30cafb9254a1136307444dd0f2</mesh_name>
-			<surface name="alu" material="72400b494b7c2666027acfa617a2f03bc8b610f4"/>
-			<surface name="tire" material="5f6c07a3b8f8aa8814880948d1e50d8ed6f90a46"/>
-			<surface name="alu_black" material="4643878dde89a3324601f7ba3410ac7d3ab91968"/>
-			<surface name="interior" material="5f8e1587287d72c957cd077c4004a9cf77634eda"/>
+			<mesh_name>guid://2b6bd203c106f23abb02fffd34846bd3b149e63b</mesh_name>
+			<surface name="alu" material="f52e25e7e36107f46cfb5f81803ab570a976f79f"/>
+			<surface name="tire" material="9a5a77712d94c1746f1d869b56f4ee765b9ec529"/>
+			<surface name="alu_black" material="f8e0f00bf1a1d2a76625af4532d3660ea1f30d43"/>
+			<surface name="interior" material="d8cac635ff104653210393ff5f5ea29a752ffe6d"/>
 			<transform>1 8.74227827826e-08 8.74227942467e-08 0.0 8.7422786604e-08 -3.17864914827e-08 -1.00000011921 0.0 -8.74227904253e-08 1.00000011921 -3.17864991254e-08 0.0 0 0 0 1.0</transform>
 		</node>
 	</node>

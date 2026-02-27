@@ -19,6 +19,8 @@ Visualization.RoadsideWidth = 1.5 1.5
 Visualization.RoadsideSlope = 1 1
 Visualization.IPGMovie.BgGeoFName = 3D/Utilities/RoadGrid_DrivingDynamicsSurface.tclgeo
 Visualization.MovieNX.RenderMask = 4095
+Visualization.MovieNX.CustomNodes:
+	nodes/FSAI_Circuit.node
 PathMode = -1
 Terrain.Param = 50 25 300 100 0.75 0
 Link.0.ID = 0

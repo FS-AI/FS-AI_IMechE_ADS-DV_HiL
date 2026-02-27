@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.18.0.1">
-	<guid>72400b494b7c2666027acfa617a2f03bc8b610f4</guid>
+	<guid>f52e25e7e36107f46cfb5f81803ab570a976f79f</guid>
 	<type>material</type>
-	<hash>4209740425</hash>
+	<hash>2354274062</hash>
 	<runtimes>
-		<runtime id="72400b494b7c2666027acfa617a2f03bc8b610f4" name="alu.mat" link="0"/>
+		<runtime id="f52e25e7e36107f46cfb5f81803ab570a976f79f" name="alu.mat" link="0"/>
 	</runtimes>
 	<parameters>
 		<parameter type="bool" name="unchanged">1</parameter>

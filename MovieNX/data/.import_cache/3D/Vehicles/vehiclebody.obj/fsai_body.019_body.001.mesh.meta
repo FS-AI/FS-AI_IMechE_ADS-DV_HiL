@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.18.0.1">
-	<guid>6461575f13e9daf8ede269bea25e0d08794b1b15</guid>
+	<guid>5c6b7715e9008390b3b867dfb5535485b7c5634d</guid>
 	<type>mesh</type>
-	<hash>3353791299</hash>
+	<hash>475054263</hash>
 	<runtimes>
-		<runtime id="6461575f13e9daf8ede269bea25e0d08794b1b15" name="fsai_body.019_body.001.mesh" link="0"/>
+		<runtime id="5c6b7715e9008390b3b867dfb5535485b7c5634d" name="fsai_body.019_body.001.mesh" link="0"/>
 	</runtimes>
 	<parameters>
 		<parameter type="bool" name="unchanged">1</parameter>
