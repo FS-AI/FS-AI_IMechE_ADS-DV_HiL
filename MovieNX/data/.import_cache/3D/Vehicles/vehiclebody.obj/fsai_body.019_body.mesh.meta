@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>340b278b6e66b13993145050ca6a5dc6d6511f0e</guid>
+	<type>mesh</type>
+	<hash>3265119448</hash>
+	<runtimes>
+		<runtime id="340b278b6e66b13993145050ca6a5dc6d6511f0e" name="fsai_body.019_body.mesh" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

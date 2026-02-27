@@ -2,8 +2,8 @@
 FileIdent = FilePathMapping 1.0
 
 DirSet.ORIGIN:
-	Project C:/CM_Projects/FSAI_CM13_1_1
-	CMInstall C:/IPG/carmaker/win64-14.0.1
-	MovieNXInstall C:/IPG/movienx/win64-14.0.1
+	Project C:/FCM_Projects/FS-AI_IMechE_ADS-DV_HiL
+	CMInstall C:/IPG/carmaker/win64-14.1.1
+	MovieNXInstall C:/IPG/movienx/win64-14.1.1
 Hosts.ORIGIN:
 	ORIGIN

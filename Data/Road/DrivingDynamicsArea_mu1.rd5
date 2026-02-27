@@ -1,7 +1,7 @@
 #INFOFILE1.1 (UTF-8) - Do not remove this line!
 FileIdent = IPGRoad 14.0
-FileCreator = CarMaker Office Extended 14.0.1
-LibVersion = 14.0.1
+FileCreator = CarMaker Office Extended 14.1.1
+LibVersion = 14.1.1
 Country = DEU DEU
 nLinks = 2
 nJunctions = 0
@@ -18,9 +18,7 @@ Visualization.SamplingParams = 0.2 1 0.02
 Visualization.RoadsideWidth = 1.5 1.5
 Visualization.RoadsideSlope = 1 1
 Visualization.IPGMovie.BgGeoFName = 3D/Utilities/RoadGrid_DrivingDynamicsSurface.tclgeo
-Visualization.MovieNX.RenderMask = 4079
-Visualization.MovieNX.CustomNodes:
-	nodes/FSAI_Circuit.node
+Visualization.MovieNX.RenderMask = 4095
 PathMode = -1
 Terrain.Param = 50 25 300 100 0.75 0
 Link.0.ID = 0

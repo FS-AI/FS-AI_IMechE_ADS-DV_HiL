@@ -3,8 +3,8 @@
 # !!! Automatically generated file, do not edit !!!
 
 FileIdent = CarMaker-PlugInterfaces 1
-FileCreator = CarMaker 2025-01-28 10:45:59
-FileVersion = 140001
+FileCreator = CarMaker 2025-07-07 14:37:51
+FileVersion = 140101
 
 Modelclasses:
 	Aero
@@ -7562,6 +7562,7 @@ Modelclass.HydBrakeSystem.FromCM:
 	BooSignal ""
 	CfgIF.BrakeKind ""
 	CfgIF.VehicleClassId ""
+	CfgIF.VhclNo ""
 	CfgIF.nWheels ""
 	CtrlIn_0 ""
 	CtrlIn_1 ""
@@ -7665,6 +7666,7 @@ Modelclass.HydBrakeSystem.Param.4.Doc:
 Modelclass.HydBrakeControl.FromCM:
 	CfgIF.BrakeKind ""
 	CfgIF.VehicleClassId ""
+	CfgIF.VhclNo ""
 	CfgIF.nWheels ""
 	CtrlIn_0 ""
 	CtrlIn_1 ""

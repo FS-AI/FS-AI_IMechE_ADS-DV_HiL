@@ -65,4 +65,5 @@ Data/TestRun/.tmp*
 Data/Vehicle/.tmp*
 Data/Road/.tmp*
 
-/MovieNX
+# Ignore large environent files
+/MovieNX/data_FS_AI_Circuit

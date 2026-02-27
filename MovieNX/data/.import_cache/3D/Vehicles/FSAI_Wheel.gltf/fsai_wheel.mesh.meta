@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>1e9f6bffe5e0de30cafb9254a1136307444dd0f2</guid>
+	<type>mesh</type>
+	<hash>1079220289</hash>
+	<runtimes>
+		<runtime id="1e9f6bffe5e0de30cafb9254a1136307444dd0f2" name="fsai_wheel.mesh" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

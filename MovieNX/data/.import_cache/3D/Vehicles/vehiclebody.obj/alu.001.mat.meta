@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>a283e4b934cbd961e0c1dbd6900c9711e6dfe3a4</guid>
+	<type>material</type>
+	<hash>1595216995</hash>
+	<runtimes>
+		<runtime id="a283e4b934cbd961e0c1dbd6900c9711e6dfe3a4" name="alu.001.mat" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

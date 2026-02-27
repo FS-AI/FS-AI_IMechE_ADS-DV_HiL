@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.18.0.1">
+	<node type="NodeDummy" id="1541707746" name="vehiclebody">
+		<transform>1 8.74227838251e-08 -3.82137148619e-15 0.0 -8.74227838251e-08 1 -4.37113900019e-08 0.0 7.94093388051e-23 4.37113900019e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="1352709593" name="vehiclebody_root">
+			<transform>1 -5.01610803597e-24 -7.88860905221e-31 0.0 -5.01610838384e-24 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="ObjectMeshStatic" id="524133732" name="FSAI_Body.019_alu.001">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://0fd2b2f1d19ad0d9c895516ec098795f2f2bf47c</mesh_name>
+				<surface name="alu.001" material="a283e4b934cbd961e0c1dbd6900c9711e6dfe3a4"/>
+				<transform>1 -5.01610803597e-24 -7.88860905221e-31 0.0 -5.01610838384e-24 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="154808691" name="FSAI_Body.019_alu_grey">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://5a126ba5ccfff122f87b84acc9b8cb9e052fc5ab</mesh_name>
+				<surface name="alu_grey" material="0cad9e93e890a365653e90f8b6b3c270aecc6076"/>
+				<transform>1 -5.01610803597e-24 -7.88860905221e-31 0.0 -5.01610838384e-24 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="944916534" name="FSAI_Body.019_body">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://340b278b6e66b13993145050ca6a5dc6d6511f0e</mesh_name>
+				<surface name="body" material="27fff781fbb8490a7fe27b3ec8c5a8f72179b7cc"/>
+				<transform>1 -5.01610803597e-24 -7.88860905221e-31 0.0 -5.01610838384e-24 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1856512541" name="FSAI_Body.019_body.001">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://6461575f13e9daf8ede269bea25e0d08794b1b15</mesh_name>
+				<surface name="body.001" material="a903de9b20c1d4ecb8c0eea0c602dc9fa757cede"/>
+				<transform>1 -5.01610803597e-24 -7.88860905221e-31 0.0 -5.01610838384e-24 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="761609432" name="FSAI_Body.019_glass_black">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://0e3f59b5e68a8ea6f52706027f93cd1ff716b170</mesh_name>
+				<surface name="glass_black" material="8a0617fddb2a523b912566ea5f8e68e1d2b63f18"/>
+				<transform>1 -5.01610803597e-24 -7.88860905221e-31 0.0 -5.01610838384e-24 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1374231127" name="FSAI_Body.019_lights">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://826895a9925d0074d864112026ee52122738960f</mesh_name>
+				<surface name="lights" material="ea43c7459856facca4ef2cd2d47565e3812f81c0"/>
+				<transform>1 -5.01610803597e-24 -7.88860905221e-31 0.0 -5.01610838384e-24 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1480782794" name="FSAI_Body.019_shield.001">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://1d1d63ef58e06c1c0d65af04d7a0128e6d8f8c22</mesh_name>
+				<surface name="shield.001" material="a5cf3b77fce88821f900aa2cc756e078d58c700a"/>
+				<transform>1 -5.01610803597e-24 -7.88860905221e-31 0.0 -5.01610838384e-24 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

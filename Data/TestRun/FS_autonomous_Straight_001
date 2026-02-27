@@ -3,7 +3,7 @@ FileIdent = CarMaker-TestRun 14
 FileCreator = CarMaker Office Extended 14.0.1
 Description:
 	Driving on Autocross Circuit.
-Vehicle = Examples_FS/FS_Autonomous_005
+Vehicle = FS-AI_IMechE_ADS-DV_2026_HiL
 Trailer =
 Tire.0 =
 Tire.1 =
