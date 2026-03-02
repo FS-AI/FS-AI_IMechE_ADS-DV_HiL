@@ -314,13 +314,14 @@ MyModel_Calc (void *MP, double dt)
         float rtU_ActualWheelspeedRL_mps = Car.Tire[2].v; //Vehicle.RL.rotv * (2 * PI * Car.WRL.Radius) / (2.0f * PI); // [rad/s] -> mps;
         float rtU_ActualWheelspeedRR_mps = Car.Tire[3].v; //Vehicle.RR.rotv * (2 * PI * Car.WRR.Radius) / (2.0f * PI); // [rad/s] -> mps;
 
-        if ( sm_state.ai2vcu->ai_steer.steer_request > 20)
+        // required to stop 'jump' in output beyond 30deg due to CAN decoding issue
+        if ( sm_state.ai2vcu->ai_steer.steer_request > 30)
         {
-            sm_state.ai2vcu->ai_steer.steer_request = 20;
+            sm_state.ai2vcu->ai_steer.steer_request = 30;
         }
-        else if ( sm_state.ai2vcu->ai_steer.steer_request < -20)
+        else if ( sm_state.ai2vcu->ai_steer.steer_request < -30)
         {
-            sm_state.ai2vcu->ai_steer.steer_request = -20;
+            sm_state.ai2vcu->ai_steer.steer_request = -30;
         }
 
         vehicle_model_update(sm_state.ai2vcu, &sm_state.vehicle_state, sm_state.vcu2ai, 
@@ -341,15 +342,11 @@ MyModel_Calc (void *MP, double dt)
             mp->temp_bool = 0;
         }
         
-        // Steer Output
-        // Car.Susp[0].SteerAngle = (sm_state.vcu2ai->vcu_steer.angle * PI / 180.0f);   // [deg] -> [rads]
-        // Car.Susp[1].SteerAngle = (sm_state.vcu2ai->vcu_steer.angle * PI / 180.0f);   // [deg] -> [rads]
+        // Steer Output, now scaled in IPG and sign corrected in Model
+        DVA_WriteRequest("VC.Steer.Ang", OWMode_Abs, -1, 0, 0,  (sm_state.vcu2ai->vcu_steer.angle * PI / 180.0f), NULL);
 
-        // Steer Output
-        DVA_WriteRequest("VC.Steer.Ang", OWMode_Abs, -1, 0, 0,  -6.9f*sm_state.vcu2ai->vcu_steer.angle * PI / 180.0f, NULL);
-
-        // eMotor output
-        DVA_WriteRequest("VC.Gas", OWMode_Abs, -1, 0, 0,  (sm_state.vcu2ai->vcu_drive_r.rear_axle_trq / (195.0f)), NULL);
+        // eMotor output normalised from -1.0/+1.0 to 0.0/1.0 to match IPG
+        DVA_WriteRequest("VC.Gas", OWMode_Abs, -1, 0, 0,  0.5f+(0.5f*(sm_state.vcu2ai->vcu_drive_r.rear_axle_trq / (195.0f))), NULL);
 
         // Brake Output
         DVA_WriteRequest("VC.Brake", OWMode_Abs, -1, 0, 0,  (sm_state.vcu2ai->vcu_brake.hyd_press_r_pct / 100.0F), NULL);

@@ -7,11 +7,14 @@ FileCreator = CarMaker Office Extended 14.1.1
 
 RefPointInputSystem = 0.0 0 0
 Description:
-	Formula Student AI (ADS-DV), Electric AWD
+	Formula Student AI IMechE ADS-DV
 	""
-	"First release. "
+	2026 Updates:
+	"   * Single motor driving rear axle."
+	"   * Corrected steering geometry so 'VC.Steer.Ang' equates to roadwheel angle."
+	"      * (same as CAN interface)"
+	"   * Cameras & LiDAR repositioned to match 2026 sensor plate."
 	""
-	Unvalidated data for FS Autonomous vehicle with Electric AWD
 
 Eng.Kind = Rigid
 Eng.Joint.pos = 0.0 0.0 0.0

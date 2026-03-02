@@ -812,8 +812,8 @@ void FSAI_VehicleModel_step(RT_MODEL *const rtM, ai2vcu_data_t *rtU_ai2vcu_data,
    *  DataTypeConversion: '<Root>/Data Type Conversion10'
    *  Inport: '<Root>/ai2vcu_data'
    */
-  rtY_vcu2ai_data_outport->vcu_steer.angle = (real32_T)rtb_MultiportSwitch;
-  rtY_vcu2ai_data_outport->vcu_steer.angle_max = 21.0F;
+  rtY_vcu2ai_data_outport->vcu_steer.angle = -1.0f*(real32_T)rtb_MultiportSwitch;
+  rtY_vcu2ai_data_outport->vcu_steer.angle_max = 30.0F;
   rtY_vcu2ai_data_outport->vcu_steer.angle_request =
     rtU_ai2vcu_data->ai_steer.steer_request;
 
