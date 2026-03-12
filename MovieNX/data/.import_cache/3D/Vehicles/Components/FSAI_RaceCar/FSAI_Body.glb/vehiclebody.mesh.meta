@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>49f00a5d202492865f0a2878d9aa6c90dc918afe</guid>
+	<type>mesh</type>
+	<hash>1621284214</hash>
+	<runtimes>
+		<runtime id="49f00a5d202492865f0a2878d9aa6c90dc918afe" name="vehiclebody.mesh" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

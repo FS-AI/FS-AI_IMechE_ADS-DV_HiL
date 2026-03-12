@@ -1,0 +1,4 @@
+#INFOFILE1.1 - Do not remove this line!
+FileClass.New = 12.0
+Geometry.Bbox = -0.12 0.12 -0.12 0.12 0.00 0.33
+Object.Class = StreetFurniture

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.18.0.1">
+	<node type="NodeDummy" id="1525835115" name="FSAI_Wheel">
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1452915662" name="Wheel_fl.002_Plane.008">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://5099e2a6927a465759ec3841f82de09b621052ce</mesh_name>
+			<surface name="shield" material="a97bdaba439ed1833b32f405e359a163524e1be2"/>
+			<surface name="alu" material="612a327c0aa59a2dd4c656bf1ff54c9c1655c964"/>
+			<surface name="tire" material="27842c0ea75eef451588e4094009573de4320c36"/>
+			<surface name="alu_black" material="779dfbf008e93793b66c7e638ab196e96e8da0d8"/>
+			<surface name="interior" material="d1d5eaa2ed52883a8728cc4d39fd1373bfdcf7ca"/>
+			<transform>1 1.91759178482e-11 -1.8308485386e-09 0.0 1.91758378193e-11 0.999780653076 0.0209425090336 0.0 1.83084853944e-09 -0.0209425090336 0.999780653076 0.0 -0.00300000002608 -2.7101062007e-10 0.000199999994948 1.0</transform>
+		</node>
+	</node>
+</nodes>

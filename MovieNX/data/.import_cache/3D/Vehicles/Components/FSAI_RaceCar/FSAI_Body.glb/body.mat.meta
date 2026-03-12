@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>49fe808bbd2a03aaefc72adc74203dbabecf5349</guid>
+	<type>material</type>
+	<hash>3216515087</hash>
+	<runtimes>
+		<runtime id="49fe808bbd2a03aaefc72adc74203dbabecf5349" name="body.mat" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

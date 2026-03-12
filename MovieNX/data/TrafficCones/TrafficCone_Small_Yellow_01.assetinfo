@@ -1,0 +1,9 @@
+# Generated .assetinfo file
+FileClass.New = 14.0
+FileIdent = MovieNX-AssetInfo 1.0
+FileCreator = MovieNX
+
+General.Bbox = -0 0.288 -0.16 0.16 0 0.29
+General.ObjectClass = StreetFurniture 
+
+Asset.Root.FName = TrafficCones/TrafficCone_Small_Yellow.node

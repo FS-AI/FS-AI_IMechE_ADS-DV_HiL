@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.18.0.1" guid="f08ce5a5bff7ad35e698f620ba2b9799a08a4a66" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<options two_sided="1"/>
+	<parameter name="albedo_color" expression="0">0.366664976 0.366664976 0.366664976 1</parameter>
+	<parameter name="roughness" expression="0">0.858578682</parameter>
+	<parameter name="emission_color" expression="0">0 0 0 1</parameter>
+</material>

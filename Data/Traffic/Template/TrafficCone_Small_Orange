@@ -2,11 +2,11 @@
 FileIdent = CarMaker-TrafficTemplate 14
 FileCreator = CarMaker Office 14.1.2
 Info = Example Traffic Object Template
-Color = 1 1 0
+Color = 1.0000 0.6471 0.0000
 ObjectClass = Unknown
 ObjectKind = StatWithName
 RCSClass = RCS_GuardRailPost
-Movie.Geometry = TrafficCones/TrafficCone_Small_Yellow_01.assetinfo
+Movie.Geometry = TrafficCones/TrafficCone_Small_Orange_01.assetinfo
 Basics.Dimension = 0.228 0.228 0.325
 Basics.Offset = -0.05 0.0
 Basics.Fr12CoM = 0.114

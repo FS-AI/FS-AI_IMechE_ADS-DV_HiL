@@ -1,0 +1,10 @@
+newmtl Terrain_Area
+Ka 0.5 0.5 0.5
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+d 1.0
+map_Kd Textures/Ground/Asphalt_01.mtex
+MatID dirt-earth
+ColSrc texture
+

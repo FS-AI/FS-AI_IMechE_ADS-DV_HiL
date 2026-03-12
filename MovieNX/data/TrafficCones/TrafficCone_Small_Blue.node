@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.18.0.1">
+	<node type="NodeDummy" id="1643114609" name="TrafficCone_Small_Blue">
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1249128220" name="TrafficCone_Small_Blue">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://04d7ad981ec9ed0db2feb511e728708f824d7dd1</mesh_name>
+			<surface name="plastic_blue_traffic" material="38e5c44c507a628bf9e77507169838d803e89cfc"/>
+			<surface name="plastic_white_traffic" material="85f5725ecb29ba70745c1b91ab5cc7406f6a5b8e"/>
+			<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

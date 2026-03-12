@@ -1,6 +1,6 @@
 #INFOFILE1.1 (UTF-8) - Do not remove this line!
 FileIdent = CarMaker-Car 14
-FileCreator = CarMaker Office Extended 14.1.1
+FileCreator = CarMaker Office 14.1.1
 
 
 ## Assembly ##############################################################
@@ -137,9 +137,9 @@ Flex.JointFr1Fr1B.d.y = 100.0
 Flex.JointFr1Fr1B.d.x.Amplify = 1.0
 Flex.JointFr1Fr1B.d.y.Amplify = 1.0
 
-Movie.Skin.FName = 3D/Vehicles/FS-AI_RaceCar.assetinfo
-Picture.PicFName = FS-AI_RaceCar.png
-Vehicle.OuterSkin = 0.0 0.715 0 2.9214 -0.715 0.78
+Movie.Skin.FName = 3D/Vehicles/FSAI_RaceCar_2026.assetinfo
+Picture.PicFName = FSAI_RaceCar.png
+Vehicle.OuterSkin = 0.0 0.315 0 2.9 -0.315 0.78
 
 Aero.Kind = Coeff6x1 1
 Aero.Marker.pos = 0.8 0.0 0.4
@@ -449,14 +449,31 @@ Sensor.Param.0.Name = Param_SSAngle Sensor
 Sensor.Param.1.Type = Inertial
 Sensor.Param.1.FName =
 Sensor.Param.1.Name = Param_B00
-Sensor.Param.2.Type = LidarRSI
+Sensor.Param.2.Type = Collision
 Sensor.Param.2.FName =
-Sensor.Param.2.Threshold = 1.0
-Sensor.Param.2.Wavelength = 905.0
-Sensor.Param.2.Name = Param_Lidar_F
-Sensor.Param.2.ReceptionArea = 0.4
-Sensor.Param.2.Beams.FName = LidarRSI_FS_autonomous
-Sensor.Param.2.IntensityGain:
+Sensor.Param.2.Name = COL00
+Sensor.Param.2.Fr1.Contour:
+	0.0 0.0
+	0.0 0.12
+	0.56 0.415
+	2.05 0.415
+	2.8 0.12
+	2.8 0
+Sensor.Param.2.WithWheels = 1
+Sensor.Param.2.Fr1.Contour.height = 0.5
+Sensor.Param.2.Fr1.AboveBelowOn = 0
+Sensor.Param.2.Fr1.Contour.xOff = 0.0
+Sensor.Param.2.Fr1.Contour.zOff = 0.2
+Sensor.Param.2.Fr1.Contour.Mirror = 1
+Sensor.Param.2.Fr1.EnvMode = 2DContour
+Sensor.Param.3.Type = LidarRSI
+Sensor.Param.3.FName =
+Sensor.Param.3.Threshold = 1.0
+Sensor.Param.3.Wavelength = 905.0
+Sensor.Param.3.Name = Param_Lidar_F
+Sensor.Param.3.ReceptionArea = 0.4
+Sensor.Param.3.Beams.FName = LidarRSI_FS_autonomous
+Sensor.Param.3.IntensityGain:
 	-80.0 0.00
 	-70.0 0.15
 	-60.0 0.36
@@ -474,46 +491,14 @@ Sensor.Param.2.IntensityGain:
 	60.0 0.36
 	70.0 0.15
 	80.0 0.00
-Sensor.Param.2.TransmitPower = 60.00
-Sensor.Param.2.SepaDist = 0.1
-Sensor.Param.2.Range = 0.3 300.0
-Sensor.Param.2.AngularAperture = 2.0
-Sensor.Param.2.InitialPulseWidth = 10.0
-Sensor.Param.3.Type = CameraRSI
-Sensor.Param.3.FName =
-Sensor.Param.3.Name = Camera_RGB
-Sensor.Param.3.VIBMode = 0
-Sensor.Param.3.Resolution = 3480 1080
-Sensor.Param.3.FoV = 90
-Sensor.Param.3.ClippingPlane = 0.1 4000.0
-Sensor.Param.3.Coloration.Mode = Realistic
-Sensor.Param.3.PrincipalPntOffset = 0.0 0.0
-Sensor.Param.3.LensType = Direct
-Sensor.Param.3.LightedOccl.FName =
-Sensor.Param.3.WeatherLensEnabled = 1
-Sensor.Param.3.WeatherLensBlur = 0.5
-Sensor.Param.3.StaticOccl.FName =
-Sensor.Param.3.NormalizationFactor = 1.0
-Sensor.Param.3.SensorNoise = 0.0
-Sensor.Param.3.OutputFormat = rgb
-Sensor.Param.3.PixelSaturationThreshold = 1.2
-Sensor.Param.3.Exposure.CameraModel = Classic
-Sensor.Param.3.Exposure.Mode = Static
-Sensor.Param.3.Exposure.Value = 2
-Sensor.Param.3.ToneMapping.Mode = None
-Sensor.Param.3.ToneMapping.MaxChannelValue = 1.0
-Sensor.Param.3.ToneMapping.LinearScale = 1.0
-Sensor.Param.3.ToneMapping.ShoulderScale = 0.3
-Sensor.Param.3.ToneMapping.LinearAngle = 0.2
-Sensor.Param.3.ToneMapping.ToeScale = 0.01
-Sensor.Param.3.ToneMapping.ToeNumerator = 0.3
-Sensor.Param.3.ToneMapping.ToeDenominator = 1.0
-Sensor.Param.3.ToneMapping.WhiteLevel = 1.0
-Sensor.Param.3.ToneMapping.SaturationRecovery = 0.75
-Sensor.Param.3.SRgbGammaCorrection = 1
+Sensor.Param.3.TransmitPower = 60.00
+Sensor.Param.3.SepaDist = 0.1
+Sensor.Param.3.Range = 0.3 300.0
+Sensor.Param.3.AngularAperture = 2.0
+Sensor.Param.3.InitialPulseWidth = 10.0
 Sensor.Param.4.Type = CameraRSI
 Sensor.Param.4.FName =
-Sensor.Param.4.Name = Camera_Depth
+Sensor.Param.4.Name = Camera_RGB
 Sensor.Param.4.VIBMode = 0
 Sensor.Param.4.Resolution = 3480 1080
 Sensor.Param.4.FoV = 90
@@ -527,7 +512,7 @@ Sensor.Param.4.WeatherLensBlur = 0.5
 Sensor.Param.4.StaticOccl.FName =
 Sensor.Param.4.NormalizationFactor = 1.0
 Sensor.Param.4.SensorNoise = 0.0
-Sensor.Param.4.OutputFormat = depth16
+Sensor.Param.4.OutputFormat = rgb
 Sensor.Param.4.PixelSaturationThreshold = 1.2
 Sensor.Param.4.Exposure.CameraModel = Classic
 Sensor.Param.4.Exposure.Mode = Static
@@ -542,7 +527,39 @@ Sensor.Param.4.ToneMapping.ToeNumerator = 0.3
 Sensor.Param.4.ToneMapping.ToeDenominator = 1.0
 Sensor.Param.4.ToneMapping.WhiteLevel = 1.0
 Sensor.Param.4.ToneMapping.SaturationRecovery = 0.75
-Sensor.Param.N = 5
+Sensor.Param.4.SRgbGammaCorrection = 1
+Sensor.Param.5.Type = CameraRSI
+Sensor.Param.5.FName =
+Sensor.Param.5.Name = Camera_Depth
+Sensor.Param.5.VIBMode = 0
+Sensor.Param.5.Resolution = 3480 1080
+Sensor.Param.5.FoV = 90
+Sensor.Param.5.ClippingPlane = 0.1 4000.0
+Sensor.Param.5.Coloration.Mode = Realistic
+Sensor.Param.5.PrincipalPntOffset = 0.0 0.0
+Sensor.Param.5.LensType = Direct
+Sensor.Param.5.LightedOccl.FName =
+Sensor.Param.5.WeatherLensEnabled = 1
+Sensor.Param.5.WeatherLensBlur = 0.5
+Sensor.Param.5.StaticOccl.FName =
+Sensor.Param.5.NormalizationFactor = 1.0
+Sensor.Param.5.SensorNoise = 0.0
+Sensor.Param.5.OutputFormat = depth16
+Sensor.Param.5.PixelSaturationThreshold = 1.2
+Sensor.Param.5.Exposure.CameraModel = Classic
+Sensor.Param.5.Exposure.Mode = Static
+Sensor.Param.5.Exposure.Value = 2
+Sensor.Param.5.ToneMapping.Mode = None
+Sensor.Param.5.ToneMapping.MaxChannelValue = 1.0
+Sensor.Param.5.ToneMapping.LinearScale = 1.0
+Sensor.Param.5.ToneMapping.ShoulderScale = 0.3
+Sensor.Param.5.ToneMapping.LinearAngle = 0.2
+Sensor.Param.5.ToneMapping.ToeScale = 0.01
+Sensor.Param.5.ToneMapping.ToeNumerator = 0.3
+Sensor.Param.5.ToneMapping.ToeDenominator = 1.0
+Sensor.Param.5.ToneMapping.WhiteLevel = 1.0
+Sensor.Param.5.ToneMapping.SaturationRecovery = 0.75
+Sensor.Param.N = 6
 Sensor.Comment:
 
 
@@ -599,7 +616,7 @@ SensorCluster.N = 3
 
 
 ## Sensor Instances ######################################################
-Sensor.N = 5
+Sensor.N = 6
 Sensor.0.name = VehSensor-0
 Sensor.0.rot = 0.0 0.0 0.0
 Sensor.0.pos = 1.3 0 0.3
@@ -609,27 +626,26 @@ Sensor.0.Mounting = Fr1A
 Sensor.0.Active = 0
 Sensor.0.Ref.Param = 0
 Sensor.0.Ref.Cluster =
-Sensor.1.name = B00
+Sensor.1.name = Collision
 Sensor.1.rot = 0.0 0.0 0.0
-Sensor.1.pos = 1.3 0 0.3
+Sensor.1.pos = 4.5 0.0 0.4
 Sensor.1.Visualization = 1
 Sensor.1.VisColor = 0.0 0.0 0.0
 Sensor.1.Mounting = Fr1A
 Sensor.1.Active = 0
-Sensor.1.Ref.Param = 1
+Sensor.1.Ref.Param = 2
 Sensor.1.Ref.Cluster =
-Sensor.1.CalcClass = Global
-Sensor.2.name = front_camera_rgb
-Sensor.2.rot = 0.0 15.0 0.0
-Sensor.2.pos = 1.7 0.0 0.62
+Sensor.2.name = B00
+Sensor.2.rot = 0.0 0.0 0.0
+Sensor.2.pos = 1.3 0 0.3
 Sensor.2.Visualization = 1
 Sensor.2.VisColor = 0.0 0.0 0.0
 Sensor.2.Mounting = Fr1A
 Sensor.2.Active = 0
-Sensor.2.Ref.Param = 3
-Sensor.2.Ref.Cluster = 1
-Sensor.2.PosInWindow = 0 0
-Sensor.3.name = front_camera_depth
+Sensor.2.Ref.Param = 1
+Sensor.2.Ref.Cluster =
+Sensor.2.CalcClass = Global
+Sensor.3.name = front_camera_rgb
 Sensor.3.rot = 0.0 15.0 0.0
 Sensor.3.pos = 1.7 0.0 0.62
 Sensor.3.Visualization = 1
@@ -637,18 +653,28 @@ Sensor.3.VisColor = 0.0 0.0 0.0
 Sensor.3.Mounting = Fr1A
 Sensor.3.Active = 0
 Sensor.3.Ref.Param = 4
-Sensor.3.Ref.Cluster = 2
+Sensor.3.Ref.Cluster = 1
 Sensor.3.PosInWindow = 0 0
-Sensor.4.name = Lidar_F
-Sensor.4.rot = 0.0 0.0 0.0
-Sensor.4.pos = 1.7 0.0 0.57
+Sensor.4.name = front_camera_depth
+Sensor.4.rot = 0.0 15.0 0.0
+Sensor.4.pos = 1.7 0.0 0.62
 Sensor.4.Visualization = 1
-Sensor.4.VisColor = 1.0 1.0 0.0
+Sensor.4.VisColor = 0.0 0.0 0.0
 Sensor.4.Mounting = Fr1A
 Sensor.4.Active = 0
-Sensor.4.Ref.Param = 2
-Sensor.4.Ref.Cluster = 0
-Sensor.4.ExtMotion = 0
+Sensor.4.Ref.Param = 5
+Sensor.4.Ref.Cluster = 2
+Sensor.4.PosInWindow = 0 0
+Sensor.5.name = Lidar_F
+Sensor.5.rot = 0.0 0.0 0.0
+Sensor.5.pos = 1.7 0.0 0.57
+Sensor.5.Visualization = 1
+Sensor.5.VisColor = 1.0 1.0 0.0
+Sensor.5.Mounting = Fr1A
+Sensor.5.Active = 0
+Sensor.5.Ref.Param = 3
+Sensor.5.Ref.Cluster = 0
+Sensor.5.ExtMotion = 0
 
 
 ## Vehicle Control #######################################################
@@ -701,6 +727,8 @@ Crypto.Show:
 	Sensor.3.Ref.Cluster
 	Sensor.4.Active
 	Sensor.4.Ref.Cluster
+	Sensor.5.Active
+	Sensor.5.Ref.Cluster
 	SensorCluster.N
 	SensorCluster.0.Tags
 	SensorCluster.0.ClientBinary
