@@ -65,5 +65,11 @@ Data/TestRun/.tmp*
 Data/Vehicle/.tmp*
 Data/Road/.tmp*
 
+
+# Ignore timestamped backup files created by CarMaker upgrades
+src/*_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_*.c
+src/*_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_*.h
+src/*_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_*.m
+
 # Ignore large environent files
 /MovieNX/data_FS_AI_Circuit

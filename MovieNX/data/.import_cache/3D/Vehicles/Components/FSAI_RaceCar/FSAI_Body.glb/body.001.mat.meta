@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.18.0.1">
-	<guid>9b3df845d7fe50b69ea1453ef7e4a23f062ab973</guid>
+	<guid>3cfebf7a19effb3fd37ef3d2a72a50ac04740e97</guid>
 	<type>material</type>
-	<hash>4145692690</hash>
+	<hash>3523749193</hash>
 	<runtimes>
-		<runtime id="9b3df845d7fe50b69ea1453ef7e4a23f062ab973" name="body.001.mat" link="0"/>
+		<runtime id="3cfebf7a19effb3fd37ef3d2a72a50ac04740e97" name="body.001.mat" link="0"/>
 	</runtimes>
 	<parameters>
 		<parameter type="bool" name="unchanged">1</parameter>

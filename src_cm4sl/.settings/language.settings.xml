@@ -5,8 +5,6 @@
             <provider class="org.eclipse.cdt.core.language.settings.providers.LanguageSettingsGenericProvider" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider" name="CDT User Setting Entries" prefer-non-shared="true" store-entries-with-project="true">
                 <language id="org.eclipse.cdt.core.gcc">
                     <resource project-relative-path="">
-                        <entry kind="includePath" name="${MSYS}/x86_64-linux/x86_64-linux/usr/include"/>
-                        <entry kind="includePath" name="${MSYS}/x86_64-linux/x86_64-linux/include"/>
                         <entry kind="includePath" name="${CM_DIR}/include"/>
                         <entry kind="macroFile" name="/${ProjName}/.settings/macros">
                             <flag value="LOCAL|VALUE_WORKSPACE_PATH"/>
@@ -15,8 +13,6 @@
                 </language>
                 <language id="org.eclipse.cdt.core.g++">
                     <resource project-relative-path="">
-                        <entry kind="includePath" name="${MSYS}/x86_64-linux/x86_64-linux/usr/include"/>
-                        <entry kind="includePath" name="${MSYS}/x86_64-linux/x86_64-linux/include"/>
                         <entry kind="includePath" name="${CM_DIR}/include"/>
                         <entry kind="macroFile" name="/${ProjName}/.settings/macros">
                             <flag value="LOCAL|VALUE_WORKSPACE_PATH"/>
@@ -37,8 +33,6 @@
             <provider class="org.eclipse.cdt.core.language.settings.providers.LanguageSettingsGenericProvider" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider" name="CDT User Setting Entries" prefer-non-shared="true" store-entries-with-project="true">
                 <language id="org.eclipse.cdt.core.gcc">
                     <resource project-relative-path="">
-                        <entry kind="includePath" name="${MSYS}/x86_64-linux/x86_64-linux/usr/include"/>
-                        <entry kind="includePath" name="${MSYS}/x86_64-linux/x86_64-linux/include"/>
                         <entry kind="includePath" name="${CM_DIR}/include"/>
                         <entry kind="macroFile" name="/${ProjName}/.settings/macros">
                             <flag value="LOCAL|VALUE_WORKSPACE_PATH"/>
@@ -47,8 +41,6 @@
                 </language>
                 <language id="org.eclipse.cdt.core.g++">
                     <resource project-relative-path="">
-                        <entry kind="includePath" name="${MSYS}/x86_64-linux/x86_64-linux/usr/include"/>
-                        <entry kind="includePath" name="${MSYS}/x86_64-linux/x86_64-linux/include"/>
                         <entry kind="includePath" name="${CM_DIR}/include"/>
                         <entry kind="macroFile" name="/${ProjName}/.settings/macros">
                             <flag value="LOCAL|VALUE_WORKSPACE_PATH"/>

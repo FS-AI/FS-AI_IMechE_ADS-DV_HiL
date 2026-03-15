@@ -1,4 +1,4 @@
-![IPG Logo](images/IPG_Logo.png)
+<img src="images/IPG_Logo.png" alt="Alt Text" width="200" height="100">
 
 # CMRosIF User's Guide for FS Autonomous
 
@@ -6,19 +6,19 @@
 
 - [CMRosIF User's Guide for FS Autonomous](#cmrosif-user-s-guide-for-fs-autonomous)
   * [Table of Contents](#table-of-contents)
-  * [1. **Introduction**](#1---introduction--)
-    + [1.1 **Installation Requirements**](#11---installation-requirements--)
-  * [2. **What's included?**](#2---what-s-included---)
-  * [3. **Quick Start Guide**](#3---quick-start-guide--)
-  * [3.1. **ROS Installation & Setup**](#31---ros-installation---setup--)
-  * [3.2. **ROS2 Quick Start**](#32---ros2-quick-start--)
-  * [4. **How can I modify CMRosIF?**](#4---how-can-i-modify-cmrosif---)
-    + [4.1. **CMNode in ROS2**](#41---cmnode-in-ros2--)
-    + [4.2. **Publishing CarMaker Data to ROS**](#42---publishing-carmaker-data-to-ros--)
-    + [4.3. **Subscribing to ROS Data in CarMaker**](#43---subscribing-to-ros-data-in-carmaker--)
-  * [5. **Miscellaneous**](#5---miscellaneous--)
+  * [1. **Introduction**](#1-introduction)
+    + [1.1 **Installation Requirements**](#11-installation-requirements)
+  * [2. **What's included?**](#2-whats-included)
+  * [3. **Quick Start Guide**](#3-quick-start-guide)
+  * [3.1. **ROS Installation & Setup**](#31-ros-installation--setup)
+  * [3.2. **ROS2 Quick Start**](#32-ros2-quick-start)
+  * [4. **How can I modify CMRosIF?**](#4-how-can-i-modify-cmrosif)
+    + [4.1. **CMNode in ROS2**](#41-cmnode-in-ros2)
+    + [4.2. **Publishing CarMaker Data to ROS**](#42-publishing-carmaker-data-to-ros)
+    + [4.3. **Subscribing to ROS Data in CarMaker**](#43-subscribing-to-ros-data-in-carmaker)
+  * [5. **Miscellaneous**](#5-miscellaneous)
     + [5.1 Lidar Sensor Specifics](#51-lidar-sensor-specifics)
-  * [6. **Known Limitations**](#6---known-limitations--)
+  * [6. **Known Limitations**](#6-known-limitations)
     + [6.1 Single Camera per Computation Cluster](#61-single-camera-per-computation-cluster)
     + [6.2 RSDS Node Shutdown Output](#62-rsds-node-shutdown-output)
     + [6.3 Compilation errors with libcmcppifloader-linux64](#63-compilation-errors-with-libcmcppifloader-linux64)
@@ -34,10 +34,10 @@ This project provides an example implementation of CarMaker with ROS (CMRosIF), 
 ### 1.1 **Installation Requirements**
 
 - Linux Ubuntu 22.04
-  - *Ubuntu 22.04 is the only officially supported version by CarMaker 12.*
+  - *Ubuntu 22.04 is the latest version officially supported by CarMaker 14.*
 - ROS2 Humble Hawksbill
   - *Project was developed using ROS2 Humble, but any ROS2 compatible with Ubuntu 22.04 may work.*
-- CarMaker Office (Linux) 12.0.1
+- CarMaker Office (Linux) 14.1.1
   - See CarMaker Release Notes and Installation Guide for proper installation procedure.
 
   - Ensure the following step is taken (excerpt from CarMaker Installation Guide):
@@ -97,10 +97,17 @@ These are of course version-specific. The versions named here are the ones with 
 
 ## 3.2. **ROS2 Quick Start**
 
-1. Run the build script `build.sh` in a terminal (located on the top level of the project). This will build the ROS workspace (located in `<project>/ros/ros2_ws`), then the CarMaker application (located in `<project>/src`).
+1. Run the build script `build.sh` in a terminal (located on the top level of the project). This will build the ROS workspace (located in `<project>/ros/ros2_ws`), then the CarMaker application (located in `<project>/src`).  
 2. Open CarMaker with the `CMStart.sh` script on the top level of the project.
+    - You might see a warning when running CMStart.sh about the _FS_autonomous_TrackDrive road file ("Reading road definition failed")_. This doesn't affect functionality.
 3. Start the ROS workspace and CarMaker application from: `Main CarMaker GUI --> Extras --> CMRosIF --> Launch & Start Application`. This will launch the ROS workspace from the `hellocm.launch` file, then Start and connect to the CarMaker application.
 4. Open the example 'TrackDrive' TestRun from the `Main GUI --> File --> Open --> Project --> FS_autonomous_TrackDrive`.
+    - **Update Simulation Parameter for Camera RSI Compatibility (CarMaker 14+)**
+    From CarMaker 14 onwards, the MovieNX engine introduces a warmup phase for GPU-based RSI sensors.
+    To avoid timeout errors when using multiple Camera RSI sensors, especially RGB + Depth streams simultaneously, add the following simulation parameter:
+    `SimStart.Anim.Wait = 300`
+    You can either include the parameter from `CM GUI -> Application -> Edit 'SImParameters'` or you can find the SimParameters file from your `project folder/Data/Config`
+    This ensures RSI sensors have enough startup time to avoid timeout issues (ERROR GPUSensor A3:192.168...: Timeout) observed in some configurations on systems with limited GPU VRAM.
 5. Start the simulation with the green Start button in the CarMaker GUI. ROS data should be published and subscribed to by CMRosIF from the following topics. The main topics in this extension to CMRosIF are **/Camera**, **/ObjectList**, **/pointcloud**, and **/VehicleControl**.
 
 ```bash
@@ -130,6 +137,8 @@ These are of course version-specific. The versions named here are the ones with 
       /tf_static
 ```
 
+At this stage, the simulation is active and running. If you publish a **/VehicleControl** ROS message on the ROS2 network, the vehicle should move. This message is described in more detail in the example in [Section 4.3](#43-subscribing-to-ros-data-in-carmaker).
+
 ![Simulation Visualization in rViz + IPGMovie](images/QuickStart_Simulation_rVizMovie.png)
 6. If raw camera streams are desired, multiple CameraRSI sensors can be defined and mounted on the CarMaker vehicle frame. Currently these cameras can be either RGB (`Coloration mode: Realistic`) or Depth (`Coloration mode: Depth linear gray`). Every active camera will automaticall launch a separate external Raw Signal Data Stream client (ROS node) that recieves the raw data from the Camera RSI Sensors (aka Raw Signal Data Stream) in CarMaker, then publishes it to standard ROS image messages in the topics **/<CAMERA_NAME>**.
 
@@ -157,6 +166,66 @@ system(sbuf);
 ![Raw Signal Data Stream Client Start](images/RSDS_Streams_RQT.png)
 
 For more information and troubleshooting on the RSDS ROS client nodes, see the corresponding README file in `<project>/ros/ros2_ws/src/carmaker_rsds_client`.
+
+## 3.3. Troubleshooting Common Setup Issues
+
+If you encounter issues during installation or when launching the project, please check the following notes collected from common user feedback.
+
+### 3.3.1 Build script permission denied
+If running `./build.sh` gives **Permission denied**, the build script is missing execute permission.
+Run the following commands once:
+```bash
+chmod +x build.sh ros/ros2_ws/build.sh
+```
+
+Then try again
+```bash
+./build.sh
+```
+### 3.3.2 "colcon: command not found"
+`colcon` is required to build ROS2 packages as stated in Section 3.1. Install it with:
+```bash
+sudo apt update
+sudo apt install python3-colcon-common-extensions
+```
+### 3.3.3 CMStart.sh: "CM_Office-14.1.1: command not found"
+CarMaker 14.1.1 normally installs a symbolic link at `/opt/ipg/bin/CM_Office-14.1.1` that points to the actual binary `/opt/ipg/carmaker/linux64-14.1.1/bin/CM_Office`.
+If that link is missing, create it with:
+```bash
+sudo ln -s /opt/ipg/carmaker/linux64-14.1.1/bin/CM_Office /opt/ipg/bin/CM_Office-14.1.1
+```
+To make sure the command is always found, add the following lines to your `~/.bashrc`:
+
+```bash
+# CarMaker 14.1.1 environment
+export CM_HOME=/opt/ipg/carmaker/linux64-14.1.1
+export CARMAKER_BASE=/opt/ipg/carmaker
+export CARMAKER_VER=14.1.1
+export PATH="/opt/ipg/bin:$CM_HOME/bin:$PATH"
+export LD_LIBRARY_PATH="$CM_HOME/lib:$LD_LIBRARY_PATH"
+export ROS_VERSION=2
+
+# ROS2 Humble
+source /opt/ros/humble/setup.bash
+```
+
+### 3.3.4 Compilation errors with libcmcppifloader-linux64
+
+On rare occasions, the first time you attempt to build the FSAI ROS project with the `build.sh` script, it will fail with the following error related to `libcmcppifloader-linux64.so`:
+
+```bash
+/usr/bin/ld:./../lib//libcmcppifloader-linux64.so: file format not recognized; treating as linker script
+/usr/bin/ld:./../lib//libcmcppifloader-linux64.so:0: syntax error
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:67: CarMaker.linux64] Error 1
+```
+
+The file `libcmcppifloader-linux64.so` is a symbolic link to the latest version of the actual CMRosIF library, which is currently `libcmcppifloader-linux64.so.1.0.0` at the time this project is published. When this project is first downloaded, the symbolic link may break for various reasons. It needs to be manually re-created. From the FSAI project directory, you can re-create the link at the proper location with the following terminal commands:
+
+```bash
+cd lib
+sudo ln -sfn libcmcppifloader-linux64.so.1.0.0 libcmcppifloader-linux64.so
+```
 
 ---
 
@@ -359,20 +428,3 @@ In ROS2, there is no standard terminal command to shutdown any node remotely. Th
 
 If any of these error messages happen at the end of a simulation, they can be safely ignored.
 
-### 6.3 Compilation errors with libcmcppifloader-linux64
-
-On rare occasions, the first time you attempt to build the FSAI ROS project with the `build.sh` script, it will fail with the following error related to `libcmcppifloader-linux64.so`:
-
-```bash
-/usr/bin/ld:./../lib//libcmcppifloader-linux64.so: file format not recognized; treating as linker script
-/usr/bin/ld:./../lib//libcmcppifloader-linux64.so:0: syntax error
-collect2: error: ld returned 1 exit status
-make: *** [Makefile:67: CarMaker.linux64] Error 1
-```
-
-The file `libcmcppifloader-linux64.so` is a symbolic link to the latest version of the actual CMRosIF library, which is currently `libcmcppifloader-linux64.so.1.0.0` at the time this project is published. When this project is first downloaded, the symbolic link may break for various reasons. It needs to be manually re-created. From the FSAI project directory, you can re-create the link at the proper location with the following terminal commands:
-
-```bash
-cd lib
-sudo ln -sfn libcmcppifloader-linux64.so.1.0.0 libcmcppifloader-linux64.so
-```

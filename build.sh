@@ -9,6 +9,8 @@ SRC_DIR=${2:-src}
 # echo command before executing it
 print_and_execute() { echo -e "Executing: '${1}'\n"; eval ${1}; }
 
+print_and_execute "make -C ${SRC_DIR} clean --no-print-directory"
+
 if [ ${ROS_VERSION} -eq 1 ] ; then
     print_and_execute "make -C ${SRC_DIR} cm-ros1 --no-print-directory"
 elif [ ${ROS_VERSION} -eq 2 ] ; then

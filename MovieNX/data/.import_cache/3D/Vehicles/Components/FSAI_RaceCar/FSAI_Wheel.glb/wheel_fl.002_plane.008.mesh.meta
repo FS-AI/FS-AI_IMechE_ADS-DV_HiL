@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>f4206ab0867be654b4f24848b70e2c5ed23bc7a5</guid>
+	<type>mesh</type>
+	<hash>2595634995</hash>
+	<runtimes>
+		<runtime id="f4206ab0867be654b4f24848b70e2c5ed23bc7a5" name="wheel_fl.002_plane.008.mesh" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

@@ -1,5 +1,5 @@
-CM4SL and TM4SL models can be updated using the matlab scripts ModelUpdate_CM12.m
-and ModelUpdate_TM12.m in your Simulink folder (src_cm4sl/src_tm4sl. The scripts
+CM4SL and TM4SL models can be updated using the matlab scripts ModelUpdate_CM14.m
+and ModelUpdate_TM14.m in your Simulink folder (src_cm4sl/src_tm4sl. The scripts
 update all Simulink models in the folder and save them as<YourModel>_updated.mdl.
 A report with all changes is saved as <YourModel>_changes.html. If an update
 fails, the matlab error is shown in the matlab command window and and the script

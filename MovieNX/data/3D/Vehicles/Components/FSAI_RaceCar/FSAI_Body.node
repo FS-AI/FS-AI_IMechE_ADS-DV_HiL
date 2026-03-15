@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.18.0.1">
-	<node type="NodeDummy" id="2027794340" name="FSAI_Body">
+	<node type="NodeDummy" id="804765734" name="FSAI_Body">
 		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-		<node type="ObjectMeshStatic" id="1521497779" name="vehiclebody">
+		<node type="ObjectMeshStatic" id="642308429" name="vehiclebody">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
-			<mesh_name>guid://49f00a5d202492865f0a2878d9aa6c90dc918afe</mesh_name>
-			<surface name="body" material="49fe808bbd2a03aaefc72adc74203dbabecf5349"/>
-			<surface name="shield.001" material="f08ce5a5bff7ad35e698f620ba2b9799a08a4a66"/>
-			<surface name="alu.001" material="c153c5b9c637918a9405100264f726d89a484047"/>
-			<surface name="alu_grey" material="d6152303d6b8dd51e9a95b263df50dfd4d9c263c"/>
-			<surface name="glass_black" material="85ab647700f5775e43947af85bd15b7002498fd5"/>
-			<surface name="lights" material="449af07128790c260fc7f6fc9e4866a4a4f8ffe2"/>
-			<surface name="body.001" material="9b3df845d7fe50b69ea1453ef7e4a23f062ab973"/>
+			<mesh_name>guid://291c28e166b1c38bdc71ea69e609d987a35f0652</mesh_name>
+			<surface name="body" material="822492b86427406e9e6a2f50df2d2f248b7dc0cd"/>
+			<surface name="shield.001" material="d80648a96e3733e0c0606331182a589608fb303a"/>
+			<surface name="alu.001" material="2baecefe108403512a3d72d64df23890426c4cab"/>
+			<surface name="alu_grey" material="1a20d7e72b2606c87d35022fc5f3f23977974470"/>
+			<surface name="glass_black" material="32b8a81492ab39ace400392ccb56500969742c19"/>
+			<surface name="lights" material="46f4183594462d95efbb343dfcb49a3766449b76"/>
+			<surface name="body.001" material="3cfebf7a19effb3fd37ef3d2a72a50ac04740e97"/>
 			<transform>1 8.74227827826e-08 8.74227942467e-08 0.0 8.7422786604e-08 -3.17864914827e-08 -1.00000011921 0.0 -8.74227904253e-08 1.00000011921 -3.17864991254e-08 0.0 0 0 0 1.0</transform>
 		</node>
 	</node>

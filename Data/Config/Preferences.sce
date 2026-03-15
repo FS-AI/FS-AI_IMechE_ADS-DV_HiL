@@ -1,6 +1,6 @@
 #INFOFILE1.1 (UTF-8) - Do not remove this line!
 FileIdent = Scenario-Config 5.0
-FileCreator = CarMaker Office Extended 14.0.1
+FileCreator = CarMaker Office 14.1.1
 Import.HDLM.ImportByRoute = 0
 Import.HDLM.LatCoord0 =
 Import.HDLM.LonCoord0 =
