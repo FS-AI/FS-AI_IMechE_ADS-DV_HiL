@@ -1,0 +1,340 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: LOG AI JOYSTICK VCU OPUS RES
+
+
+BO_ 770 VCU2OPUS_3: 8 VCU
+ SG_ EBS_TEST_BITFIELD_LATCHED : 16|16@1+ (1,0) [0|65535] ""  LOG,OPUS
+ SG_ EBS_TEST_BITFIELD : 0|16@1+ (1,0) [0|65535] ""  LOG,OPUS
+
+BO_ 769 VCU2OPUS_2: 8 VCU
+ SG_ EBS_REAR_CALIPER_PRESS : 48|16@1- (0.01,0) [-327.68|327.67] "Bar"  LOG,OPUS
+ SG_ EBS_FRONT_CALIPER_PRESS : 32|16@1- (0.01,0) [-327.68|327.67] "Bar"  LOG,OPUS
+ SG_ EBS_REAR_ACC_PRESS : 16|16@1- (0.01,0) [-327.68|327.67] "Bar"  LOG,OPUS
+ SG_ EBS_FRONT_ACC_PRESS : 0|16@1- (0.01,0) [-327.68|327.67] "Bar"  LOG,OPUS
+
+BO_ 768 VCU2OPUS_1: 8 VCU
+ SG_ LEM_500A_ADC : 48|16@1+ (0.25,-625) [-625|15758.75] "A"  LOG,OPUS
+ SG_ AUX_HV : 32|16@1+ (0.001,0) [0|65.535] "V"  LOG,OPUS
+ SG_ VBAT_ADC : 16|16@1+ (0.001,0) [0|65.535] "V"  LOG,OPUS
+ SG_ KL15_ADC : 0|16@1+ (0.001,0) [0|65.535] "V"  LOG,OPUS
+
+BO_ 0 NMT: 2 VCU
+ SG_ CMD : 0|8@1+ (1,0) [0|255] ""  LOG,RES,JOYSTICK
+ SG_ NODE_ID : 8|8@1+ (1,0) [0|255] ""  LOG,RES,JOYSTICK
+
+BO_ 1312 VCU2AI_Status: 8 VCU
+ SG_ EBS_STATE : 36|4@1+ (1,0) [0|15] ""  LOG
+ SG_ TS_STATE : 28|4@1+ (1,0) [0|15] ""  LOG
+ SG_ OP_STATE : 4|4@1+ (1,0) [0|15] ""  LOG
+ SG_ HVIL_OPEN_FAULT : 41|1@1- (1,0) [0|1] "__F__"  LOG,AI
+ SG_ GO_SIGNAL : 11|1@1- (1,0) [0|1] ""  LOG,AI
+ SG_ AMI_STATE : 20|4@1+ (1,0) [0|15] ""  LOG,AI
+ SG_ HANDSHAKE : 0|1@1- (1,0) [0|1] ""  LOG,AI
+ SG_ STEERING_STATUS : 12|2@1+ (1,0) [0|3] ""  LOG,AI
+ SG_ AS_STATE : 16|4@1+ (1,0) [0|7] ""  LOG,AI
+ SG_ TS_SWITCH_STATUS : 10|1@1- (1,0) [0|1] ""  LOG,AI
+ SG_ AS_SWITCH_STATUS : 9|1@1- (1,0) [0|1] ""  LOG,AI
+
+BO_ 1315 VCU2AI_Steer: 6 VCU
+ SG_ ANGLE_REQUEST : 32|16@1- (0.1,0) [-30|30] "deg"  LOG,AI
+ SG_ ANGLE_MAX : 16|16@1+ (0.1,0) [0|30] "deg"  LOG,AI
+ SG_ ANGLE : 0|16@1- (0.1,0) [-3276.8|3276.7] "deg"  LOG,AI
+
+BO_ 1317 VCU2AI_Speeds: 8 VCU
+ SG_ RR_WHEEL_SPEED : 48|16@1+ (1,0) [0|1250] "rpm"  LOG,AI
+ SG_ RL_WHEEL_SPEED : 32|16@1+ (1,0) [0|1250] "rpm"  LOG,AI
+ SG_ FR_WHEEL_SPEED : 16|16@1+ (1,0) [0|1250] "rpm"  LOG,AI
+ SG_ FL_WHEEL_SPEED : 0|16@1+ (1,0) [0|1250] "rpm"  LOG,AI
+
+BO_ 1296 AI2VCU_Status: 8 AI
+ SG_ HANDSHAKE : 0|1@1- (1,0) [0|1] ""  LOG,VCU
+ SG_ MISSION_STATUS : 12|2@1+ (1,0) [0|3] ""  LOG,VCU
+ SG_ ESTOP_REQUEST : 8|1@1- (1,0) [0|1] ""  LOG,VCU
+ SG_ DIRECTION_REQUEST : 14|2@1+ (1,0) [0|3] ""  LOG,VCU
+
+BO_ 1280 VCU2LOG_Dynamics1: 8 VCU
+ SG_ Drive_trq_target_pct : 56|8@1+ (1,0) [0|100] "%"  LOG
+ SG_ Drive_trq_actual_pct : 48|8@1+ (1,0) [0|100] "%"  LOG
+ SG_ Brake_target_pct : 40|8@1+ (1,0) [0|100] "%"  LOG
+ SG_ Brake_actual_pct : 32|8@1+ (1,0) [0|100] "%"  LOG
+ SG_ Steer_target : 24|8@1- (0.5,0) [-64|63.5] "deg"  LOG
+ SG_ Steer_actual : 16|8@1- (0.5,0) [-64|63.5] "deg"  LOG
+ SG_ Speed_target : 8|8@1+ (1,0) [0|255] "km/h"  LOG
+ SG_ Speed_actual : 0|8@1+ (1,0) [0|255] "km/h"  LOG
+
+BO_ 1282 VCU2LOG_Status: 5 VCU
+ SG_ Cones_count_all : 23|17@1+ (1,0) [0|131071] ""  LOG
+ SG_ Cones_count_actual : 15|8@1+ (1,0) [0|255] ""  LOG
+ SG_ Lap_counter : 11|4@1+ (1,0) [0|15] ""  LOG
+ SG_ State_service_brake : 9|2@1+ (1,0) [0|3] ""  LOG
+ SG_ State_steering : 8|1@1- (1,0) [0|1] ""  LOG
+ SG_ AMI_STATE : 5|3@1+ (1,0) [0|7] ""  LOG
+ SG_ State_EBS : 3|2@1+ (1,0) [0|3] ""  LOG
+ SG_ State_ASSI : 0|3@1+ (1,0) [0|7] ""  LOG
+
+BO_ 1299 AI2VCU_Steer: 2 AI
+ SG_ STEER_REQUEST : 0|16@1- (0.1,0) [-30|30] "deg"  LOG,VCU
+
+BO_ 1300 AI2VCU_Brake: 2 AI
+ SG_ HYD_PRESS_R_REQ_pct : 8|8@1+ (0.5,0) [0|100] "%"  LOG,VCU
+ SG_ HYD_PRESS_F_REQ_pct : 0|8@1+ (0.5,0) [0|100] "%"  LOG,VCU
+
+BO_ 1316 VCU2AI_Brake: 5 VCU
+ SG_ STATUS_EBS : 36|4@1+ (1,0) [0|15] ""  LOG,AI
+ SG_ STATUS_BRK : 32|4@1+ (1,0) [0|15] ""  LOG,AI
+ SG_ HYD_PRESS_R_REQ_pct : 24|8@1+ (0.5,0) [0|100] "%"  LOG,AI
+ SG_ HYD_PRESS_R_pct : 16|8@1+ (0.5,0) [0|100] "%"  LOG,AI
+ SG_ HYD_PRESS_F_REQ_pct : 8|8@1+ (0.5,0) [0|100] "%"  LOG,AI
+ SG_ HYD_PRESS_F_pct : 0|8@1+ (0.5,0) [0|100] "%"  LOG,AI
+
+BO_ 1313 VCU2AI_Drive_F: 6 VCU
+ SG_ FRONT_AXLE_TRQ_REQUEST : 16|16@1+ (0.1,0) [0|195] "Nm"  LOG,AI
+ SG_ FRONT_AXLE_TRQ_MAX : 32|16@1+ (0.1,0) [0|195] "Nm"  LOG,AI
+ SG_ FRONT_AXLE_TRQ : 0|16@1- (0.1,0) [-195|195] "Nm"  LOG,AI
+
+BO_ 1297 AI2VCU_Drive_F: 4 AI
+ SG_ FRONT_MOTOR_SPEED_MAX : 16|16@1+ (1,0) [0|4000] "rpm"  LOG,VCU
+ SG_ FRONT_AXLE_TRQ_REQUEST : 0|16@1+ (0.1,0) [0|195] "Nm"  LOG,VCU
+
+BO_ 1298 AI2VCU_Drive_R: 4 AI
+ SG_ REAR_MOTOR_SPEED_MAX : 16|16@1+ (1,0) [0|4000] "rpm"  LOG,VCU
+ SG_ REAR_AXLE_TRQ_REQUEST : 0|16@1+ (0.1,0) [0|195] "Nm"  LOG,VCU
+
+BO_ 1314 VCU2AI_Drive_R: 6 VCU
+ SG_ REAR_AXLE_TRQ_MAX_Nm : 32|16@1+ (0.1,0) [0|195] "Nm"  LOG,AI
+ SG_ REAR_AXLE_TRQ_REQUEST_Nm : 16|16@1+ (0.1,0) [0|195] "Nm"  LOG,AI
+ SG_ REAR_AXLE_TRQ_Nm : 0|16@1- (0.1,0) [-195|195] "Nm"  LOG,AI
+
+BO_ 129 RES_EMCY: 8 RES
+ SG_ RES_Fault_ID : 24|16@1+ (1,0) [0|65535] ""  LOG,VCU
+ SG_ RES_ER : 16|8@1+ (1,0) [0|255] ""  LOG,VCU
+ SG_ RES_EEC : 0|16@1+ (1,0) [0|65535] ""  LOG,VCU
+
+BO_ 385 RES_TPDO: 8 RES
+ SG_ RADIO_STRENGTH : 48|8@1+ (1,0) [0|255] "%"  LOG,VCU
+ SG_ K3_SWITCH_STATUS : 2|1@1- (1,0) [0|1] ""  LOG,VCU
+ SG_ K2_SWITCH_GO_STATUS : 1|1@1- (1,0) [0|1] ""  LOG,VCU
+ SG_ ESTOP_STATUS : 0|1@1- (1,0) [0|1] ""  LOG,VCU
+
+BO_ 1318 VCU2AI_Wheel_counts: 8 VCU
+ SG_ RR_PULSE_COUNT : 48|16@1+ (1,0) [0|65535] ""  LOG,AI
+ SG_ RL_PULSE_COUNT : 32|16@1+ (1,0) [0|65535] ""  LOG,AI
+ SG_ FR_PULSE_COUNT : 16|16@1+ (1,0) [0|65535] ""  LOG,AI
+ SG_ FL_PULSE_COUNT : 0|16@1+ (1,0) [0|65535] ""  LOG,AI
+
+BO_ 291 OPUS2VCU_FB: 1 OPUS
+ SG_ CHARGE_REQ : 5|1@1- (1,0) [0|1] ""  LOG
+ SG_ BRK_DISCH_REQ : 4|1@1- (1,0) [0|1] ""  LOG,VCU
+ SG_ AMI_STATE : 0|4@1+ (1,0) [0|15] ""  LOG,VCU
+
+BO_ 644 UMB_PDO2: 4 JOYSTICK
+ SG_ XPOS : 16|16@1+ (1,0) [0|255] ""  LOG,VCU
+ SG_ YPOS : 0|16@1+ (1,0) [0|255] ""  LOG,VCU
+
+BO_ 132 UMB_EMCY: 8 JOYSTICK
+ SG_ UMB_Fault_ID : 24|16@1+ (1,0) [0|65535] ""  LOG,VCU
+ SG_ UMB_ER : 16|8@1+ (1,0) [0|255] ""  LOG,VCU
+ SG_ UMB_EEC : 0|16@1+ (1,0) [0|65535] ""  LOG,VCU
+
+BO_ 128 SYNC: 0 VCU
+
+BO_ 388 UMB_PDO1: 2 JOYSTICK
+ SG_ BTN_BTM : 3|1@1- (1,0) [0|1] ""  LOG,VCU
+ SG_ BTN_TOP : 0|1@1- (1,0) [0|1] ""  LOG,VCU
+
+BO_ 1281 AI2LOG_Dynamics2: 6 Vector__XXX
+ SG_ Accel_longitudinal_mps2 : 0|16@1- (0.00195313,0) [-64|63.998] "m/s^2"  LOG
+ SG_ Accel_lateral_mps2 : 16|16@1- (0.00195313,0) [-64|63.998] "m/s^2"  LOG
+ SG_ Yaw_rate_degps : 32|16@1- (0.0078125,0) [-256|255.992] "deg/s"  LOG
+
+
+
+CM_ BU_ AI "AI Computer (NVIDIA Drive PX2)";
+CM_ BU_ JOYSTICK "Umbilical controller";
+CM_ BU_ VCU "Vehicle Control Unit";
+CM_ BU_ OPUS "Display screen";
+CM_ BU_ RES "Remote Emergency Stop";
+CM_ SG_ 770 EBS_TEST_BITFIELD_LATCHED "Rear left wheel speed pulse count";
+CM_ SG_ 770 EBS_TEST_BITFIELD "Rear left wheel speed pulse count";
+CM_ SG_ 1312 HVIL_OPEN_FAULT "HVIL open-circuit fault";
+CM_ SG_ 1312 GO_SIGNAL "Autonomous System \"Go\" signal";
+CM_ SG_ 1312 AMI_STATE "State of the Mission Indicator";
+CM_ SG_ 1312 HANDSHAKE "Handshake";
+CM_ SG_ 1312 STEERING_STATUS "State of the steering system";
+CM_ SG_ 1312 AS_STATE "State of the Autonomous System";
+CM_ SG_ 1312 TS_SWITCH_STATUS "Tractive System switch status";
+CM_ SG_ 1312 AS_SWITCH_STATUS "Autonomous System switch status";
+CM_ SG_ 1315 ANGLE_REQUEST "Steer Angle Request";
+CM_ SG_ 1315 ANGLE_MAX "Steer Angle Max";
+CM_ SG_ 1315 ANGLE "Steer Angle";
+CM_ SG_ 1296 HANDSHAKE "Handshake";
+CM_ SG_ 1296 MISSION_STATUS "Autonomous mission status";
+CM_ SG_ 1296 ESTOP_REQUEST "Shutdown request to VCU";
+CM_ SG_ 1296 DIRECTION_REQUEST "Requested vehicle direction";
+CM_ SG_ 1300 HYD_PRESS_R_REQ_pct "Requested rear axle hydraulic brake pressure";
+CM_ SG_ 1300 HYD_PRESS_F_REQ_pct "Requested front axle hydraulic brake pressure";
+CM_ SG_ 1316 STATUS_EBS "Emergency brake status";
+CM_ SG_ 1316 STATUS_BRK "Braking system status";
+CM_ SG_ 1316 HYD_PRESS_R_REQ_pct "Requested rear axle hydraulic brake pressure";
+CM_ SG_ 1316 HYD_PRESS_R_pct "Rear axle hydraulic brake pressure";
+CM_ SG_ 1316 HYD_PRESS_F_REQ_pct "Requested front axle hydraulic brake pressure";
+CM_ SG_ 1316 HYD_PRESS_F_pct "Front axle hydraulic brake pressure";
+CM_ SG_ 1298 REAR_AXLE_TRQ_REQUEST "Requested rear axle torque";
+CM_ SG_ 1314 REAR_AXLE_TRQ_MAX_Nm "Maximum rear axle drive torque";
+CM_ SG_ 1314 REAR_AXLE_TRQ_REQUEST_Nm "Requested rear axle torque";
+CM_ SG_ 1314 REAR_AXLE_TRQ_Nm "Current rear axle torque";
+CM_ SG_ 1318 RR_PULSE_COUNT "Rear right wheel speed pulse count";
+CM_ SG_ 1318 RL_PULSE_COUNT "Rear left wheel speed pulse count";
+CM_ SG_ 1318 FR_PULSE_COUNT "Front right wheel speed pulse count";
+CM_ SG_ 1318 FL_PULSE_COUNT "Front left wheel speed pulse count";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "GenEnvVarEndingDsp" STRING ;
+BA_DEF_  "GenEnvVarEndingSnd" STRING ;
+BA_DEF_  "GenEnvVarPrefix" STRING ;
+BA_DEF_ BU_  "GenNodAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BU_  "GenNodAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 1.17549E-038 3.4E+038;
+BA_DEF_ SG_  "GenSigAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "int","float","undef";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenEnvVarEndingDsp" "Dsp";
+BA_DEF_DEF_  "GenEnvVarEndingSnd" "Snd";
+BA_DEF_DEF_  "GenEnvVarPrefix" "Env";
+BA_DEF_DEF_  "GenNodAutoGenSnd" "Yes";
+BA_DEF_DEF_  "GenNodAutoGenDsp" "Yes";
+BA_DEF_DEF_  "GenMsgCycleTime" 5;
+BA_DEF_DEF_  "GenSigStartValue" 1.17549E-038;
+BA_DEF_DEF_  "GenSigAutoGenSnd" "";
+BA_DEF_DEF_  "GenSigAutoGenDsp" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 770 10;
+BA_ "GenMsgCycleTime" BO_ 769 10;
+BA_ "GenMsgCycleTime" BO_ 768 10;
+BA_ "GenMsgCycleTime" BO_ 0 100;
+BA_ "GenMsgCycleTime" BO_ 1312 10;
+BA_ "GenMsgCycleTime" BO_ 1315 10;
+BA_ "GenMsgCycleTime" BO_ 1317 10;
+BA_ "GenMsgCycleTime" BO_ 1296 10;
+BA_ "GenMsgCycleTime" BO_ 1280 100;
+BA_ "GenMsgCycleTime" BO_ 1282 100;
+BA_ "GenMsgCycleTime" BO_ 1299 10;
+BA_ "GenMsgCycleTime" BO_ 1300 10;
+BA_ "GenMsgCycleTime" BO_ 1316 10;
+BA_ "GenMsgCycleTime" BO_ 1313 10;
+BA_ "GenMsgCycleTime" BO_ 1297 10;
+BA_ "GenMsgCycleTime" BO_ 1298 10;
+BA_ "GenMsgCycleTime" BO_ 1314 10;
+BA_ "GenMsgCycleTime" BO_ 129 10;
+BA_ "GenMsgCycleTime" BO_ 385 10;
+BA_ "GenMsgCycleTime" BO_ 1318 10;
+BA_ "GenMsgCycleTime" BO_ 291 100;
+BA_ "GenMsgCycleTime" BO_ 644 100;
+BA_ "GenMsgCycleTime" BO_ 132 100;
+BA_ "GenMsgCycleTime" BO_ 128 5;
+BA_ "GenMsgCycleTime" BO_ 388 5;
+BA_ "GenSigStartValue" SG_ 769 EBS_REAR_CALIPER_PRESS 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 769 EBS_FRONT_CALIPER_PRESS 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 769 EBS_REAR_ACC_PRESS 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 769 EBS_FRONT_ACC_PRESS 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 768 LEM_500A_ADC 2500;
+BA_ "GenSigStartValue" SG_ 768 AUX_HV 1.17549E-035;
+BA_ "GenSigStartValue" SG_ 768 VBAT_ADC 1.17549E-035;
+BA_ "GenSigStartValue" SG_ 768 KL15_ADC 1.17549E-035;
+BA_ "GenSigStartValue" SG_ 1312 AMI_STATE 0;
+BA_ "GenSigStartValue" SG_ 1312 HANDSHAKE 0;
+BA_ "GenSigStartValue" SG_ 1312 STEERING_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1312 AS_STATE 0;
+BA_ "GenSigStartValue" SG_ 1312 TS_SWITCH_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1312 AS_SWITCH_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1296 HANDSHAKE 0;
+BA_ "GenSigStartValue" SG_ 1296 MISSION_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1296 ESTOP_REQUEST 0;
+BA_ "GenSigStartValue" SG_ 1296 DIRECTION_REQUEST 0;
+BA_ "GenSigStartValue" SG_ 1280 Drive_trq_target_pct 0;
+BA_ "GenSigStartValue" SG_ 1280 Drive_trq_actual_pct 0;
+BA_ "GenSigStartValue" SG_ 1280 Brake_target_pct 0;
+BA_ "GenSigStartValue" SG_ 1280 Brake_actual_pct 0;
+BA_ "GenSigStartValue" SG_ 1282 Cones_count_all 0;
+BA_ "GenSigStartValue" SG_ 1282 Cones_count_actual 0;
+BA_ "GenSigStartValue" SG_ 1282 Lap_counter 0;
+BA_ "GenSigStartValue" SG_ 1282 State_service_brake 0;
+BA_ "GenSigStartValue" SG_ 1282 State_steering 0;
+BA_ "GenSigStartValue" SG_ 1282 AMI_STATE 0;
+BA_ "GenSigStartValue" SG_ 1282 State_EBS 0;
+BA_ "GenSigStartValue" SG_ 1282 State_ASSI 0;
+BA_ "GenSigStartValue" SG_ 1300 HYD_PRESS_F_REQ_pct 0;
+BA_ "GenSigStartValue" SG_ 1316 HYD_PRESS_F_REQ_pct 0;
+BA_ "GenSigStartValue" SG_ 1316 HYD_PRESS_F_pct 0;
+BA_ "GenSigStartValue" SG_ 1298 REAR_AXLE_TRQ_REQUEST 0;
+BA_ "GenSigStartValue" SG_ 1314 REAR_AXLE_TRQ_MAX_Nm 0;
+BA_ "GenSigStartValue" SG_ 1314 REAR_AXLE_TRQ_REQUEST_Nm 0;
+BA_ "GenSigStartValue" SG_ 1314 REAR_AXLE_TRQ_Nm 0;
+BA_ "GenSigStartValue" SG_ 291 CHARGE_REQ 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 291 AMI_STATE 1.17549E-038;
+VAL_ 0 CMD 130 "Reset communication" 129 "Reset node" 128 "Pre-operational" 2 "Stop" 1 "Start" ;
+VAL_ 0 NODE_ID 4 "UMB_NODE" 1 "RES_NODE" 0 "ALL_NODES" ;
+VAL_ 1312 EBS_STATE 4 "EBS_DISCHARGING" 255 "EBS_FAULT" 0 "EBS_INIT" 3 "EBS_TRIGGERED" 2 "EBS_ARMED" 1 "EBS_CHARGING" ;
+VAL_ 1312 TS_STATE 255 "TS_FAULT" 0 "TS_INIT" 4 "TS_SHUTDOWN" 3 "TS_RUNNING" 2 "TS_ACTIVATE" 1 "TS_PRECHARGE" ;
+VAL_ 1312 OP_STATE 255 "OP_FAULT" 0 "OP_INIT" 3 "OP_CHARGE" 2 "OP_AUTO" 1 "OP_PUSHBAR" ;
+VAL_ 1312 HVIL_OPEN_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 GO_SIGNAL 1 "GO" 0 "NO GO" ;
+VAL_ 1312 AMI_STATE 7 "AUTONOMOUS DEMO" 6 "STATIC INSPECTION B" 5 "STATIC INSPECTION A" 4 "TRACK DRIVE" 3 "AUTOCROSS" 2 "SKIDPAD" 1 "ACCELERATION" 0 "NOT SELECTED" ;
+VAL_ 1312 STEERING_STATUS 1 "ACTIVE" 0 "OFF" ;
+VAL_ 1312 AS_STATE 0 "AS_INIT" 5 "AS_FINISHED" 4 "EMERGENCY_BRAKE" 3 "AS_DRIVING" 2 "AS_READY" 1 "AS_OFF" ;
+VAL_ 1312 TS_SWITCH_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 1312 AS_SWITCH_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 1296 MISSION_STATUS 3 "FINISHED" 2 "RUNNING" 1 "SELECTED" 0 "NOT SELECTED" ;
+VAL_ 1296 ESTOP_REQUEST 1 "SHUTDOWN REQUESTED" 0 "NO SHUTDOWN" ;
+VAL_ 1296 DIRECTION_REQUEST 2 "REVERSE" 1 "FORWARD" 0 "NEUTRAL" ;
+VAL_ 1282 State_service_brake 3 "AVAILABLE" 2 "ENGAGED" 1 "DISENGAGED" ;
+VAL_ 1282 State_steering 1 "ON" 0 "OFF" ;
+VAL_ 1282 AMI_STATE 7 "AUTONOMOUS DEMO" 6 "STATIC INSPECTION B" 5 "STATIC INSPECTION A" 4 "TRACK DRIVE" 3 "AUTOCROSS" 2 "SKIDPAD" 1 "ACCELERATION" 0 "NOT SELECTED" ;
+VAL_ 1282 State_EBS 3 "TRIGGERED" 2 "ARMED" 1 "UNAVAILABLE" ;
+VAL_ 1282 State_ASSI 5 "FINISH" 4 "EMERGENCY_BRAKE" 3 "DRIVING" 2 "READY" 1 "OFF" ;
+VAL_ 1316 STATUS_EBS 3 "TRIGGERED" 2 "ARMED" 1 "UNAVAILABLE" ;
+VAL_ 1316 STATUS_BRK 4 "FAULT" 3 "SHUTDOWN_COMPLETE" 2 "SHUTTING_DOWN" 1 "READY" 0 "INITIALISING" ;
+VAL_ 385 K3_SWITCH_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 385 K2_SWITCH_GO_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 385 ESTOP_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 291 BRK_DISCH_REQ 1 "TRUE" 0 "FALSE" ;
+VAL_ 291 AMI_STATE 7 "AUTONOMOUS DEMO" 6 "STATIC INSPECTION B" 5 "STATIC INSPECTION A" 4 "TRACK DRIVE" 3 "AUTOCROSS" 2 "SKIDPAD" 1 "ACCELERATION" 0 "NOT SELECTED" ;
+

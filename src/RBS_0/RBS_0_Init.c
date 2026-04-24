@@ -1,7 +1,7 @@
 
 /*
  *****************************************************************************
- *  CarMaker - Version 14.0.1
+ *  CarMaker - Version 14.1.1
  *  Virtual Test Driving Tool
  *
  *  Copyright ©1998-2025 IPG Automotive GmbH. All rights reserved.

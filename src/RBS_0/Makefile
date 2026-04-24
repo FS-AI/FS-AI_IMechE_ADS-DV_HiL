@@ -26,7 +26,7 @@ endif
 RBS_NAME ?=			RBS_0
 LIB_NAME =			$(RBS_NAME)$(RBS_EXT)
 RBS_SRCS ?=			$(LIB_NAME:$(RBS_EXT)=.c)
-RBS_LIB_NAME ?=			libRBS_0.dll
+RBS_LIB_NAME ?=			libRBS_0$(RBS_EXT)
 RBS_LIBS ?=			
 RBS_CFLAGS ?=			
 

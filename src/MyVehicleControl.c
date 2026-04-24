@@ -99,23 +99,15 @@ MyModel_DeclQuants_dyn (struct tMyModel *mp, int park)
     DDefUChar(ai2vcu_df, "Brake.HYD_PRESS_F_REQ_pct", "", &mp->ai2vcu_data.ai_brake.hyd_press_f_req_pct, DVA_IO_In);
     DDefUChar(ai2vcu_df, "Brake.HYD_PRESS_R_REQ_pct", "", &mp->ai2vcu_data.ai_brake.hyd_press_r_req_pct, DVA_IO_In);
 
-    DDefUShort(ai2vcu_df, "Drive_F.FRONT_AXLE_TRQ_REQUEST", "", &mp->ai2vcu_data.ai_drive_f.front_axle_trq_request, DVA_IO_In);
-    DDefUShort(ai2vcu_df, "Drive_F.FRONT_MOTOR_SPEED_MAX", "", &mp->ai2vcu_data.ai_drive_f.front_motor_speed_max, DVA_IO_In);
-
     DDefUShort(ai2vcu_df, "Drive_R.REAR_AXLE_TRQ_REQUEST", "", &mp->ai2vcu_data.ai_drive_r.rear_axle_trq_request, DVA_IO_In);
     DDefUShort(ai2vcu_df, "Drive_R.REAR_MOTOR_SPEED_MAX", "", &mp->ai2vcu_data.ai_drive_r.rear_motor_speed_max, DVA_IO_In);
 
     DDefShort(ai2vcu_df, "Steer.STEER_REQUEST", "", &mp->ai2vcu_data.ai_steer.steer_request, DVA_IO_In);
 
-    DDefUChar(ai2vcu_df, "Status.CONES_COUNT_ACTUAL", "", &mp->ai2vcu_data.ai_status.cones_count_actual, DVA_IO_In);
-    DDefUShort(ai2vcu_df, "Status.CONES_COUNT_ALL", "", &mp->ai2vcu_data.ai_status.cones_count_all, DVA_IO_In);
     DDefUChar(ai2vcu_df, "Status.DIRECTION_REQUEST", "", &mp->ai2vcu_data.ai_status.direction_request, DVA_IO_In);
     DDefUChar(ai2vcu_df, "Status.ESTOP_REQUEST", "", &mp->ai2vcu_data.ai_status.estop_request, DVA_IO_In);
     DDefUChar(ai2vcu_df, "Status.HANDSHAKE", "", &mp->ai2vcu_data.ai_status.handshake, DVA_IO_In);
-    DDefUChar(ai2vcu_df, "Status.LAP_COUNTER", "", &mp->ai2vcu_data.ai_status.lap_counter, DVA_IO_In);
     DDefUChar(ai2vcu_df, "Status.MISSION_STATUS", "", &mp->ai2vcu_data.ai_status.mission_status, DVA_IO_In);
-    DDefUChar(ai2vcu_df, "Status.VEH_SPEED_ACTUAL", "", &mp->ai2vcu_data.ai_status.veh_speed_actual, DVA_IO_In);
-    DDefUChar(ai2vcu_df, "Status.VEH_SPEED_DEMAND", "", &mp->ai2vcu_data.ai_status.veh_speed_demand, DVA_IO_In);
 
     DDefaultDelete(ai2vcu_df);
 
@@ -147,30 +139,14 @@ MyModel_DeclQuants_dyn (struct tMyModel *mp, int park)
     DDefUShort(vcu2ai_df, "Speeds.RL_WHEEL_SPEED", "", &mp->vcu2ai_data.vcu_speeds.rl_wheel_speed, DVA_IO_In);
     DDefUShort(vcu2ai_df, "Speeds.RR_WHEEL_SPEED", "", &mp->vcu2ai_data.vcu_speeds.rr_wheel_speed, DVA_IO_In);
 
-    DDefUChar(vcu2ai_df, "Status.AI_COMMS_LOST", "", &mp->vcu2ai_data.vcu_status.ai_comms_lost, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.AI_ESTOP_REQUEST", "", &mp->vcu2ai_data.vcu_status.ai_estop_request, DVA_IO_In);
     DDefUChar(vcu2ai_df, "Status.AMI_STATE", "", &mp->vcu2ai_data.vcu_status.ami_state, DVA_IO_In);
     DDefUChar(vcu2ai_df, "Status.AS_STATE", "", &mp->vcu2ai_data.vcu_status.as_state, DVA_IO_In);
     DDefUChar(vcu2ai_df, "Status.AS_SWITCH_STATUS", "", &mp->vcu2ai_data.vcu_status.as_switch_status, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.AUTONOMOUS_BRAKING_FAULT", "", &mp->vcu2ai_data.vcu_status.autonomous_braking_fault, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.BMS_FAULT", "", &mp->vcu2ai_data.vcu_status.bms_fault, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.BRAKE_PLAUSIBILITY", "", &mp->vcu2ai_data.vcu_status.brake_plausibility_fault, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.CHARGE_PROCEDURE_FAULT", "", &mp->vcu2ai_data.vcu_status.charge_procedure_fault, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.EBS_FAULT", "", &mp->vcu2ai_data.vcu_status.ebs_fault, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.FAULT_STATUS", "", &mp->vcu2ai_data.vcu_status.fault_status, DVA_IO_In);
     DDefUChar(vcu2ai_df, "Status.GO_SIGNAL", "", &mp->vcu2ai_data.vcu_status.go_signal, DVA_IO_In);
     DDefUChar(vcu2ai_df, "Status.HANDSHAKE", "", &mp->vcu2ai_data.vcu_status.handshake, DVA_IO_In);
     DDefUChar(vcu2ai_df, "Status.HVIL_OPEN_FAULT", "", &mp->vcu2ai_data.vcu_status.hvil_open_fault, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.HVIL_SHORT_FAULT", "", &mp->vcu2ai_data.vcu_status.hvil_short_fault, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.MISSION_STATUS_FAULT", "", &mp->vcu2ai_data.vcu_status.mission_status_fault, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.OFFBOARD_CHARGER_FAULT", "", &mp->vcu2ai_data.vcu_status.offboard_charger_fault, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.SHUTDOWN_CAUSE", "", &mp->vcu2ai_data.vcu_status.shutdown_cause, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.SHUTDOWN_REQUEST", "", &mp->vcu2ai_data.vcu_status.shutdown_request, DVA_IO_In);
     DDefUChar(vcu2ai_df, "Status.STEERING_STATUS", "", &mp->vcu2ai_data.vcu_status.steering_status, DVA_IO_In);
     DDefUChar(vcu2ai_df, "Status.TS_SWITCH_STATUS", "", &mp->vcu2ai_data.vcu_status.ts_switch_status, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.WARN_BATT_SOC_LOW", "", &mp->vcu2ai_data.vcu_status.warn_batt_soc_low, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.WARN_BATT_TEMP_HIGH", "", &mp->vcu2ai_data.vcu_status.warn_batt_temp_high, DVA_IO_In);
-    DDefUChar(vcu2ai_df, "Status.WARNING_STATUS", "", &mp->vcu2ai_data.vcu_status.warning_status, DVA_IO_In);
 
     DDefaultDelete(vcu2ai_df);
 
@@ -314,7 +290,8 @@ MyModel_Calc (void *MP, double dt)
         float rtU_ActualWheelspeedRL_mps = Car.Tire[2].v; //Vehicle.RL.rotv * (2 * PI * Car.WRL.Radius) / (2.0f * PI); // [rad/s] -> mps;
         float rtU_ActualWheelspeedRR_mps = Car.Tire[3].v; //Vehicle.RR.rotv * (2 * PI * Car.WRR.Radius) / (2.0f * PI); // [rad/s] -> mps;
 
-        // required to stop 'jump' in output beyond 30deg due to CAN decoding issue
+        // STEER_REQUEST is allowed to exceed +/30deg in 'CANParameters_13_1_1.can.info' to avoid decoding 'jump'
+        // for an excess request. Cap to +/-30deg here to avoid over-steering.
         if ( sm_state.ai2vcu->ai_steer.steer_request > 30)
         {
             sm_state.ai2vcu->ai_steer.steer_request = 30;

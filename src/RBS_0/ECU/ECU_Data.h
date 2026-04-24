@@ -1,6 +1,6 @@
 /*
  *****************************************************************************
- *  CarMaker - Version 14.0.1
+ *  CarMaker - Version 14.1.1
  *  Virtual Test Driving Tool
  *
  *  Copyright ©1998-2025 IPG Automotive GmbH. All rights reserved.
@@ -27,10 +27,10 @@
 extern "C" {
 #endif
 
-tRBS_ECU 	*ECU_OPUS;
-tRBS_0_OPUS_PDUs OPUS;
 tRBS_ECU 	*ECU_AI;
 tRBS_0_AI_PDUs AI;
+tRBS_ECU 	*ECU_OPUS;
+tRBS_0_OPUS_PDUs OPUS;
 tRBS_ECU 	*ECU_VCU;
 tRBS_0_VCU_PDUs VCU;
 

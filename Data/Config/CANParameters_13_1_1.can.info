@@ -2,38 +2,38 @@
 FileIdent = CarMaker-CANParameters	1
 
 Description:
-	Generated with Rest Bus Configurator 3.4.1 for:
-	CarMaker/HIL 14.0.1
+	Generated with Rest Bus Configurator 3.4.2 for:
+	CarMaker/HIL 14.1.1
 	CAN Rest Bus Simulation
 
-Created = 2025/07/11 10:44:45 IMECH@IMECHE-FSAI-2
-CmdLine = -pdu -excludePDU USER-DEFINED-I-PDU,N-PDU,NM-PDU,USER-DEFINED-PDU,DCM-I-PDU,J-1939-DCM-I-PDU,DCM-I-PDU,GENERAL-PURPOSE-PDU,GENERAL-PURPOSE-I-PDU -cluster CANdb -srvECU OPUS,AI -simECU VCU -o CANParameters_13_1_1.can.info -mapfile RBSParameters_13_1_1.rbs.info CANdb/ADS-DV_2024_CAN1.dbc
+Created = 2026/04/24 21:51:42 Ian@GAMING-5530
+CmdLine = -pdu -excludePDU USER-DEFINED-I-PDU,N-PDU,NM-PDU,USER-DEFINED-PDU,DCM-I-PDU,J-1939-DCM-I-PDU,DCM-I-PDU,GENERAL-PURPOSE-PDU,GENERAL-PURPOSE-I-PDU -cluster CANdb -srvECU OPUS,AI -simECU VCU -o CANParameters_13_1_1.can.info -mapfile RBSParameters_13_1_1.rbs.info CANdb/ADS-DV_2026_CAN1_no_GPS.dbc
 GatewayMode = 0
 PDUMode = 1
-CANdb =
-
-TxFrame.0 = NMT 0 0 2 0 0 VCU
-TxFrame.0.Receiver = OPUS
-TxFrame.0.TxMode = Cyclic 100000 100000 100000 1000
-TxFrame.0.PDUs:
-	NMT 0 LSB -1
+Config.CANdb = CANdb/ADS-DV_2026_CAN1_no_GPS.dbc
 
 RxFrame.0 = OPUS2VCU_FB 291 0 1 0 0 OPUS
 RxFrame.0.Receiver = VCU
 RxFrame.0.PDUs:
 	OPUS2VCU_FB 0 LSB -1
 
-TxFrame.1 = VCU2LOG_Dynamics1 1280 0 8 0 0 VCU
-TxFrame.1.Receiver = OPUS
-TxFrame.1.TxMode = Cyclic 100000 100000 100000 2000
-TxFrame.1.PDUs:
-	VCU2LOG_Dynamics1 0 LSB -1
+TxFrame.0 = VCU2OPUS_1 768 0 8 0 0 VCU
+TxFrame.0.Receiver = OPUS
+TxFrame.0.TxMode = Cyclic 10000 10000 10000 -1000
+TxFrame.0.PDUs:
+	VCU2OPUS_1 0 LSB -1
 
-TxFrame.2 = VCU2LOG_Status 1282 0 5 0 0 VCU
+TxFrame.1 = VCU2OPUS_2 769 0 8 0 0 VCU
+TxFrame.1.Receiver = OPUS
+TxFrame.1.TxMode = Cyclic 10000 10000 10000 -1000
+TxFrame.1.PDUs:
+	VCU2OPUS_2 0 LSB -1
+
+TxFrame.2 = VCU2OPUS_3 770 0 8 0 0 VCU
 TxFrame.2.Receiver = OPUS
-TxFrame.2.TxMode = Cyclic 100000 100000 100000 3000
+TxFrame.2.TxMode = Cyclic 10000 10000 10000 -1000
 TxFrame.2.PDUs:
-	VCU2LOG_Status 0 LSB -1
+	VCU2OPUS_3 0 LSB -1
 
 RxFrame.1 = AI2VCU_Status 1296 0 8 0 0 AI
 RxFrame.1.Receiver = VCU
@@ -135,59 +135,38 @@ PDU.AI2VCU_Drive_R.Signal.1.Coding:
 PDU.AI2VCU_Status = 8
 PDU.AI2VCU_Status.TxMode = Cyclic 10000
 PDU.AI2VCU_Status.Signals:
-	CONES_COUNT_ACTUAL 8 24 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
-	CONES_COUNT_ALL 16 32 LSB "(null)" UINT16 SCALE-LINEAR 0 -1 InDict
 	DIRECTION_REQUEST 2 14 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
 	ESTOP_REQUEST 1 8 LSB "(null)" INT8 SCALE-LINEAR 0 -1 InDict
 	HANDSHAKE 1 0 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
-	LAP_COUNTER 4 16 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
 	MISSION_STATUS 2 12 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
-	VEH_SPEED_ACTUAL 8 48 LSB "km/h" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	VEH_SPEED_DEMAND 8 56 LSB "km/h" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
 PDU.AI2VCU_Status.Signal.0.Coding:
-	[0,255] 0 1 1
+	[0,3] 0 1 1
 PDU.AI2VCU_Status.Signal.1.Coding:
-	[0,65535] 0 1 1
+	[0,1] 0 1 1
 PDU.AI2VCU_Status.Signal.2.Coding:
-	[0,3] 0 1 1
+	[0,1] 0 1 1
 PDU.AI2VCU_Status.Signal.3.Coding:
-	[0,1] 0 1 1
-PDU.AI2VCU_Status.Signal.4.Coding:
-	[0,1] 0 1 1
-PDU.AI2VCU_Status.Signal.5.Coding:
-	[0,15] 0 1 1
-PDU.AI2VCU_Status.Signal.6.Coding:
 	[0,3] 0 1 1
-PDU.AI2VCU_Status.Signal.7.Coding:
-	[0,255] 0 1 1
-PDU.AI2VCU_Status.Signal.8.Coding:
-	[0,255] 0 1 1
 
 PDU.AI2VCU_Steer = 2
 PDU.AI2VCU_Steer.TxMode = Cyclic 10000
 PDU.AI2VCU_Steer.Signals:
 	STEER_REQUEST 16 0 LSB "deg" INT16 SCALE-LINEAR 1.17549e-039 -1 InDict
 PDU.AI2VCU_Steer.Signal.0.Coding:
-	[-210,210] 0 0.1 1
-
-PDU.NMT = 2
-PDU.NMT.TxMode = Cyclic 100000
-PDU.NMT.Signals:
-	CMD 8 0 LSB "(null)" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	NODE_ID 8 8 LSB "(null)" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-PDU.NMT.Signal.0.Coding:
-	[0,255] 0 1 1
-PDU.NMT.Signal.1.Coding:
-	[0,255] 0 1 1
+	[-32768,32767] 0 0.1 1
+# manual edit of above line (compared to DBC) to avoid 'jump' in decoded value if limits exceeded
 
 PDU.OPUS2VCU_FB = 1
 PDU.OPUS2VCU_FB.TxMode = Cyclic 100000
 PDU.OPUS2VCU_FB.Signals:
 	AMI_STATE 4 0 LSB "(null)" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
 	BRK_DISCH_REQ 1 4 LSB "(null)" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
+	CHARGE_REQ 1 5 LSB "(null)" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
 PDU.OPUS2VCU_FB.Signal.0.Coding:
 	[0,15] 0 1 1
 PDU.OPUS2VCU_FB.Signal.1.Coding:
+	[0,1] 0 1 1
+PDU.OPUS2VCU_FB.Signal.2.Coding:
 	[0,1] 0 1 1
 
 PDU.VCU2AI_Brake = 5
@@ -257,38 +236,25 @@ PDU.VCU2AI_Speeds.Signal.3.Coding:
 PDU.VCU2AI_Status = 8
 PDU.VCU2AI_Status.TxMode = Cyclic 10000
 PDU.VCU2AI_Status.Signals:
-	AI_COMMS_LOST 1 45 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	AI_ESTOP_REQUEST 1 40 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
 	AMI_STATE 4 20 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
 	AS_STATE 4 16 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
 	AS_SWITCH_STATUS 1 9 LSB "(null)" INT8 SCALE-LINEAR 0 -1 InDict
-	AUTONOMOUS_BRAKING_FAULT 1 46 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	BMS_FAULT 1 49 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	BRAKE_PLAUSIBILITY_FAULT 1 50 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	CHARGE_PROCEDURE_FAULT 1 48 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	EBS_FAULT 1 43 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	FAULT_STATUS 1 24 LSB "(null)" INT8 SCALE-LINEAR 0 -1 InDict
+	EBS_STATE 4 36 LSB "(null)" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
 	GO_SIGNAL 1 11 LSB "(null)" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
 	HANDSHAKE 1 0 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
 	HVIL_OPEN_FAULT 1 41 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	HVIL_SHORT_FAULT 1 42 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	MISSION_STATUS_FAULT 1 47 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	OFFBOARD_CHARGER_FAULT 1 44 LSB "__F__" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	SHUTDOWN_CAUSE 8 56 LSB "(null)" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	SHUTDOWN_REQUEST 1 8 LSB "(null)" INT8 SCALE-LINEAR 0 -1 InDict
+	OP_STATE 4 4 LSB "(null)" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
 	STEERING_STATUS 2 12 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
+	TS_STATE 4 28 LSB "(null)" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
 	TS_SWITCH_STATUS 1 10 LSB "(null)" INT8 SCALE-LINEAR 0 -1 InDict
-	WARN_BATT_SOC_LOW 1 33 LSB "(null)" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	WARN_BATT_TEMP_HIGH 1 32 LSB "(null)" INT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	WARNING_STATUS 1 25 LSB "(null)" INT8 SCALE-LINEAR 0 -1 InDict
 PDU.VCU2AI_Status.Signal.0.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.1.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.2.Coding:
 	[0,15] 0 1 1
-PDU.VCU2AI_Status.Signal.3.Coding:
+PDU.VCU2AI_Status.Signal.1.Coding:
 	[0,7] 0 1 1
+PDU.VCU2AI_Status.Signal.2.Coding:
+	[0,1] 0 1 1
+PDU.VCU2AI_Status.Signal.3.Coding:
+	[0,15] 0 1 1
 PDU.VCU2AI_Status.Signal.4.Coding:
 	[0,1] 0 1 1
 PDU.VCU2AI_Status.Signal.5.Coding:
@@ -296,38 +262,12 @@ PDU.VCU2AI_Status.Signal.5.Coding:
 PDU.VCU2AI_Status.Signal.6.Coding:
 	[0,1] 0 1 1
 PDU.VCU2AI_Status.Signal.7.Coding:
-	[0,1] 0 1 1
+	[0,15] 0 1 1
 PDU.VCU2AI_Status.Signal.8.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.9.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.10.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.11.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.12.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.13.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.14.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.15.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.16.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.17.Coding:
-	[0,255] 0 1 1
-PDU.VCU2AI_Status.Signal.18.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.19.Coding:
 	[0,3] 0 1 1
-PDU.VCU2AI_Status.Signal.20.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.21.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.22.Coding:
-	[0,1] 0 1 1
-PDU.VCU2AI_Status.Signal.23.Coding:
+PDU.VCU2AI_Status.Signal.9.Coding:
+	[0,15] 0 1 1
+PDU.VCU2AI_Status.Signal.10.Coding:
 	[0,1] 0 1 1
 
 PDU.VCU2AI_Steer = 6
@@ -337,11 +277,11 @@ PDU.VCU2AI_Steer.Signals:
 	ANGLE_MAX 16 16 LSB "deg" UINT16 SCALE-LINEAR 1.17549e-039 -1 InDict
 	ANGLE_REQUEST 16 32 LSB "deg" INT16 SCALE-LINEAR 1.17549e-039 -1 InDict
 PDU.VCU2AI_Steer.Signal.0.Coding:
-	[-210,210] 0 0.1 1
+	[-32768,32767] 0 0.1 1
 PDU.VCU2AI_Steer.Signal.1.Coding:
-	[0,210] 0 0.1 1
+	[0,300] 0 0.1 1
 PDU.VCU2AI_Steer.Signal.2.Coding:
-	[-210,210] 0 0.1 1
+	[-300,300] 0 0.1 1
 
 PDU.VCU2AI_Wheel_counts = 8
 PDU.VCU2AI_Wheel_counts.TxMode = Cyclic 10000
@@ -359,58 +299,44 @@ PDU.VCU2AI_Wheel_counts.Signal.2.Coding:
 PDU.VCU2AI_Wheel_counts.Signal.3.Coding:
 	[0,65535] 0 1 1
 
-PDU.VCU2LOG_Dynamics1 = 8
-PDU.VCU2LOG_Dynamics1.TxMode = Cyclic 100000
-PDU.VCU2LOG_Dynamics1.Signals:
-	Brake_actual_pct 8 32 LSB "%" UINT8 SCALE-LINEAR 0 -1 InDict
-	Brake_target_pct 8 40 LSB "%" UINT8 SCALE-LINEAR 0 -1 InDict
-	Drive_trq_actual_pct 8 48 LSB "%" UINT8 SCALE-LINEAR 0 -1 InDict
-	Drive_trq_target_pct 8 56 LSB "%" UINT8 SCALE-LINEAR 0 -1 InDict
-	Speed_actual 8 0 LSB "km/h" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	Speed_target 8 8 LSB "km/h" UINT8 SCALE-LINEAR 1.17549e-038 -1 InDict
-	Steer_actual 8 16 LSB "deg" INT8 SCALE-LINEAR 5.87745e-039 -1 InDict
-	Steer_target 8 24 LSB "deg" INT8 SCALE-LINEAR 5.87745e-039 -1 InDict
-PDU.VCU2LOG_Dynamics1.Signal.0.Coding:
-	[0,100] 0 1 1
-PDU.VCU2LOG_Dynamics1.Signal.1.Coding:
-	[0,100] 0 1 1
-PDU.VCU2LOG_Dynamics1.Signal.2.Coding:
-	[0,100] 0 1 1
-PDU.VCU2LOG_Dynamics1.Signal.3.Coding:
-	[0,100] 0 1 1
-PDU.VCU2LOG_Dynamics1.Signal.4.Coding:
-	[0,255] 0 1 1
-PDU.VCU2LOG_Dynamics1.Signal.5.Coding:
-	[0,255] 0 1 1
-PDU.VCU2LOG_Dynamics1.Signal.6.Coding:
-	[-128,127] 0 0.5 1
-PDU.VCU2LOG_Dynamics1.Signal.7.Coding:
-	[-128,127] 0 0.5 1
+PDU.VCU2OPUS_1 = 8
+PDU.VCU2OPUS_1.TxMode = Cyclic 10000
+PDU.VCU2OPUS_1.Signals:
+	AUX_HV 16 32 LSB "V" UINT16 SCALE-LINEAR 1.17549e-038 -1 InDict
+	KL15_ADC 16 0 LSB "V" UINT16 SCALE-LINEAR 1.17549e-038 -1 InDict
+	LEM_500A_ADC 16 48 LSB "A" UINT16 SCALE-LINEAR 0 -1 InDict
+	VBAT_ADC 16 16 LSB "V" UINT16 SCALE-LINEAR 1.17549e-038 -1 InDict
+PDU.VCU2OPUS_1.Signal.0.Coding:
+	[0,65535] 0 0.001 1
+PDU.VCU2OPUS_1.Signal.1.Coding:
+	[0,65535] 0 0.001 1
+PDU.VCU2OPUS_1.Signal.2.Coding:
+	[0,65535] -625 0.25 1
+PDU.VCU2OPUS_1.Signal.3.Coding:
+	[0,65535] 0 0.001 1
 
-PDU.VCU2LOG_Status = 5
-PDU.VCU2LOG_Status.TxMode = Cyclic 100000
-PDU.VCU2LOG_Status.Signals:
-	AMI_STATE 3 5 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
-	Cones_count_actual 8 15 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
-	Cones_count_all 17 23 LSB "(null)" UINT32 SCALE-LINEAR 0 -1 InDict
-	Lap_counter 4 11 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
-	State_ASSI 3 0 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
-	State_EBS 2 3 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
-	State_service_brake 2 9 LSB "(null)" UINT8 SCALE-LINEAR 0 -1 InDict
-	State_steering 1 8 LSB "(null)" INT8 SCALE-LINEAR 0 -1 InDict
-PDU.VCU2LOG_Status.Signal.0.Coding:
-	[0,7] 0 1 1
-PDU.VCU2LOG_Status.Signal.1.Coding:
-	[0,255] 0 1 1
-PDU.VCU2LOG_Status.Signal.2.Coding:
-	[0,131071] 0 1 1
-PDU.VCU2LOG_Status.Signal.3.Coding:
-	[0,15] 0 1 1
-PDU.VCU2LOG_Status.Signal.4.Coding:
-	[0,7] 0 1 1
-PDU.VCU2LOG_Status.Signal.5.Coding:
-	[0,3] 0 1 1
-PDU.VCU2LOG_Status.Signal.6.Coding:
-	[0,3] 0 1 1
-PDU.VCU2LOG_Status.Signal.7.Coding:
-	[0,1] 0 1 1
+PDU.VCU2OPUS_2 = 8
+PDU.VCU2OPUS_2.TxMode = Cyclic 10000
+PDU.VCU2OPUS_2.Signals:
+	EBS_FRONT_ACC_PRESS 16 0 LSB "Bar" INT16 SCALE-LINEAR 1.17549e-040 -1 InDict
+	EBS_FRONT_CALIPER_PRESS 16 32 LSB "Bar" INT16 SCALE-LINEAR 1.17549e-040 -1 InDict
+	EBS_REAR_ACC_PRESS 16 16 LSB "Bar" INT16 SCALE-LINEAR 1.17549e-040 -1 InDict
+	EBS_REAR_CALIPER_PRESS 16 48 LSB "Bar" INT16 SCALE-LINEAR 1.17549e-040 -1 InDict
+PDU.VCU2OPUS_2.Signal.0.Coding:
+	[-32768,32767] 0 0.01 1
+PDU.VCU2OPUS_2.Signal.1.Coding:
+	[-32768,32767] 0 0.01 1
+PDU.VCU2OPUS_2.Signal.2.Coding:
+	[-32768,32767] 0 0.01 1
+PDU.VCU2OPUS_2.Signal.3.Coding:
+	[-32768,32767] 0 0.01 1
+
+PDU.VCU2OPUS_3 = 8
+PDU.VCU2OPUS_3.TxMode = Cyclic 10000
+PDU.VCU2OPUS_3.Signals:
+	EBS_TEST_BITFIELD 16 0 LSB "(null)" UINT16 SCALE-LINEAR 1.17549e-038 -1 InDict
+	EBS_TEST_BITFIELD_LATCHED 16 16 LSB "(null)" UINT16 SCALE-LINEAR 1.17549e-038 -1 InDict
+PDU.VCU2OPUS_3.Signal.0.Coding:
+	[0,65535] 0 1 1
+PDU.VCU2OPUS_3.Signal.1.Coding:
+	[0,65535] 0 1 1
